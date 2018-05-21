@@ -35,7 +35,7 @@ if ((vehicle _object) isKindOf "Tank") then {
 	};	
 };
 
-if ((vehicle _object) isKindOf "Helicopter") then {
+if (((vehicle _object) isKindOf "Helicopter") and !((typeOf (vehicle _object)) isEqualTo "Steerable_Parachute_F")) then {
 	if ((typeOf _object) != "rhsusf_airforce_pilot") then {
 		_fail = true;
 	};

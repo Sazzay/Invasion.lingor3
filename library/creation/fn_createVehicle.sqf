@@ -36,6 +36,7 @@ if (isNil "_respawn") then {
 
 _vehicle = createVehicle [_type, [_pos select 0, _pos select 1], [], 0, "CAN_COLLIDE"];
 _vehicle setPosATL _pos;
+_vehicle setDir _dir;
 
 if !(_vehicle isEqualTo objNull) then {
 	if (_respawn isEqualTo true) then {

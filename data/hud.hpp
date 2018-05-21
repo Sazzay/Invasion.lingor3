@@ -22,7 +22,7 @@ class RscTitles {
 			{
 				idc = 1500;
 				text = "";
-				x = 0.5 * safezoneW + safezoneX - (0.16 * safezoneW / 2);
+				x = 0.5 * safezoneW + safezoneX - (0.3 * safezoneW / 2);
 				y = 0.1 * safezoneH + safezoneY - (0.03 * safezoneH / 2);
 				w = 0.3 * safezoneW;
 				h = 0.03 * safezoneH;
