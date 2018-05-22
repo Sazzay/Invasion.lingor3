@@ -15,4 +15,14 @@ class I
 		file = "library\creation";
 		class createVehicle;
 	};
+	class acs
+	{
+		file = "library\acs";
+		class findHostileForce;
+	};
+	class positional
+	{
+		file = "library\positional";
+		class findNearestWater;
+	};
 };

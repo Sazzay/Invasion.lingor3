@@ -41,9 +41,6 @@ if (((vehicle _object) isKindOf "Helicopter") and !((typeOf (vehicle _object)) i
 	};
 };
 
-// Debug
-hint format ["Player: %1, Vehicle: %2, Fail: %3", _object, vehicle _object, _fail];
-
 if ((_fail) isEqualTo true) then {
 	moveOut _object;
 	["You are not qualified to operate this vehicle."] spawn I_fnc_notification;
