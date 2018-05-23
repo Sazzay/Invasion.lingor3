@@ -7,6 +7,7 @@
 	Parameters:
 	_this select 0: Position2D
 	_this select 1: INT
+	_this select 2: INT
 	
 	Returns:
 	Position2D

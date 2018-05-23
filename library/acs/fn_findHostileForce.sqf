@@ -2,7 +2,7 @@
 	Author: Markus "Sazzay" Larsson
 	
 	Description:
-	Find a mass of grouped blufor units and return their position and correlation to the sea
+	Find a mass of grouped blufor units and return their position and direction correlation to the sea
 	
 	Parameters:
 	_this select 0: INT
@@ -19,7 +19,7 @@
 if (isNil "_amount") exitWith {};
 
 {
-	//if (position _x isFlatEmpty [-1, -1, -1, -1, 0, false] isEqualTo []) exitWith {};
+	if (position _x isFlatEmpty [-1, -1, -1, -1, 0, false] isEqualTo []) exitWith {};
 
 	{
 		if (side _x isEqualTo west) then {
@@ -47,11 +47,9 @@ if (_pass isEqualTo true) then {
 		_fPos set [_i, (_fPos select _i) / (count _array)];
 	};
 	
-	_dir = [_fPos, ([_fPos, 5000] call I_fnc_findNearestWater)] call BIS_fnc_dirTo;
+	_dir = [_fPos, ([_fPos, 5000, 10] call I_fnc_findNearestWater)] call BIS_fnc_dirTo;
 };
 
-_return = [([_fPos, 5000, 10] call I_fnc_findNearestWater), _dir];
+_return = [_fPos, _dir];
 
-hint str _return;
-//5334, 9066
 _return

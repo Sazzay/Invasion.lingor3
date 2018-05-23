@@ -4,6 +4,7 @@ class I
 	{
 		file = "library\restrictions";
 		class vehicularEligibility;
+		class timedBool;
 	};
 	class visual
 	{
