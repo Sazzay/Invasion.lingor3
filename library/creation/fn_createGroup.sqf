@@ -20,7 +20,7 @@
 
 [_this select 0, _this select 1, nil] params ["_type", "_pos", "_index"];
 
-if (isNil(_type) or isNil (_pos)) exitWith {
+if (isNil("_type") or isNil ("_pos")) exitWith {
 	diag_log "I_fnc_createGroup: _type can not be nil.";
 };
 

@@ -16,6 +16,7 @@ class I
 	{
 		file = "library\creation";
 		class createVehicle;
+		class createGroup;
 	};
 	class acs
 	{
