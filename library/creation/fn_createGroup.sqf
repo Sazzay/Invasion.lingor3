@@ -32,4 +32,6 @@ if (isNil(_type) or isNil (_pos)) exitWith {
 
 _return = [_pos, EAST, ((I_DEF_GROUPS select _index) select 1)] call BIS_fnc_spawnGroup;
 
+[_return] call I_fnc_aiSkill;
+
 _return

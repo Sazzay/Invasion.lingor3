@@ -47,7 +47,7 @@ if (_pass isEqualTo true) then {
 		_fPos set [_i, (_fPos select _i) / (count _array)];
 	};
 	
-	_dir = [_fPos, ([_fPos, 5000, 10] call I_fnc_findNearestWater)] call BIS_fnc_dirTo;
+	_dir = [_fPos, ([_fPos, 5000, 10, 100] call I_fnc_findNearestWater)] call BIS_fnc_dirTo;
 };
 
 _return = [_fPos, _dir];
