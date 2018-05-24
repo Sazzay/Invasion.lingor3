@@ -9,7 +9,7 @@
 	_this select 0: INT
 	
 	Returns:
-	ARRAY
+	OBJECT
 	
 	Example:
 	_call = [5] call I_fnc_findHostileBoatPatrol;
