@@ -3,7 +3,7 @@
 Another ARMA 3 semi-dynamic mission, inspired greatly by previous works like domination or insurgency. The idea of this mission is that USMC
 is conducting an island invasion of (as a first map of choice) Lingor. The composition of main objectives will be different each restart but 
 typically it involves:
-- Capture of towns as the main victory denominator.
+- Capture of towns as the main progressive goal towards victory.
 - Capture of vital locations, like airfields, bases and other strategic locations that are randomized per restart.
 - Destruction of resources, like ammo caches, anti-air installations, vehicle depots and more.
 
