@@ -22,6 +22,7 @@ class I
 	{
 		file = "library\acs";
 		class findHostileForce;
+		class findHostileBoatPatrol;
 	};
 	class positional
 	{
