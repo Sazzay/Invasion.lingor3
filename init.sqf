@@ -10,4 +10,4 @@ if !(isServer) exitWith {};
 
 //_call = ["Test", 5] call I_fnc_timedBool;
 
-[5] call I_fnc_findHostileBoatPatrol
+//[5] call I_fnc_findHostileBoatPatrol;

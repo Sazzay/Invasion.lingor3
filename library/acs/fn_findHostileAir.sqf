@@ -28,3 +28,5 @@ if (isNil "_speed" or isNil "_height") exitWith {
 		};
 	};
 } forEach vehicles;
+
+_return
