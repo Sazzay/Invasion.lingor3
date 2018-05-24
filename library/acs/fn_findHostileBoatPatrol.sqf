@@ -32,3 +32,5 @@ if (isNil "_amount") exitWith {
 } forEach vehicles;
 
 hint str _return;
+
+_return
