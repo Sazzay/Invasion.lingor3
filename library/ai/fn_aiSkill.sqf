@@ -20,8 +20,8 @@ if (!((typeName _mvar) isEqualTo "OBJECT") and !((typeName _mvar) isEqualTo "GRO
 };
 
 _table = [
-["ai_spotTime", 0.2],
-["ai_spotDistance", 0.2],
+["ai_spotTime", 0.7],
+["ai_spotDistance", 0.3],
 ["ai_courage", 0.8],
 ["ai_aimingSpeed", 0.2],
 ["ai_aimingShake", 0.3],

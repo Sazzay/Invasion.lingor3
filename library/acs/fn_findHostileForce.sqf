@@ -19,10 +19,8 @@
 if (isNil "_amount") exitWith {};
 
 {
-	if (position _x isFlatEmpty [-1, -1, -1, -1, 0, false] isEqualTo []) exitWith {};
-
 	{
-		if (side _x isEqualTo west) then {
+		if ((side _x isEqualTo west) and !((position _x) isFlatEmpty [-1, -1, -1, -1, 0, false] isEqualTo [])) then {
 			_array pushBack _x;
 		};
 	} forEach nearestObjects [_x, ["Man"], 30];
