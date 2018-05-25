@@ -14,7 +14,7 @@ while {true} do {
 	if (!(_array isEqualTo []) and ((missionNamespace getVariable "RESTRICT_ACS_AIR") isEqualTo false) and ((random 100) < 20)) then {
 		{
 			if !(surfaceIsWater (getPos _x)) then {
-				_group = [selectRandom ["VDV-AA-SQUAD", "VDV-AA-SQUAD-2"], selectRandom ([(getPos _x)] call I_fnc_findAAPos)] call I_fnc_createGroup;
+				_group = [selectRandom ["VDV-AA-SQUAD", "VDV-AA-SQUAD-2", "VDV-AA-URAL"], selectRandom ([(getPos _x)] call I_fnc_findAAPos)] call I_fnc_createGroup;
 				_group reveal [_x, (0.5 + random 1)];
 				
 				[_group] call I_fnc_deleteInactive;

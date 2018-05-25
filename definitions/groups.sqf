@@ -16,5 +16,6 @@ I_DEF_GROUPS = [
 ["VDV-MI8-ASSAULT-SQUAD", (configfile >> "CfgGroups" >> "East" >> "rhs_faction_vdv" >> "rhs_group_rus_vdv_mi8" >> "rhs_group_rus_vdv_mi8_squad")],
 ["VDV-MI24-RECON-SQUAD", (configfile >> "CfgGroups" >> "East" >> "rhs_faction_vdv" >> "rhs_group_rus_vdv_mi24" >> "rhs_group_rus_vdv_mi24_squad")],
 ["VDV-AA-SQUAD", (configfile >> "CfgGroups" >> "East" >> "rhs_faction_vdv" >> "rhs_group_rus_vdv_infantry_flora" >> "rhs_group_rus_vdv_infantry_flora_section_AA")],
-["VDV-AA-SQUAD-2", (configfile >> "CfgGroups" >> "East" >> "rhs_faction_vdv" >> "rhs_group_rus_vdv_infantry" >> "rhs_group_rus_vdv_infantry_section_AA")]
+["VDV-AA-SQUAD-2", (configfile >> "CfgGroups" >> "East" >> "rhs_faction_vdv" >> "rhs_group_rus_vdv_infantry" >> "rhs_group_rus_vdv_infantry_section_AA")],
+["VDV-AA-URAL", (configfile >> "CfgGroups" >> "East" >> "rhs_faction_vdv" >> "rhs_group_rus_vdv_Ural" >> "rhs_group_rus_vdv_Ural_squad_aa")]
 ];
