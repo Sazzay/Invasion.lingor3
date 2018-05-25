@@ -20,15 +20,14 @@ if (!((typeName _mvar) isEqualTo "OBJECT") and !((typeName _mvar) isEqualTo "GRO
 };
 
 _table = [
-["ai_spotTime", 0.7],
-["ai_spotDistance", 0.3],
-["ai_courage", 0.8],
-["ai_aimingSpeed", 0.2],
-["ai_aimingShake", 0.3],
-["ai_aimingAccuracy", 0.1],
-["ai_commanding", 0.6],
-["ai_reloadSpeed", 0.8],
-["ai_ForcePosUp", true]
+["spotTime", 0.7],
+["spotDistance", 0.3],
+["courage", 0.8],
+["aimingSpeed", 0.2],
+["aimingShake", 0.3],
+["aimingAccuracy", 0.1],
+["commanding", 0.6],
+["reloadSpeed", 0.8]
 ];
 
 if ((typeName _mvar) isEqualTo "OBJECT") then {
@@ -43,5 +42,5 @@ if ((typeName _mvar) isEqualTo "GROUP") then {
 		{
 			_unit setSkill _x;
 		} forEach _table;
-	} forEach _mvar;
+	} forEach (units _mvar);
 };

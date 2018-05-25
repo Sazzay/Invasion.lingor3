@@ -36,5 +36,6 @@ class I
 		file = "library\ai";
 		class taskGroupAssault;
 		class aiSkill;
+		class deleteInactive;
 	};
 };

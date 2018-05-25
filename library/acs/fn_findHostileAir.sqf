@@ -9,10 +9,10 @@
 	_this select 1: INT
 	
 	Returns:
-	OBJECT
+	ARRAY
 	
 	Example:
-	_call = [50, 200] call I_fnc_findHostileAir;
+	_call = [200, 50] call I_fnc_findHostileAir;
 */
 
 [_this select 0, _this select 1, []] params ["_speed", "_height", "_return"];
@@ -22,7 +22,7 @@ if (isNil "_speed" or isNil "_height") exitWith {
 };
 
 {
-	if (((speed _x) > _speed) and ((getTerrainHeightASL _x) > _height))  then {
+	if (((speed _x) > _speed) and (((getPosASL _x) select 2) > _height))  then {
 		if (_x isKindOf "Air") then {
 			_return pushBack _x;
 		};
