@@ -11,7 +11,7 @@
 	Returns:
 	
 	Example:
-	_call = [_group] call I_fnc_taskGroup;
+	_call = [_group, [5000, 3000]] call I_fnc_taskGroupAssault;
 */
 
 [_this select 0, _this select 1] params ["_group", "_pos"];
