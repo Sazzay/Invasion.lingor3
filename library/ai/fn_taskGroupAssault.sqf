@@ -35,5 +35,5 @@ _group addWaypoint [_pos, 10 + random 20];
 	waitUntil {((leader(_this select 0)) distance (_this select 1)) < 200};
 
 	[(_this select 0), 0] setWaypointBehaviour "COMBAT";
-	[(_this select 0), 0] setWaypointType "MOVE";
+	[(_this select 0), 0] setWaypointType "SAD";
 };

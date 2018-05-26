@@ -5,6 +5,8 @@
 	Every base 15 seconds (modifiers to be added) this runtime script checks if there is a large enough hostile force to
 	dispatch friendly units to. If true, it will spawn a random amount of groups in the direction away from the
 	position in question.
+	
+	Notes: 0.56~ execution time maximum.
 */
 
 [[], [], []] params ["_array", "_positions", "_groups"];
@@ -38,6 +40,7 @@ while {true} do {
 		
 		{
 			[_x, (_array select 0)] call I_fnc_taskGroupAssault;
+			[_x] call I_fnc_deleteInactive;
 		
 			{
 				_x setDir ((_array select 1) - 180);

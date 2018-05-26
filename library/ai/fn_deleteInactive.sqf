@@ -42,7 +42,7 @@ if (isNil "_group") exitWith {
 		};
 		
 		if (_exit isEqualTo true) exitWith {
-			hint "Units removed from inactivity."
+			diag_log "I_fnc_deleteInactive: units removed from inactivity."
 		};
 	};
 };
