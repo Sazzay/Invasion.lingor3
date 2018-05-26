@@ -1,0 +1,51 @@
+/*
+	Author: Markus "Sazzay" Larsson
+	
+	Description:
+	Every base 15 seconds (modifiers to be added) this runtime script checks if there is a large enough hostile force to
+	dispatch friendly units to. If true, it will spawn a random amount of groups in the direction away from the
+	position in question.
+*/
+
+[[], [], []] params ["_array", "_positions", "_groups"];
+
+["RESTRICT_ACS_LAND", 0] call I_fnc_timedBool;
+
+while {true} do {
+	_array = [6] call I_fnc_findHostileForce;
+	
+	if (!(_array isEqualTo [[0, 0], 0]) and ((missionNamespace getVariable "RESTRICT_ACS_LAND") isEqualTo false)) then {
+		_positions = [(_array select 0), 300, 1500, ((_array select 1) - 180)] call I_fnc_findEmptyLine;
+		
+		if !(_positions isEqualTo []) then {
+			{
+				if ((random 100) < 8) then {
+					_groups pushBack ([selectRandom I_DEF_LAND_INF_GROUPS, _x] call I_fnc_createGroup);
+					
+					//temp
+					_markerstr = createMarker [format ["markername_%1", _x],_x];
+					_markerstr setMarkerShape "ICON";
+					_markerstr setMarkerType "hd_dot";
+				};
+			} forEach _positions;
+			
+			if (_groups isEqualTo []) then {
+				_groups pushBack [selectRandom I_DEF_LAND_INF_GROUPS, selectRandom _positions] call I_fnc_createGroup;
+			};
+		} else {
+			diag_log "rt_tickHostileForce: no suitable spawn positions have been found.";
+		};
+		
+		{
+			[_x, (_array select 0)] call I_fnc_taskGroupAssault;
+		
+			{
+				_x setDir ((_array select 1) - 180);
+			} forEach (units _x);
+		} forEach _groups;
+		
+		["RESTRICT_ACS_LAND", 600 - (random 150) + (random 150)] call I_fnc_timedBool;
+	};
+	
+	sleep 15;
+};

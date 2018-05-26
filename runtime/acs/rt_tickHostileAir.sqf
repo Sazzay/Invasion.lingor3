@@ -2,7 +2,7 @@
 	Author: Markus "Sazzay" Larsson
 	
 	Description:
-	Every base -- seconds (modifiers to be added) this runtime script checks if there is a air vehicle and reacts accordingly
+	Every base 15 seconds (modifiers to be added) this runtime script checks if there is a air vehicle and reacts accordingly
 	depending on its class (plane or helicopter) with a little bit of randomization to it.
 */
 
@@ -11,7 +11,7 @@
 while {true} do {
 	_array = ([50, 100] call I_fnc_findHostileAir);
 
-	if (!(_array isEqualTo []) and ((missionNamespace getVariable "RESTRICT_ACS_AIR") isEqualTo false) and ((random 100) < 20)) then {
+	if (!(_array isEqualTo []) and ((missionNamespace getVariable "RESTRICT_ACS_AIR") isEqualTo false) and ((random 100) < 30)) then {
 		{
 			if !(surfaceIsWater (getPos _x)) then {
 				_group = [selectRandom ["VDV-AA-SQUAD", "VDV-AA-SQUAD-2", "VDV-AA-URAL"], selectRandom ([(getPos _x)] call I_fnc_findAAPos)] call I_fnc_createGroup;
@@ -29,5 +29,5 @@ while {true} do {
 		["RESTRICT_ACS_AIR", 600 - (random 150) + (random 150)] call I_fnc_timedBool;
 	};
 
-	sleep 20; // add mods to this, like radar sites would decrease the checks
+	sleep 15; // add mods to this, like radar sites would decrease the checks
 };

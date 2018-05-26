@@ -39,6 +39,4 @@ for "_i" from _mind to _maxd step ((_maxd - _mind) / 25) do {
 	};
 };
 
-hint str _return;
-
 _return
