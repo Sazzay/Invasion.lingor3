@@ -5,10 +5,10 @@
 	Every base 5 seconds this script checks if a boat patrol is active, if so it then runs a number of functions to determine
 	an ambush location for friendly forces. It then spawns the infantry group and tasks it to destroy the blufor boat.
 	
-	Notes: 0.65~ execution time maximum.
+	Notes: 1.1~ sec execution time maximum on successful loop.
 */
 
-[[], []] params ["_array", "_groups"];
+[[], [], []] params ["_array", "_groups", "_positions"];
 
 ["RESTRICT_ACS_SEA", 0] call I_fnc_timedBool; // Initialize the bool
 
@@ -18,12 +18,16 @@ while {true} do {
 	if (((missionNamespace getVariable "RESTRICT_ACS_SEA") isEqualTo false) and !(_array isEqualTo [])) then {
 		{
 			if ([(getPos _x), (getDir _x), 300] call I_fnc_findEmptyWaterLine) then {
-				_groups pushBack ([(selectRandom I_DEF_LAND_AMBUSH_GROUPS), selectRandom ([_x] call I_fnc_findAmbushLocation)] call I_fnc_createGroup);
-				[(_groups select _forEachIndex), _x] call I_fnc_taskGroupAmbush;
-				["RESTRICT_ACS_SEA", 900 - (random 300) + (random 300)] call I_fnc_timedBool;
+				_positions = ([_x] call I_fnc_findAmbushLocation);
+				
+				if !(_positions isEqualTo []) then {
+					_groups pushBack ([(selectRandom I_DEF_LAND_AMBUSH_GROUPS), selectRandom _positions] call I_fnc_createGroup);
+					[(_groups select _forEachIndex), _x] call I_fnc_taskGroupAmbush;
+					["RESTRICT_ACS_SEA", 900 - (random 300) + (random 300)] call I_fnc_timedBool;
+				};
 			};
 		} forEach _array;
 	};
 	
-	sleep 5;
+	sleep 2;
 };
