@@ -17,22 +17,22 @@ while {true} do {
 	_array = [6] call I_fnc_findHostileForce;
 	
 	if (!(_array isEqualTo [[0, 0], 0]) and ((missionNamespace getVariable "RESTRICT_ACS_LAND") isEqualTo false)) then {
-		_positions = [(_array select 0), 300, 1500, ((_array select 1) - 180)] call I_fnc_findEmptyLine;
+		_positions = [(_array select 0), 300, 800, ((_array select 1) - 180)] call I_fnc_findEmptyLine;
 		
 		if !(_positions isEqualTo []) then {
 			{
-				if ((random 100) < 8) then {
-					_groups pushBack ([selectRandom I_DEF_LAND_INF_GROUPS, _x] call I_fnc_createGroup);
+				if ((random 100) < 15) then {
+					_groups pushBack ([(selectRandom I_DEF_LAND_INF_GROUPS), _x] call I_fnc_createGroup);
 					
-					//temp
+					/*
 					_markerstr = createMarker [format ["markername_%1", _x],_x];
 					_markerstr setMarkerShape "ICON";
-					_markerstr setMarkerType "hd_dot";
+					_markerstr setMarkerType "hd_dot";*/ // debug
 				};
 			} forEach _positions;
 			
 			if (_groups isEqualTo []) then {
-				_groups pushBack [selectRandom I_DEF_LAND_INF_GROUPS, selectRandom _positions] call I_fnc_createGroup;
+				_groups pushBack ([(selectRandom I_DEF_LAND_INF_GROUPS), (selectRandom _positions)] call I_fnc_createGroup);
 			};
 		} else {
 			diag_log "rt_tickHostileForce: no suitable spawn positions have been found.";

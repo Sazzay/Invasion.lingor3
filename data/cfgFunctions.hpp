@@ -30,11 +30,14 @@ class I
 		class findNearestWater;
 		class findAAPos;
 		class findEmptyLine;
+		class findEmptyWaterLine;
+		class findAmbushLocation;
 	};
 	class ai
 	{
 		file = "library\ai";
 		class taskGroupAssault;
+		class taskGroupAmbush;
 		class aiSkill;
 		class deleteInactive;
 	};

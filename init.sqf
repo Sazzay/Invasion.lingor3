@@ -9,7 +9,3 @@ if !(isServer) exitWith {};
 [] execVM "runtime\acs\rt_tickHostileAir.sqf";
 [] execVM "runtime\acs\rt_tickHostileBoatPatrol.sqf";
 [] execVM "runtime\acs\rt_tickHostileForce.sqf";
-
-//[5] call I_fnc_findHostileBoatPatrol;
-
-//hint str (nearestLocations [[0, 0], ["NameCity", "NameCityCapital", "NameVillage"], 15000]);

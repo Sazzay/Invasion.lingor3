@@ -6,6 +6,8 @@
 	depending on its class (plane or helicopter) with a little bit of randomization to it.
 */
 
+[[], grpNull] params ["_array", "_group"];
+
 ["RESTRICT_ACS_AIR", 0] call I_fnc_timedBool; // Initialize the bool
 
 while {true} do {

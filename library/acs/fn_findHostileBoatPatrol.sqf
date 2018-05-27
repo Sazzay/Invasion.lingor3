@@ -23,14 +23,12 @@ if (isNil "_amount") exitWith {
 
 {
 	if (_x isKindOf "Ship") then {
-		if (abs(getTerrainHeightASL getPos _x) < 6) then {
-			if (count (nearestObjects [_x, ["Man"], 20]) >= _amount) then {
+		if (abs(getTerrainHeightASL getPos _x) < 8) then {
+			if (count (fullCrew _x) >= _amount) then {
 				_return pushBack _x;
 			};
 		};
 	};
 } forEach vehicles;
-
-hint str _return;
 
 _return

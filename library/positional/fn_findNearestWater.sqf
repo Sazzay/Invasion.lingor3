@@ -17,7 +17,7 @@
 	_call = [[12351, 2334], 3000] call I_fnc_findNearestWater;
 */
 
-[_this select 0, _this select 1, _this select 2, _this select 3, [], []] params ["_pos", "_radius", "_mind", "_maxd", "_positions", "_distances"];
+[_this select 0, _this select 1, _this select 2, _this select 3, [], [], []] params ["_pos", "_radius", "_mind", "_maxd", "_positions", "_distances", "_return"];
 
 if ((isNil ("_pos")) or (isNil ("_radius"))) exitWith {
 	diag_log "I_fnc_findNearestWater: insufficient information provided."
@@ -38,9 +38,9 @@ for "_i" from ((_pos select 0) - _radius) to ((_pos select 0) + _radius) step 10
 if !(_positions isEqualTo []) then {
 	{
 		_distances pushBack (_pos distance2D _x);
-	} forEach _positions;	
-};
+	} forEach _positions;
 	
-_return = [(_positions select (_distances find (selectMin _distances))) select 0, (_positions select (_distances find (selectMin _distances))) select 1, 0];
+	_return = [(_positions select (_distances find (selectMin _distances))) select 0, (_positions select (_distances find (selectMin _distances))) select 1, 0];
+};
 
 _return
