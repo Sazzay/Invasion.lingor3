@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1207;
+		nextID=1220;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2582.6016,256.67731,8333.3086};
-		dir[]={0.47431618,-0.64205819,0.6025151};
-		up[]={0.3971591,0.76662791,0.50450134};
-		aside[]={0.78583455,5.075708e-008,-0.61861199};
+		pos[]={3699.0718,260.25171,9214.6348};
+		dir[]={0.79669911,-0.5725643,0.19377249};
+		up[]={0.5563572,0.81984961,0.13531564};
+		aside[]={0.23634154,-9.6165604e-007,-0.97171795};
 	};
 };
 binarizationWanted=0;
@@ -46,14 +46,13 @@ addons[]=
 	"A3_Props_F_Orange_Humanitarian_Garbage",
 	"rhsusf_c_troops",
 	"A3_Modules_F_Curator_Curator",
-	"rhsusf_c_markvsoc",
 	"A3_Characters_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=14;
+		items=13;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -141,13 +140,6 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
-		{
-			className="rhsusf_c_markvsoc";
-			name="Mark V SOC";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
 	};
 };
 randomSeed=5274257;
@@ -209,7 +201,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=8;
+		items=6;
 		class Item0
 		{
 			dataType="Group";
@@ -5562,309 +5554,13 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=7;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5137.5879,8.6640978,8109.5928};
-						angles[]={0,5.7223763,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-					};
-					id=1194;
-					type="rhsusf_socom_swcc_officer";
-					atlOffset=12.484;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male05ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5137.5884,8.6639452,8109.5928};
-						angles[]={0,5.7223711,0};
-					};
-					side="West";
-					class Attributes
-					{
-					};
-					id=1195;
-					type="rhsusf_socom_swcc_crewman";
-					atlOffset=12.483783;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5137.5884,8.6639452,8109.5928};
-						angles[]={0,5.7223711,0};
-					};
-					side="West";
-					class Attributes
-					{
-					};
-					id=1196;
-					type="rhsusf_socom_swcc_crewman";
-					atlOffset=12.483783;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5137.5884,8.6639452,8109.5928};
-						angles[]={0,5.7223711,0};
-					};
-					side="West";
-					class Attributes
-					{
-					};
-					id=1197;
-					type="rhsusf_socom_swcc_crewman";
-					atlOffset=12.483783;
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5137.5884,8.6639452,8109.5928};
-						angles[]={0,5.7223711,0};
-					};
-					side="West";
-					class Attributes
-					{
-					};
-					id=1198;
-					type="rhsusf_socom_swcc_crewman";
-					atlOffset=12.483783;
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5137.5884,8.6639452,8109.5928};
-						angles[]={0,5.7223711,0};
-					};
-					side="West";
-					class Attributes
-					{
-					};
-					id=1199;
-					type="rhsusf_socom_swcc_officer";
-					atlOffset=12.483783;
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5137.5884,8.6639452,8109.5928};
-						angles[]={0,5.7223711,0};
-					};
-					side="West";
-					class Attributes
-					{
-					};
-					id=1200;
-					type="rhsusf_socom_swcc_officer";
-					atlOffset=12.483783;
-				};
-			};
-			class Attributes
-			{
-			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=7;
-				};
-				class Links
-				{
-					items=7;
-					class Item0
-					{
-						linkID=0;
-						item0=1194;
-						item1=1193;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-					class Item1
-					{
-						linkID=1;
-						item0=1195;
-						item1=1193;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={0};
-						};
-					};
-					class Item2
-					{
-						linkID=2;
-						item0=1196;
-						item1=1193;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={1};
-						};
-					};
-					class Item3
-					{
-						linkID=3;
-						item0=1197;
-						item1=1193;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={2};
-						};
-					};
-					class Item4
-					{
-						linkID=4;
-						item0=1198;
-						item1=1193;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={3};
-						};
-					};
-					class Item5
-					{
-						linkID=5;
-						item0=1199;
-						item1=1193;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={4};
-						};
-					};
-					class Item6
-					{
-						linkID=6;
-						item0=1200;
-						item1=1193;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={5};
-						};
-					};
-				};
-			};
-			id=1192;
-			atlOffset=12.483783;
-		};
-		class Item6
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5137.5884,12.228797,8109.5425};
-				angles[]={0,5.7223711,0};
-			};
-			side="West";
-			flags=2;
-			class Attributes
-			{
-			};
-			id=1193;
-			type="rhsusf_mkvsoc";
-			atlOffset=12.483783;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item7
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
 				items=1;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5005.6929,14.719026,9002.2383};
+						position[]={4970.3325,10.983532,9130.1563};
 					};
 					side="West";
 					flags=7;

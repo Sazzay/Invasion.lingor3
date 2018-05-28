@@ -3,6 +3,7 @@ if !(isServer) exitWith {};
 // Definitions
 [] execVM "definitions\groups.sqf";
 [] execVM "definitions\vehicles.sqf";
+[] execVM "definitions\objects.sqf";
 
 // Runtime
 [] execVM "runtime\spawns\rt_vehicularSpawns.sqf";

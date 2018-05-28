@@ -19,6 +19,7 @@
 		if (((_x select 1) isEqualTo true) and ((missionNamespace getVariable format ["ADS_TOWN_%1", (_x select 0)]) isEqualTo false)) then {
 			[format ["ADS_TOWN_%1", (_x select 0)], true] call I_fnc_setVariable;
 			diag_log format ["ADS_TOWN_%1: Active", (_x select 0)];
+			[(_x select 0)] call I_fnc_populateTown;
 		};
 		if (((_x select 1) isEqualTo false) and ((missionNamespace getVariable format ["ADS_TOWN_%1", (_x select 0)]) isEqualTo true)) then {
 			[format ["ADS_TOWN_%1", (_x select 0)], false] call I_fnc_setVariable;
@@ -26,8 +27,4 @@
 		};
 	} forEach _array;
 	
-
-
 }, 1, [_towns]] call CBA_fnc_addPerFrameHandler;
-
-// test -> no change -> test 2, spam repeat test2

@@ -18,6 +18,7 @@ class I
 		class createVehicle;
 		class createGroup;
 		class findPlayers;
+		class populateTown;
 	};
 	class acs
 	{
@@ -33,6 +34,7 @@ class I
 		class findAAPos;
 		class findEmptyLine;
 		class findEmptyWaterLine;
+		class findEmptyNoRoads;
 		class findAmbushLocation;
 		class findTowns;
 	};
