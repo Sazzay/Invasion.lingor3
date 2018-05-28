@@ -11,11 +11,12 @@ class I
 		file = "library\visual";
 		class notification;
 	};
-	class creation
+	class objects
 	{
-		file = "library\creation";
+		file = "library\objects";
 		class createVehicle;
 		class createGroup;
+		class findPlayers;
 	};
 	class acs
 	{
@@ -32,6 +33,7 @@ class I
 		class findEmptyLine;
 		class findEmptyWaterLine;
 		class findAmbushLocation;
+		class findTowns;
 	};
 	class ai
 	{

@@ -23,7 +23,7 @@ if (isNil "_speed" or isNil "_height") exitWith {
 
 {
 	if (((speed _x) > _speed) and (((getPosASL _x) select 2) > _height))  then {
-		if (_x isKindOf "Air") then {
+		if ((_x isKindOf "Air") and ((side _x) isEqualTo west)) then {
 			_return pushBack _x;
 		};
 	};

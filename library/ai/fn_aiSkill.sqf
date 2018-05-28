@@ -25,7 +25,7 @@ _table = [
 ["courage", 0.8],
 ["aimingSpeed", 0.2],
 ["aimingShake", 0.3],
-["aimingAccuracy", 0.1],
+["aimingAccuracy", 0.15],
 ["commanding", 0.6],
 ["reloadSpeed", 0.8]
 ];

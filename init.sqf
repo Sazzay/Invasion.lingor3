@@ -9,3 +9,10 @@ if !(isServer) exitWith {};
 [] execVM "runtime\acs\rt_tickHostileAir.sqf";
 [] execVM "runtime\acs\rt_tickHostileBoatPatrol.sqf";
 [] execVM "runtime\acs\rt_tickHostileForce.sqf";
+[] execVM "runtime\ads\rt_tickTownDefense.sqf";
+
+//[] call I_fnc_findTowns;
+while {true} do {
+[[5135, 8107], 300] call I_fnc_findPlayers;
+sleep 0.5;
+};

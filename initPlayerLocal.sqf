@@ -3,4 +3,3 @@ player addEventHandler ["GetInMan", {
 	
 	//_call = [_unit, _role] call I_fnc_vehicularEligibility;
 }];
-

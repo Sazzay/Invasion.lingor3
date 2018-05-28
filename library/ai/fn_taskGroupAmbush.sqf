@@ -25,6 +25,6 @@
 waitUntil {((leader (_this select 0)) distance (_this select 1)) < 150};
 
 (_this select 0) reveal (_this select 1);
-(_this select 0) addWaypoint [_this select 1), 0];
+(_this select 0) addWaypoint [(_this select 1), 0];
 [(_this select 0), 0] setWaypointType "DESTROY";
 };

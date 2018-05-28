@@ -27,6 +27,6 @@ if (isNil "_object") exitWith {
 			_return pushBack (getPos _x);
 		};
 	};
-} forEach (nearestTerrainObjects [getPos _object, ["TREE", "SMALL TREE", "FOREST BORDER"], 1000, true, true]);
+} forEach (nearestTerrainObjects [getPos _object, ["TREE", "SMALL TREE", "FOREST BORDER"], 800, true, true]);
 
 _return
