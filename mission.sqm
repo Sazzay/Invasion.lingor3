@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1205;
+		nextID=1207;
 	};
 	class LayerIndexProvider
 	{
@@ -46,7 +46,8 @@ addons[]=
 	"A3_Props_F_Orange_Humanitarian_Garbage",
 	"rhsusf_c_troops",
 	"A3_Modules_F_Curator_Curator",
-	"rhsusf_c_markvsoc"
+	"rhsusf_c_markvsoc",
+	"A3_Characters_F"
 };
 class AddonsMetaData
 {
@@ -208,7 +209,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			dataType="Group";
@@ -5574,7 +5575,6 @@ class Mission
 					flags=2;
 					class Attributes
 					{
-						isPlayer=1;
 					};
 					id=1194;
 					type="rhsusf_socom_swcc_officer";
@@ -5851,6 +5851,77 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5005.6929,14.719026,9002.2383};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1206;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1205;
 		};
 	};
 };
