@@ -5,14 +5,22 @@
 */
 
 I_DEF_MILITARY_BUILDINGS = [
-"Land_CamoNetB_EAST",
 "RU_WarfareBBarracks",
 "Land_fortified_nest_big",
-"Land_Hlaska",
-"Land_Vez_svetla",
 "Land_army_hut_int"
 ];
 
-I_DEF_HQ_BUILDINGS = [
+I_DEF_MILITARY_HQ_BUILDINGS = [
 "BTR90_HQ_unfolded"
+];
+
+I_DEF_MILITARY_WATCHTOWERS = [
+"Land_Hlaska",
+"Land_Vez_svetla"
+];
+
+I_DEF_MILITARY_VEHICLE_COVERS = [
+"Land_CamoNetB_EAST",
+"CamoNet_ghex_big_F",
+"CamoNet_INDP_big_F"
 ];

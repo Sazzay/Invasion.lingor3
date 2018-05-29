@@ -37,6 +37,8 @@ class I
 		class findEmptyNoRoads;
 		class findAmbushLocation;
 		class findTowns;
+		class findNearestPos;
+		class findFarthestPos;
 	};
 	class ai
 	{
@@ -45,5 +47,10 @@ class I
 		class taskGroupAmbush;
 		class aiSkill;
 		class deleteInactive;
+	};
+	class arrays
+	{
+		file = "library\arrays";
+		class deleteElement;
 	};
 };

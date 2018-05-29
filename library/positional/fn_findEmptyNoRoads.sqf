@@ -25,7 +25,7 @@ for "_i" from 0 to _rad step 10 do {
 	for "_i2" from 0 to 360 step 3.6 do {
 		_scan = [(_pos select 0) + (_i * sin _i2), (_pos select 1) + (_i * cos _i2)];
 		
-		if (!(isOnRoad _scan) and !((_scan isFlatEmpty [10, -1, 0.1, 10, 0, false, objNull]) isEqualTo [])) then {
+		if (!(isOnRoad _scan) and !((_scan isFlatEmpty [15, -1, 0.1, 15, 0, false, objNull]) isEqualTo [])) then {
 			_return pushBack _scan;
 		};
 	};

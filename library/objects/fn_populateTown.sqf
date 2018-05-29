@@ -15,17 +15,31 @@
 	_call = [[5000, 3000]] call I_fnc_populateTown;
 */
 
-[_this select 0, [], nil] params ["_pos", "_positions", "_find"];
+[_this select 0, [], []] params ["_pos", "_positions", "_objects"];
 
-(selectRandom I_DEF_HQ_BUILDINGS) createVehicle (selectRandom ([_pos, 300] call I_fnc_findEmptyNoRoads));
 
-for "_i" from 0 to (3 + random 5) do {
-	_temporary = (selectRandom I_DEF_MILITARY_BUILDINGS) createVehicle (selectRandom ([_pos, 300] call I_fnc_findEmptyNoRoads));
-	_temporary setDir (getDir (nearestBuilding _pos));
-	
-	if (typeOf _temporary isEqualTo "Land_CamoNetB_EAST") then {
-		[(getPos _temporary), (getDir _temporary) - 180, selectRandom I_DEF_VEHICLES_ARMORED, EAST] call bis_fnc_spawnvehicle;
+//hint str (count _positions);
+
+if ((count ([_pos, 400] call I_fnc_findEmptyNoRoads)) >= 1) then {
+	(selectRandom I_DEF_MILITARY_HQ_BUILDINGS) createVehicle ([_pos, ([_pos, 400] call I_fnc_findEmptyNoRoads)] call I_fnc_findNearestPos);
+};
+
+if ((count ([_pos, 400] call I_fnc_findEmptyNoRoads)) >= 3) then {
+	hint "test";
+
+	for "_i" from 0 to 1 do {
+		_temp = (selectRandom I_DEF_MILITARY_VEHICLE_COVERS) createVehicle ([_pos, ([_pos, 400] call I_fnc_findEmptyNoRoads)] call I_fnc_findNearestPos);
+		_temp setDir (getDir (nearestBuilding _temp));
+		[(getPos _temp), (getDir _temp) - 180, selectRandom I_DEF_VEHICLES_ARMORED, EAST] call bis_fnc_spawnvehicle;
 	};
 };
 
-// wip as fuck m8
+if ((count ([_pos, 400] call I_fnc_findEmptyNoRoads)) >= 7) then {
+	for "_i" from 0 to 4 do {
+		if ((nearestObjects [([_pos, ([_pos, 400] call I_fnc_findEmptyNoRoads)] call I_fnc_findFarthestPos), ["Building"], 50]) isEqualTo []) then {
+		_temp = (selectRandom I_DEF_MILITARY_WATCHTOWERS) createVehicle ([_pos, ([_pos, 400] call I_fnc_findEmptyNoRoads)] call I_fnc_findFarthestPos);
+		_temp setDir (getDir (nearestBuilding _temp));
+		_objects pushBack _temp;
+		};
+	};
+};

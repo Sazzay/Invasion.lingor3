@@ -8,18 +8,18 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1220;
+		nextID=1230;
 	};
 	class LayerIndexProvider
 	{
-		nextID=178;
+		nextID=189;
 	};
 	class Camera
 	{
-		pos[]={3699.0718,260.25171,9214.6348};
-		dir[]={0.79669911,-0.5725643,0.19377249};
-		up[]={0.5563572,0.81984961,0.13531564};
-		aside[]={0.23634154,-9.6165604e-007,-0.97171795};
+		pos[]={3620.8533,224.43253,9205.3936};
+		dir[]={0.77552265,-0.50194395,-0.38315359};
+		up[]={0.45006165,0.86486787,-0.22235937};
+		aside[]={-0.44298279,-3.8158032e-007,-0.89662164};
 	};
 };
 binarizationWanted=0;
@@ -45,8 +45,7 @@ addons[]=
 	"A3_Supplies_F_Heli_Slingload",
 	"A3_Props_F_Orange_Humanitarian_Garbage",
 	"rhsusf_c_troops",
-	"A3_Modules_F_Curator_Curator",
-	"A3_Characters_F"
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
@@ -4215,6 +4214,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Playable Units";
+							state=1;
 							class Entities
 							{
 								items=6;
@@ -4540,6 +4540,7 @@ class Mission
 									{
 									};
 									id=862;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -4890,6 +4891,7 @@ class Mission
 									{
 									};
 									id=889;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -5050,7 +5052,7 @@ class Mission
 									{
 									};
 									id=902;
-									atlOffset=0.0005531311;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -5211,7 +5213,7 @@ class Mission
 									{
 									};
 									id=905;
-									atlOffset=53.542;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -5310,7 +5312,7 @@ class Mission
 									{
 									};
 									id=908;
-									atlOffset=53.528;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -5409,7 +5411,7 @@ class Mission
 									{
 									};
 									id=910;
-									atlOffset=53.528;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -5436,15 +5438,15 @@ class Mission
 								};
 							};
 							id=209;
-							atlOffset=0.0013942719;
+							atlOffset=17.27;
 						};
 					};
 					id=725;
-					atlOffset=51.662308;
+					atlOffset=-8.216527;
 				};
 			};
 			id=722;
-			atlOffset=51.662308;
+			atlOffset=-8.216527;
 		};
 		class Item4
 		{
@@ -5560,16 +5562,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4970.3325,10.983532,9130.1563};
+						position[]={4970.333,10.983468,9130.1563};
 					};
 					side="West";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						isPlayer=1;
 					};
-					id=1206;
-					type="B_Soldier_F";
+					id=1229;
+					type="rhsusf_socom_marsoc_cso";
 					class CustomAttributes
 					{
 						class Attribute0
