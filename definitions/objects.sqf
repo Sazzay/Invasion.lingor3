@@ -16,7 +16,9 @@ I_DEF_MILITARY_HQ_BUILDINGS = [
 
 I_DEF_MILITARY_WATCHTOWERS = [
 "Land_Hlaska",
-"Land_Vez_svetla"
+"Land_Strazni_vez",
+"Land_Cargo_Tower_V1_F",
+"Land_Cargo_Tower_V4_F"
 ];
 
 I_DEF_MILITARY_VEHICLE_COVERS = [
