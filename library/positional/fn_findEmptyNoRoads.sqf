@@ -21,7 +21,7 @@ if ((isNil "_pos") or (isNil "_rad")) exitWith {
 	diag_log "I_fnc_findEmptyNoRoads: no position or radius input specified.";
 };
 
-for "_i" from 0 to _rad step 10 do {
+for "_i" from 0 to _rad step 20 do {
 	for "_i2" from 0 to 360 step 3.6 do {
 		_scan = [(_pos select 0) + (_i * sin _i2), (_pos select 1) + (_i * cos _i2)];
 		

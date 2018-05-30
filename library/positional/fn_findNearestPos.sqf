@@ -26,7 +26,7 @@ if !(_positions isEqualTo []) then {
 		_distances pushBack (_pos distance2D _x);
 	} forEach _positions;
 	
-	_return = [(_positions select (_distances find (selectMin _distances))) select 0, (_positions select (_distances find (selectMin _distances))) select 1, 0];
+	_return = [(_positions select (_distances find (selectMin _distances))) select 0, (_positions select (_distances find (selectMin _distances))) select 1];
 };
 
 _return

@@ -8,7 +8,7 @@
 	[_this select 0 select 0, []] params ["_pos", "_array"];
 
 	{
-		if (count ([_x, 500] call I_fnc_findPlayers) >= 1) then {
+		if (count ([_x, 1200] call I_fnc_findPlayers) >= 1) then {
 			_array set [_forEachIndex, [[_x select 0, _x select 1], true]];
 		} else {
 			_array set [_forEachIndex, [[_x select 0, _x select 1], false]];
@@ -29,4 +29,4 @@
 		};
 	} forEach _array;
 	
-}, 1, [_towns]] call CBA_fnc_addPerFrameHandler;
+}, 5, [_towns]] call CBA_fnc_addPerFrameHandler;

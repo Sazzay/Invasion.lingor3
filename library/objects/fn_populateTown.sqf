@@ -17,7 +17,6 @@
 
 [_this select 0, [], [], [], []] params ["_pos", "_positions", "_objects", "_static", "_return"];
 
-
 hint str (count ([_pos, 400] call I_fnc_findEmptyNoRoads));
 
 if ((count ([_pos, 400] call I_fnc_findEmptyNoRoads)) >= 1) then {
@@ -62,6 +61,11 @@ if ((count _static) > 0) then {
 					_unit setDir (([_unit, (getPos _building)] call BIS_fnc_dirTo) - 180);
 					_unit disableAI "MOVE";
 					_objects pushBack _unit;
+					
+					[_unit] spawn {
+						waitUntil {!((_this select 0) findNearestEnemy (getPos (_this select 0)) isEqualTo objNull)};
+						(_this select 0) enableAI "MOVE";
+					};
 				};
 			} forEach ([_x] call BIS_fnc_buildingPositions);
 		};
