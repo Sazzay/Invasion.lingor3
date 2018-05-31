@@ -1,3 +1,5 @@
+/*
+
 // Air - UH-1Y
 ["RHS_UH1Y_UNARMED_d", [6711.27,9724.76,53.542], 155, true] call I_fnc_createVehicle;
 ["RHS_UH1Y_UNARMED_d", [6728.73,9732.17,53.528], 155, true] call I_fnc_createVehicle;
@@ -22,3 +24,4 @@
 
 // Sea - Transport Boat
 ["B_Boat_Armed_01_minigun_F", [6651.222, 9731.944, 30], 246.896, true] call I_fnc_createVehicle;
+*/
