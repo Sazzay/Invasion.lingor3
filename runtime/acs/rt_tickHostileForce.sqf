@@ -23,11 +23,6 @@ while {true} do {
 			{
 				if ((random 100) < 15) then {
 					_groups pushBack ([(selectRandom I_DEF_LAND_INF_GROUPS), _x] call I_fnc_createGroup);
-					
-					/*
-					_markerstr = createMarker [format ["markername_%1", _x],_x];
-					_markerstr setMarkerShape "ICON";
-					_markerstr setMarkerType "hd_dot";*/ // debug
 				};
 			} forEach _positions;
 			

@@ -32,13 +32,11 @@
 if (_fail isEqualTo true) exitWith {};
 
 for "_i" from _mind to _maxd step ((_maxd - _mind) / 25) do {
-	_spos = ([[(_pos select 0) + (_i * sin _dir), (_pos select 1) + (_i * cos _dir)], 0, ((_maxd - _mind) / 25), 10, 0, 0.4, 0, [], []] call BIS_fnc_findSafePos);
+	_spos = ([[(_pos select 0) + (_i * sin _dir), (_pos select 1) + (_i * cos _dir)], 0, ((_maxd - _mind) / 25), 15, 0, 0.4, 0, [], []] call BIS_fnc_findSafePos);
 	
 	if !(_spos isEqualTo [4400, 4400, 300]) then {
 		_return pushBack _spos;
 	};
 };
-
-hint str _return;
 
 _return

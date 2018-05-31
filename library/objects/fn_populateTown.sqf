@@ -17,8 +17,6 @@
 
 [_this select 0, [], [], [], []] params ["_pos", "_positions", "_objects", "_static", "_return"];
 
-hint str (count ([_pos, 400] call I_fnc_findEmptyNoRoads));
-
 if ((count ([_pos, 400] call I_fnc_findEmptyNoRoads)) >= 1) then {
 	_static pushBack ((selectRandom I_DEF_MILITARY_HQ_BUILDINGS) createVehicle ([_pos, ([_pos, 400] call I_fnc_findEmptyNoRoads)] call I_fnc_findNearestPos));
 };
@@ -48,7 +46,7 @@ if ((count ([_pos, 400] call I_fnc_findEmptyNoRoads)) >= 7) then {
 	};
 };
 
-if ((count _static) > 0) then {
+if ((count _static) > 0) then { // 37
 	{
 		[_x] params ["_building"];
 	
@@ -70,6 +68,29 @@ if ((count _static) > 0) then {
 			} forEach ([_x] call BIS_fnc_buildingPositions);
 		};
 	} forEach _static;
+};
+
+for "_i" from 0 to 5 do {
+	[random 100, [], grpNull] params ["_random", "_scan", "_group"];
+
+	if (_i isEqualTo 0 or _i isEqualTo 1) then {
+		_random = 0;
+	} else {
+		_random = random 100;
+	};
+	
+	if (_random < 40) then {	
+		_scan = _pos findEmptyPosition [random 100, (200 + random 200), "Land_HelipadEmpty_F"];
+		
+		if !(_scan isEqualTo []) then {
+			_group = [selectRandom ["VDV-INFANTRY-SQUAD", "MSV-INFANTRY-SQUAD"], [_scan select 0, _scan select 1]] call I_fnc_createGroup;
+			[_group, _pos, 400] call CBA_fnc_taskPatrol;
+			
+			{
+				_objects pushBack _x;
+			} forEach (units _group);
+		};
+	};
 };
 
 _return = _objects + _static;

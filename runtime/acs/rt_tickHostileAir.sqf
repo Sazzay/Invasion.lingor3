@@ -11,7 +11,7 @@
 ["RESTRICT_ACS_AIR", 0] call I_fnc_timedBool; // Initialize the bool
 
 while {true} do {
-	_array = ([50, 100] call I_fnc_findHostileAir);
+	_array = ([0, 100] call I_fnc_findHostileAir);
 
 	if (!(_array isEqualTo []) and ((missionNamespace getVariable "RESTRICT_ACS_AIR") isEqualTo false) and ((random 100) < 30)) then {
 		{
