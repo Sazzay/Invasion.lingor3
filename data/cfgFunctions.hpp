@@ -37,8 +37,10 @@ class I
 		class findEmptyNoRoads;
 		class findAmbushLocation;
 		class findTowns;
+		class findAirports;
 		class findNearestPos;
 		class findFarthestPos;
+		class findTaskPos;
 	};
 	class ai
 	{

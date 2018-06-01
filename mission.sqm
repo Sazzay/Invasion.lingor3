@@ -8,18 +8,18 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1537;
+		nextID=1548;
 	};
 	class LayerIndexProvider
 	{
-		nextID=248;
+		nextID=260;
 	};
 	class Camera
 	{
-		pos[]={6082.6182,263.48282,9878.9873};
-		dir[]={0.94314736,-0.31171793,0.11639683};
-		up[]={0.30953956,0.95003039,0.038205963};
-		aside[]={0.12250852,3.0797819e-006,-0.99259746};
+		pos[]={6610.335,49.84874,9917.126};
+		dir[]={0.32796851,-0.35590065,0.87508756};
+		up[]={0.12490222,0.93452334,0.33326477};
+		aside[]={0.93639952,-9.1968104e-009,-0.35094708};
 	};
 };
 binarizationWanted=0;
@@ -2322,47 +2322,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6576.5488,10.971315,9836.1797};
-				angles[]={0,1.1464369,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				reportRemoteTargets=1;
-				receiveRemoteTargets=1;
-			};
-			id=1376;
-			type="CUP_B_Frigate_ANZAC";
-			atlOffset=24.327;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item4
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={6952.0063,10.682053,10005.358};
 				angles[]={0,1.1563953,0};
 			};
@@ -2376,7 +2335,7 @@ class Mission
 			type="CUP_B_Frigate_ANZAC";
 			atlOffset=24.037737;
 		};
-		class Item5
+		class Item4
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2394,7 +2353,7 @@ class Mission
 			type="CUP_B_Frigate_ANZAC";
 			atlOffset=24.842545;
 		};
-		class Item6
+		class Item5
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2412,7 +2371,7 @@ class Mission
 			type="CUP_B_Frigate_ANZAC";
 			atlOffset=25.131653;
 		};
-		class Item7
+		class Item6
 		{
 			dataType="Group";
 			side="West";
@@ -2424,7 +2383,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6768.2231,20.113298,10059.671};
+						position[]={6768.2515,20.113298,10059.623};
 						angles[]={0,1.1321636,0};
 					};
 					side="West";
@@ -2463,12 +2422,12 @@ class Mission
 			};
 			id=1522;
 		};
-		class Item8
+		class Item7
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6768.2231,22.875629,10059.621};
+				position[]={6768.2515,22.875629,10059.573};
 				angles[]={0,1.1321636,0};
 			};
 			side="West";
@@ -2479,7 +2438,7 @@ class Mission
 			id=1523;
 			type="CUP_WV_B_CRAM";
 		};
-		class Item9
+		class Item8
 		{
 			dataType="Group";
 			side="West";
@@ -2530,7 +2489,7 @@ class Mission
 			};
 			id=1525;
 		};
-		class Item10
+		class Item9
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2545,6 +2504,47 @@ class Mission
 			};
 			id=1527;
 			type="CUP_WV_B_CRAM";
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6576.5488,10.971315,9836.1797};
+				angles[]={0,1.1464369,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+			};
+			id=1376;
+			type="CUP_B_Frigate_ANZAC";
+			atlOffset=24.327;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };

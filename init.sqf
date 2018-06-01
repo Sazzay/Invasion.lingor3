@@ -1,6 +1,7 @@
 if !(isServer) exitWith {};
 
 // Definitions
+[] execVM "definitions\locations.sqf";
 [] execVM "definitions\groups.sqf";
 [] execVM "definitions\vehicles.sqf";
 [] execVM "definitions\objects.sqf";
@@ -13,8 +14,6 @@ if !(isServer) exitWith {};
 [] execVM "runtime\acs\rt_tickHostileForce.sqf";
 [] execVM "runtime\ads\rt_tickTownDefense.sqf";
 
-//[] call I_fnc_findTowns;
-while {true} do {
-[[5135, 8107], 300] call I_fnc_findPlayers;
-sleep 0.5;
-};
+sleep 1;
+
+[] call I_fnc_findTaskPos;

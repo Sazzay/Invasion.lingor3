@@ -31,5 +31,5 @@ while {true} do {
 		["RESTRICT_ACS_AIR", 600 - (random 150) + (random 150)] call I_fnc_timedBool;
 	};
 
-	sleep 15; // add mods to this, like radar sites would decrease the checks
+	sleep 15;
 };
