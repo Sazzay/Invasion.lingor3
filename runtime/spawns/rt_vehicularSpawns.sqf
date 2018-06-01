@@ -1,27 +1,20 @@
-/*
-
-// Air - UH-1Y
-["RHS_UH1Y_UNARMED_d", [6711.27,9724.76,53.542], 155, true] call I_fnc_createVehicle;
-["RHS_UH1Y_UNARMED_d", [6728.73,9732.17,53.528], 155, true] call I_fnc_createVehicle;
-
-// Air - AH1Z
-["RHS_AH1Z_wd", [6782.79,9750.63,53.5284], 335, true] call I_fnc_createVehicle;
-
-// Air - CH53
-["rhsusf_CH53E_USMC", [6714.78,9792.31,53.528], 65, true] call I_fnc_createVehicle;
-
-// Air - F22
-["rhsusf_f22", [6835.389, 9778.104, 53.528], 337.004, true] call I_fnc_createVehicle;
-["rhsusf_f22", [6801.63, 9763.941, 53.528], 337.004, true] call I_fnc_createVehicle;
-
-// Sea - SOC
-["rhsusf_mkvsoc", [6648.351, 9742.143, 28.871], 247.335, true] call I_fnc_createVehicle;
-["rhsusf_mkvsoc", [6655.828, 9723.643, 28.66], 247.335, true] call I_fnc_createVehicle;
-
-// Sea - Transport Boat
-["B_T_Boat_Transport_01_F", [6657.182, 9738.754, 30.327], 247.309, true] call I_fnc_createVehicle;
-["B_T_Boat_Transport_01_F", [6660.422, 9731.904, 30], 247.309, true] call I_fnc_createVehicle;
-
-// Sea - Transport Boat
-["B_Boat_Armed_01_minigun_F", [6651.222, 9731.944, 30], 246.896, true] call I_fnc_createVehicle;
-*/
+["RHS_UH1Y", [6637.176,10023.523,46.646], 153.694, true] call I_fnc_createVehicle;
+["RHS_UH1Y", [6622.403,10016.349,46.646], 153.694, true] call I_fnc_createVehicle;
+["RHS_AH1Z_wd", [6794.132,10075.462,46.646], 333.838, true] call I_fnc_createVehicle;
+["RHS_AH1Z_wd", [6780.599,10069.069,46.646], 333.838, true] call I_fnc_createVehicle;
+["rhsusf_CH53E_USMC", [6635.461,9998.054,46.8], 244.993, true] call I_fnc_createVehicle;
+["CUP_B_AV8B_DYN_USMC", [6675.756, 10019.562, 46.646], 5.366, true] call I_fnc_createVehicle;
+["CUP_B_AV8B_DYN_USMC", [6662.738, 10013.249, 46.647], 5.366, true] call I_fnc_createVehicle;
+["rhsusf_mkvsoc", [6664.707, 10018.322, 28.817], 245.249, true] call I_fnc_createVehicle;
+["rhsusf_mkvsoc", [6660.512, 10029.641, 28.668], 243.663, true] call I_fnc_createVehicle;
+["rhsusf_m1025_w_s_Mk19", [6683.858, 10026.472, 37.623], 292.065, true] call I_fnc_createVehicle;
+["rhsusf_m1025_w_s_Mk19", [6678.494, 10023.915, 37.623], 292.065, true] call I_fnc_createVehicle;
+["rhsusf_rg33_m2_usmc_wd", [6672.94, 10021.218, 37.623], 292.065, true] call I_fnc_createVehicle;
+["rhsusf_rg33_m2_usmc_wd", [6667.367, 10018.534, 37.623], 292.065, true] call I_fnc_createVehicle;
+["rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy", [6672.881, 10041.740, 37.623], 245.676, true] call I_fnc_createVehicle;
+["CUP_B_LAV25M240_USMC", [6697.741, 10052.556, 39.783], 192.492, true] call I_fnc_createVehicle;
+["CUP_B_LAV25M240_USMC", [6702.353, 10054.708, 39.784], 192.492, true] call I_fnc_createVehicle;
+["RHS_M2A3_BUSKIII_wd", [6733.021, 10069.643, 39.781], 243.695, true] call I_fnc_createVehicle;
+["rhsusf_m1a1fep_od", [6735.495, 10061.063, 39.781], 245.139, true] call I_fnc_createVehicle;
+["rhsusf_m109_usarmy", [6713.477, 10040.066, 39.785], 244.4, true] call I_fnc_createVehicle;
+["rhsusf_m109_usarmy", [6704.642, 10036.012, 39.783], 244.4, true] call I_fnc_createVehicle;
