@@ -26,3 +26,14 @@ I_DEF_MILITARY_VEHICLE_COVERS = [
 "CamoNet_ghex_big_F",
 "CamoNet_INDP_big_F"
 ];
+
+I_DEF_TASK_OBJECTS = [
+"rhs_prv13",
+"rhs_p37",
+"RU_WarfareBArtilleryRadar",
+"RU_WarfareBAntiAirRadar",
+"RU_WarfareBBarracks",
+"Land_fort_artillery_nest",
+"RU_WarfareBUAVterminal",
+"RU_WarfareBHeavyFactory"
+];

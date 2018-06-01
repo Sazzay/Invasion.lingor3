@@ -19,6 +19,7 @@ class I
 		class createGroup;
 		class findPlayers;
 		class populateTown;
+		class populateTask;
 	};
 	class acs
 	{

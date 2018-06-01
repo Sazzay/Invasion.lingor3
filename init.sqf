@@ -13,7 +13,6 @@ if !(isServer) exitWith {};
 [] execVM "runtime\acs\rt_tickHostileBoatPatrol.sqf";
 [] execVM "runtime\acs\rt_tickHostileForce.sqf";
 [] execVM "runtime\ads\rt_tickTownDefense.sqf";
+[] execVM "runtime\ads\rt_tickTaskDefense.sqf";
 
 sleep 1;
-
-[] call I_fnc_findTaskPos;
