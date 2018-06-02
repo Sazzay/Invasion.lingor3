@@ -9,12 +9,13 @@
 	Notes: 0.56~ execution time maximum.
 */
 
-[[], [], []] params ["_array", "_positions", "_groups"];
+[[], [], [], []] params ["_array", "_positions", "_groups", "_var"];
 
 ["RESTRICT_ACS_LAND", 0] call I_fnc_timedBool;
 
 while {true} do {
 	_array = [6] call I_fnc_findHostileForce;
+	_var = (["ADS_TASK_RRS", [0, 0, 0]] call I_fnc_getVariable);
 	
 	if (!(_array isEqualTo [[0, 0], 0]) and ((missionNamespace getVariable "RESTRICT_ACS_LAND") isEqualTo false)) then {
 		_positions = [(_array select 0), 300, 800, ((_array select 1) - 180)] call I_fnc_findEmptyLine;
@@ -42,7 +43,7 @@ while {true} do {
 			} forEach (units _x);
 		} forEach _groups;
 		
-		["RESTRICT_ACS_LAND", 600 - (random 150) + (random 150)] call I_fnc_timedBool;
+		["RESTRICT_ACS_LAND", 700 - (random 150) + (random 150) - ((_var select 1) * 20)] call I_fnc_timedBool;
 	};
 	
 	sleep 15;

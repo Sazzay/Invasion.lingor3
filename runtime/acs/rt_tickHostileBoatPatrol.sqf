@@ -8,12 +8,13 @@
 	Notes: 1.1~ sec execution time maximum on successful loop.
 */
 
-[[], [], []] params ["_array", "_groups", "_positions"];
+[[], [], [], []] params ["_array", "_groups", "_positions", "_var"];
 
 ["RESTRICT_ACS_SEA", 0] call I_fnc_timedBool; // Initialize the bool
 
 while {true} do {
 	_array = ([2] call I_fnc_findHostileBoatPatrol);
+	_var = (["ADS_TASK_RRS", [0, 0, 0]] call I_fnc_getVariable);
 	
 	if (((missionNamespace getVariable "RESTRICT_ACS_SEA") isEqualTo false) and !(_array isEqualTo [])) then {
 		{
@@ -24,7 +25,7 @@ while {true} do {
 					_groups pushBack ([(selectRandom I_DEF_LAND_AMBUSH_GROUPS), selectRandom _positions] call I_fnc_createGroup);
 					[(_groups select _forEachIndex), _x] call I_fnc_taskGroupAmbush;
 					[(_groups select _forEachIndex)] call I_fnc_deleteInactive;
-					["RESTRICT_ACS_SEA", 900 - (random 300) + (random 300)] call I_fnc_timedBool;
+					["RESTRICT_ACS_SEA", 600 - (random 150) + (random 150)  - ((_var select 1) * 20)] call I_fnc_timedBool;
 				};
 			};
 		} forEach _array;
