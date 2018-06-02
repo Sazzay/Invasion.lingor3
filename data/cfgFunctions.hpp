@@ -56,4 +56,10 @@ class I
 		file = "library\arrays";
 		class deleteElement;
 	};
+	
+		class logistics
+	{
+		file = "library\logistics";
+		class addMobileRespawn;
+	};
 };
