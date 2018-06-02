@@ -1,0 +1,3 @@
+(1) A logistic core system, which adds supplies at a certain interval, possibly add modifiers that increase the time.
+(2) A sling-loadable repair station, which uses the Huron model and changes into the repair depot when used (addaction?)
+(3) MHQ which adds a respawn point. (Expand on this with more features potentionally)
