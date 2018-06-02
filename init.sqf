@@ -17,3 +17,5 @@ if !(isServer) exitWith {};
 [] execVM "runtime\ads\rt_tickTaskCount.sqf";
 
 sleep 1;
+
+[4, [1244, 637]] call I_fnc_paraAssaultSquadron;

@@ -6,7 +6,7 @@
 */
 
 while {true} do {
-	sleep 5;
+	sleep 20;
 
 	[(missionNamespace getVariable "ADS_TASK_ALLOBJECTS"), 0, 0, 0] params ["_array", "_radar", "_reinforcement", "_support"];
 
@@ -23,6 +23,4 @@ while {true} do {
 	} forEach _array;
 	
 	["ADS_TASK_RRS", [_radar, _reinforcement, _support]] call I_fnc_setVariable;
-	
-	hint str (missionNamespace getVariable "ADS_TASK_RRS");
 };

@@ -63,4 +63,9 @@ class I
 		file = "library\logistics";
 		class addMobileRespawn;
 	};
+	class support
+	{
+		file = "library\support";
+		class paraAssaultSquadron;
+	};
 };

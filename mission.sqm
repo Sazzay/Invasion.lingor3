@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1608;
+		nextID=1776;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6342.6772,295.92593,10001.069};
-		dir[]={0.83796996,-0.4994289,-0.22045027};
-		up[]={0.48301873,0.86629277,-0.12707025};
-		aside[]={-0.25444382,-1.1055963e-006,-0.96721143};
+		pos[]={516.21368,550.29822,7681.4404};
+		dir[]={0.81223887,-0.2375547,-0.53298789};
+		up[]={0.19869512,0.97129613,-0.13038099};
+		aside[]={-0.54868907,-7.5766002e-007,-0.83618367};
 	};
 };
 binarizationWanted=0;
@@ -144,11 +144,12 @@ class Mission
 	};
 	class Entities
 	{
-		items=17;
+		items=18;
 		class Item0
 		{
 			dataType="Layer";
 			name="World Map";
+			state=1;
 			class Entities
 			{
 				items=1;
@@ -542,7 +543,7 @@ class Mission
 									{
 									};
 									id=862;
-									atlOffset=0.042648315;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -901,7 +902,7 @@ class Mission
 									{
 									};
 									id=889;
-									atlOffset=0.042709351;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1061,6 +1062,7 @@ class Mission
 									{
 									};
 									id=902;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1221,7 +1223,7 @@ class Mission
 									{
 									};
 									id=905;
-									atlOffset=46.646;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1320,7 +1322,7 @@ class Mission
 									{
 									};
 									id=908;
-									atlOffset=9.0230446;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1419,7 +1421,7 @@ class Mission
 									{
 									};
 									id=910;
-									atlOffset=9.0230446;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1642,7 +1644,7 @@ class Mission
 									{
 									};
 									id=1402;
-									atlOffset=6.8187714e-005;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1865,7 +1867,7 @@ class Mission
 									{
 									};
 									id=1406;
-									atlOffset=6.8187714e-005;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2149,6 +2151,7 @@ class Mission
 									{
 									};
 									id=1494;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2175,15 +2178,15 @@ class Mission
 								};
 							};
 							id=209;
-							atlOffset=0.045655251;
+							atlOffset=17.27;
 						};
 					};
 					id=725;
-					atlOffset=0.045655251;
+					atlOffset=17.27;
 				};
 			};
 			id=722;
-			atlOffset=0.045655251;
+			atlOffset=17.27;
 		};
 		class Item1
 		{
@@ -3814,17 +3817,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6977.1851,207.45343,10120.646};
+						position[]={6977.1846,207.45322,10120.646};
+						angles[]={0,2.4788105,0};
 					};
 					side="West";
 					flags=2;
 					class Attributes
 					{
-						isPlayer=1;
 					};
 					id=1606;
 					type="rhsusf_usmc_marpat_wd_helipilot";
-					atlOffset=237.452;
+					atlOffset=237.45178;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3873,7 +3876,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6977.1846,207.4532,10120.646};
+						position[]={6977.1846,207.45322,10120.646};
+						angles[]={0,2.4788105,0};
 					};
 					side="West";
 					class Attributes
@@ -3881,7 +3885,7 @@ class Mission
 					};
 					id=1607;
 					type="rhsusf_usmc_marpat_wd_helipilot";
-					atlOffset=237.45177;
+					atlOffset=237.45178;
 				};
 			};
 			class Attributes
@@ -3928,6 +3932,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6977.1846,209.40067,10120.596};
+				angles[]={0,2.4788105,0};
 			};
 			side="West";
 			flags=2;
@@ -3937,6 +3942,58 @@ class Mission
 			id=1605;
 			type="RHS_AH1Z_wd";
 			atlOffset=237.45178;
+		};
+		class Item17
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1172.9919,69.360031,610.85498};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1774;
+					type="B_Competitor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1773;
 		};
 	};
 };
