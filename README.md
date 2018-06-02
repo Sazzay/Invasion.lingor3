@@ -20,4 +20,15 @@ Active Combat System, these are:
 - Counter to land, dynamic persistent land attacks. Motorized, mechanized and air response to players conducting land operations in larger
 groups. This can be anything from a BTR-80A to full blown MI-8 paratrooper assault squads.
 
+Done:
+- ACS (Air)
+- ACS (Sea)
+- ACS (Land)
+- ADS (Towns)
+- ADS (Tasks)
+- AI Support (MI-8 Air Assault Squad ie. paratroopers)
 
+Todo:
+- AI Support (Artillery)
+- AI Convoys
+- All clientside stuff remains
