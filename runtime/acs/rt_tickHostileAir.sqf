@@ -6,14 +6,15 @@
 	depending on its class (plane or helicopter) with a little bit of randomization to it.
 */
 
-[[], grpNull] params ["_array", "_group"];
+[[], grpNull, nil] params ["_array", "_group", "_var"];
 
 ["RESTRICT_ACS_AIR", 0] call I_fnc_timedBool; // Initialize the bool
 
 while {true} do {
 	_array = ([0, 100] call I_fnc_findHostileAir);
+	_var = (["ADS_TASK_RRS", [0, 0, 0]] call I_fnc_getVariable);
 
-	if (!(_array isEqualTo []) and ((missionNamespace getVariable "RESTRICT_ACS_AIR") isEqualTo false) and ((random 100) < 30)) then {
+	if (!(_array isEqualTo []) and ((missionNamespace getVariable "RESTRICT_ACS_AIR") isEqualTo false) and ((random 100) < (30 + ((_var select 0) * 3)))) then {
 		{
 			if !(surfaceIsWater (getPos _x)) then {
 				_group = [selectRandom ["VDV-AA-SQUAD", "VDV-AA-SQUAD-2", "VDV-AA-URAL"], selectRandom ([(getPos _x)] call I_fnc_findAAPos)] call I_fnc_createGroup;
@@ -28,7 +29,7 @@ while {true} do {
 			};
 		} forEach _array;
 		
-		["RESTRICT_ACS_AIR", 600 - (random 150) + (random 150)] call I_fnc_timedBool;
+		["RESTRICT_ACS_AIR", 600 - (random 150) + (random 150) - ((_var select 0) * 20)] call I_fnc_timedBool;
 	};
 
 	sleep 15;

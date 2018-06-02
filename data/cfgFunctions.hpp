@@ -6,6 +6,7 @@ class I
 		class vehicularEligibility;
 		class timedBool;
 		class setVariable;
+		class getVariable;
 	};
 	class visual
 	{
