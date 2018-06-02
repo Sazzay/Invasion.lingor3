@@ -18,7 +18,7 @@ if !(isServer) exitWith {};
 
 sleep 1;
 
-[4, [1244, 637]] call I_fnc_paraAssaultSquadron;
+//[3, [1244, 637]] call I_fnc_paraAssaultSquadron;
 
 // LHD respawn
 I_RESPAWN_LHD = [west, [6690.31,10032.1,16.6477], "USMC LHD"] call BIS_fnc_addRespawnPosition; // getPosASL player;

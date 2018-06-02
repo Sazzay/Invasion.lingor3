@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1776;
+		nextID=1777;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={310.92188,550.29822,7813.9404};
-		dir[]={0.63008422,-0.37518564,-0.68005002};
-		up[]={0.25504026,0.92686516,-0.2752623};
-		aside[]={-0.73362988,-2.1489104e-006,-0.67973959};
+		pos[]={582.02618,80.173172,862.63342};
+		dir[]={-0.90040493,-0.28356677,-0.32996136};
+		up[]={-0.26625562,0.95895141,-0.09757176};
+		aside[]={-0.34408498,6.7229848e-008,0.93894517};
 	};
 };
 binarizationWanted=0;
@@ -3955,16 +3955,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1172.9919,69.360031,610.85498};
+						position[]={480.552,34.049976,869.40698};
 					};
 					side="West";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						isPlayer=1;
 					};
-					id=1774;
-					type="B_Competitor_F";
+					id=1776;
+					type="B_Soldier_GL_F";
 					class CustomAttributes
 					{
 						class Attribute0
