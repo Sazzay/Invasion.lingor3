@@ -19,7 +19,7 @@
 	{
 		[(missionNamespace getVariable format ["ADS_TASK_%1", (getPos _x)]), []] params ["_var", "_objects"];
 	
-		if (alive _x and ((_var select 0) isEqualTo false) and ((_var select 2) isEqualTo false) and (count ([getPos _x, 400] call I_fnc_findPlayers) >= 1)) then {
+		if (alive _x and ((_var select 0) isEqualTo false) and ((_var select 2) isEqualTo false) and (count ([getPos _x, 600] call I_fnc_findPlayers) >= 1)) then {
 			for "_i" from 0 to 2 do {
 				[([(getPos _x), (50 + random 50), (300 + random 100), 10, 0, 0.5, 0, [], []] call BIS_fnc_findSafePos)] params ["_scan"];
 				
@@ -34,12 +34,12 @@
 			};
 			
 			[format ["ADS_TASK_%1", (getPos _x)], [true, _objects, false]] call I_fnc_setVariable;
-			hint format ["ADS_TASK_%1: Active", (getPos _x)];
+			diag_log format ["ADS_TASK_%1: Active", (getPos _x)];
 		};
 		
-		if (alive _x and ((_var select 0) isEqualTo true) and ((_var select 2) isEqualTo false) and (count ([getPos _x, 400] call I_fnc_findPlayers) <= 0)) then {
+		if (alive _x and ((_var select 0) isEqualTo true) and ((_var select 2) isEqualTo false) and (count ([getPos _x, 600] call I_fnc_findPlayers) <= 0)) then {
 			[format ["ADS_TASK_%1", (getPos _x)], [false, (_var select 1), false]] call I_fnc_setVariable;
-			hint format ["ADS_TASK_%1: Inactive", (getPos _x)];
+			diag_log format ["ADS_TASK_%1: Inactive", (getPos _x)];
 			
 			{
 					deleteVehicle _x;

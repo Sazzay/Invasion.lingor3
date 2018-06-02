@@ -14,5 +14,6 @@ if !(isServer) exitWith {};
 [] execVM "runtime\acs\rt_tickHostileForce.sqf";
 [] execVM "runtime\ads\rt_tickTownDefense.sqf";
 [] execVM "runtime\ads\rt_tickTaskDefense.sqf";
+[] execVM "runtime\ads\rt_tickTaskCount.sqf";
 
 sleep 1;
