@@ -57,7 +57,7 @@ class I
 		class deleteElement;
 	};
 	
-		class logistics
+	class logistics
 	{
 		file = "library\logistics";
 		class addMobileRespawn;
