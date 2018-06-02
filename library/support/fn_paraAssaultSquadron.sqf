@@ -62,5 +62,3 @@ for "_i" from 0 to (_amount - 1) do {
 		[((_this select 1) select 2)] call I_fnc_deleteInactive;
 	};
 };
-
-// "rhs_d6_Parachute_backpack"
