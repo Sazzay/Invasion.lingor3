@@ -17,3 +17,6 @@ if !(isServer) exitWith {};
 [] execVM "runtime\ads\rt_tickTaskCount.sqf";
 
 sleep 1;
+
+// LHD respawn
+respawn_LHD = [west, [6690.31,10032.1,16.6477], "USMC LHD"] call BIS_fnc_addRespawnPosition; // getPosASL player;
