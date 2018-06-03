@@ -42,7 +42,7 @@ Active Combat System - Anti Air: This part of the ACS spawns anti air units whic
 
 Active Combat System - Sea: This part of ACS spawns one full squad of MSV or VDV infantry to wait until the patrol boat in the river is close enough, and then it attacks that boat. This to ensure that no travel path onto a russian occupied island is overlooked, as a river approach is more subtle.
 
-Active Combat System - Land: This part of ACS spawns up anywhere from 1 to 6 squads (usually, by this I mean it's a percentage chance to spawn in), these squads are MSV or VDV infantry that may be accompanied by BMP's, BTR's or BMD's. This is the most deadly part of ACS as they counter air units and land infantry.
+Active Combat System - Land: This part of ACS spawns up anywhere from 1 to 6 squads (usually, by this I mean it's a percentage chance to spawn in), these squads are MSV or VDV infantry that may be accompanied by BMP's, BTR's or BMD's. This is the most deadly part of ACS as they counter air units and land infantry. After it has spawned it, the units mount up and proceed to the players general area shortly after they make landfall (remember you start on a carrier as the player!).
 
 Active Defense System - Towns: This part of ADS populates a town with OPFOR infantry, armor and watch towers along with one HQ building. It also has a capture variable where if you, the player, is within 100 meters starts capturing (however as of 6/3/2018 no clientside display for this is added yet). This is the main victory condition, if enough towns are destroyed, the mission is won.
 
