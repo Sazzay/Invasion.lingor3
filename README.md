@@ -52,7 +52,7 @@ AI Support System - MI-8 Air Assault Squad: As the name suggests, this script ch
 
 AI Support System - Artillery (WIP): This script will work in the same manner as MI-8 Air Assault Squad script does, except instead of paratroopers it spawns artillery within a certain distance and then proceeds to bombard the area that the instigators (the general area of the person who killed the opfor unit is).
 
-That's it for the major system and what is ready and/or very close to being ready. We still have work to do on all the clientside stuf and we have a few other systems related to airports and base capture needing to be considered for the serverside. Other then that you will have the general stuff that most other missions offer: Rally points & we have MHQ's implemented are examples.
+That's it for the major system and what is ready and/or very close to being ready. We still have work to do on all the clientside stuff and we have a few other systems related to airports and base capture needing to be considered for the serverside. Other then that you will have the general stuff that most other missions offer: Rally points & we have MHQ's implemented are examples.
 
 For roles available in the mission goes as follows:
 24x Operators (MARSOC), 2 groups: Main difference between any of these units are Team Leader and Element Leaders, where IIRC Team Leader controls the whole squad of 12 and the Element Leader controls a fireteam (half the squad). We plan on making some kind of load out system for this where kits can be picked by anyone but is limited in number (think Squad loadouts, sort of).
