@@ -55,18 +55,18 @@ AI Support System - Artillery (WIP): This script will work in the same manner as
 That's it for the major system and what is ready and/or very close to being ready. We still have work to do on all the clientside stuff and we have a few other systems related to airports and base capture needing to be considered for the serverside. Other then that you will have the general stuff that most other missions offer: Rally points & we have MHQ's implemented are examples.
 
 For roles available in the mission goes as follows:
-24x Operators (MARSOC), 2 groups: Main difference between any of these units are Team Leader and Element Leaders, where IIRC Team Leader controls the whole squad of 12 and the Element Leader controls a fireteam (half the squad). We plan on making some kind of load out system for this where kits can be picked by anyone but is limited in number (think Squad loadouts, sort of).
-4x Pilots & Co-Pilots: Pilots and Co-Pilots for controlling the UH-1Y's, AH-1Z's and CH-53E's.
-2x AV-8B Pilots: As the name suggests, this is for the harrier pilots.
-9x Crewmen: These crewmen range from Commander, Gunner to Driver. All of these will be required to operate a vehicle effectively.
+- 24x Operators (MARSOC), 2 groups: Main difference between any of these units are Team Leader and Element Leaders, where IIRC Team Leader controls the whole squad of 12 and the Element Leader controls a fireteam (half the squad). We plan on making some kind of load out system for this where kits can be picked by anyone but is limited in number (think Squad loadouts, sort of).
+- 4x Pilots & Co-Pilots: Pilots and Co-Pilots for controlling the UH-1Y's, AH-1Z's and CH-53E's.
+- 2x AV-8B Pilots: As the name suggests, this is for the harrier pilots.
+- 9x Crewmen: These crewmen range from Commander, Gunner to Driver. All of these will be required to operate a vehicle effectively.
 
 For vehicles we have the following:
-2x AV-8B Harriers
-2x UH-1Y Transport Helicopters
-1x CH-53E Heavy Transport & Airlift (required to transport some vehicles to land)
-2x Stryker MGS
-2x M1129 Stryker (mortar stryker)
-Undecided amount of: HMVWW's, Stryker ATGM, LAV-25's and other amphibious vehicles.
-And a MHQ truck.
+- 2x AV-8B Harriers
+- 2x UH-1Y Transport Helicopters
+- 1x CH-53E Heavy Transport & Airlift (required to transport some vehicles to land)
+- 2x Stryker MGS
+- 2x M1129 Stryker (mortar stryker)
+- Undecided amount of: HMVWW's, Stryker ATGM, LAV-25's and other amphibious vehicles.
+- And a MHQ truck.
 
 Me & Panda would both appreciate suggestions and feedback on what we have already described. Even more so when we actually have this up and running, feedback will be vital to make this more enjoyable.
