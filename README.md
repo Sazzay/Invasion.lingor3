@@ -66,6 +66,7 @@ For vehicles we have the following:
 1x CH-53E Heavy Transport & Airlift (required to transport some vehicles to land)
 2x Stryker MGS
 2x M1129 Stryker (mortar stryker)
-Undecided amount of: HMVWW's, LAV-25's and other amphibious vehicles.
+Undecided amount of: HMVWW's, Stryker ATGM, LAV-25's and other amphibious vehicles.
 And a MHQ truck.
 
+Me & Panda would both appreciate suggestions and feedback on what we have already described. Even more so when we actually have this up and running, feedback will be vital to make this more enjoyable.
