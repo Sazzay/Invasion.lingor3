@@ -32,3 +32,6 @@ Todo:
 - AI Support (Artillery)
 - AI Convoys
 - All clientside stuff remains
+
+Suggestions:
+- Sattelite Pictures for SM's
