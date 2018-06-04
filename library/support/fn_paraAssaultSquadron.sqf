@@ -24,32 +24,52 @@ if (isNil "_amount") exitWith {
 };
 
 for "_i" from 0 to (_amount - 1) do {
-	[([[_pos select 0, (_pos select 1) + (_i * 100)], 0, "RHS_Mi8MTV3_vvsc", EAST] call bis_fnc_spawnvehicle), nil] params ["_veh", "_group"];
+	[([[_pos select 0, (_pos select 1) + (_i * 100)], 0, "RHS_Mi8mt_vvsc", EAST] call bis_fnc_spawnvehicle), nil] params ["_veh", "_group"];
 
 	(_veh select 0) setPosASL [(_pos select 0) + (_i * 100), (_pos select 1) + (_i * 100), 300];
-	(_veh select 0) flyInHeightASL [300, 300, 300];
+	(_veh select 0) flyInHeight 200;
 
 	_group = ([(selectRandom I_DEF_LAND_AMBUSH_GROUPS), [_pos select 0, (_pos select 1) + (_i * 50)]] call I_fnc_createGroup);
 
 	{
-		_x moveInAny (_veh select 0);
+		_x assignAsCargo (_veh select 0);
+		_x moveInCargo (_veh select 0);
 	} forEach (units _group);
 	
+	(_veh select 2) setBehaviour "CARELESS";
+	
 	{
-		_x doMove [((_target select 0) + (50 * _i)), ((_target select 1) + (50 * _i))];
+		[_x] params ["_unit"];
+		
+		{
+			_unit disableAI _x;
+		} forEach ["TARGET", "AUTOTARGET", "AUTOCOMBAT", "WEAPONAIM"];
+		
+		_unit doMove [((_target select 0) + (50 * _i)), ((_target select 1) + (50 * _i))];
 	} forEach (_veh select 1);
 	
 	[_group, _veh, _target] spawn {
-		waitUntil {((getPos (leader (_this select 0))) distance2D (_this select 2)) < 300};
+		waitUntil {((getPos (leader (_this select 0))) distance2D (_this select 2)) < 600};
 
-		[((_this select 1) select 0)] call RHS_fnc_infantryParadrop;
+		[((_this select 1) select 0), 0.5] call RHS_fnc_infantryParadrop;
 		
-		{
-			doStop _x;
+		sleep 7;
+		
+		[(_this select 0), (_this select 2)] call I_fnc_taskGroupAssault;
+		
+		{	
 			_x doMove [10200, 1730];
-			
+		
 			[_x] spawn {
-				waitUntil {((getPos (_this select 0)) distance2D [10200, 1730]) < 300};
+				while {true} do {
+					if (((getPos (_this select 0)) distance2D [10200, 1730]) < 1000) exitWith {};
+					
+					if !(alive (_this select 0)) exitWith {
+						sleep 60;
+					};
+					
+					sleep 1;
+				};
 				
 				{
 					deleteVehicle _x

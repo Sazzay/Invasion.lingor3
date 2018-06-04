@@ -68,4 +68,9 @@ class I
 		file = "library\support";
 		class paraAssaultSquadron;
 	};
+	class debug
+	{
+		file = "library\debug";
+		class hintStrEastGroups;
+	};
 };
