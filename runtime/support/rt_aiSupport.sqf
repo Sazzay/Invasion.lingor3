@@ -14,13 +14,7 @@ addMissionEventHandler ["EntityKilled", {
 
 	if (((side _killer) isEqualTo west) and ((missionNamespace getVariable "RESTRICT_AISS_PARA") isEqualTo false)) then {
 		if ((random 100) < (5 + (_var select 2))) then {
-			if ((random 100) < 50) then {
-				[2, (getPos _killer)] call I_fnc_paraAssaultSquadron;
-			} else {
-				[4, (getPos _killer)] call I_fnc_paraAssaultSquadron;
-			};
-			
-			hint str (getPos _killer);
+			[(selectRandom [2, 4]), (getPos _killer)] call I_fnc_paraAssaultSquadron;
 			
 			["RESTRICT_AISS_PARA", 800 - random 150 + random 150 - ((_var select 2) * 20)] call I_fnc_timedBool;
 		};

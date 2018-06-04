@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=514;
+	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1957;
+		nextID=1987;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3765.5508,208.12196,9736.7461};
-		dir[]={0.61044794,-0.54340756,-0.57631087};
-		up[]={0.39515349,0.83945036,-0.37305504};
-		aside[]={-0.68650728,-1.8684659e-007,-0.72716993};
+		pos[]={3860.8777,190.33185,9782.3848};
+		dir[]={0.78208679,-0.45717725,-0.42366287};
+		up[]={0.40203303,0.88933849,-0.21778429};
+		aside[]={-0.47634903,6.2165782e-008,-0.87934506};
 	};
 };
 binarizationWanted=0;
@@ -3544,7 +3544,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="76561197992354130";
+									value="TESTINGSTUFF";
 								};
 							};
 						};
@@ -4039,18 +4039,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3963.959,26.440018,9598.1523};
+						position[]={3970.5229,25.554558,9603.7891};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						rank="SERGEANT";
+						name="TESTINGSTUFF";
 						isPlayer=1;
 					};
 					id=1860;
 					type="rhsusf_usmc_recon_marpat_wd_marksman";
-					atlOffset=2.4750004;
 					class CustomAttributes
 					{
 						class Attribute0
