@@ -18,7 +18,7 @@
 [_this select 0, _this select 1, [], nil] params ["_pos", "_positions", "_distances", "_return"];
 
 if ((isNil "_pos") or (isNil "_positions")) exitWith {
-	diag_log "I_fnc_findNearestPos: _pos or _positions not defined.";
+	diag_log "I_fnc_findFarthestPos: _pos or _positions not defined.";
 };
 
 if !(_positions isEqualTo []) then {

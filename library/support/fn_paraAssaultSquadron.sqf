@@ -11,7 +11,6 @@
 	_this select 1: Position2D
 	
 	Returns:
-	ARRAY
 	
 	Example:
 	_call = [4, [1244, 637]] call I_fnc_paraAssaultSquadron;
@@ -37,6 +36,7 @@ for "_i" from 0 to (_amount - 1) do {
 	} forEach (units _group);
 	
 	(_veh select 2) setBehaviour "CARELESS";
+	(_veh select 2) deleteGroupWhenEmpty true;
 	
 	{
 		[_x] params ["_unit"];

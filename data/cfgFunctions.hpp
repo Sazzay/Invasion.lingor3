@@ -43,6 +43,7 @@ class I
 		class findNearestPos;
 		class findFarthestPos;
 		class findTaskPos;
+		class findArtilleryPos;
 	};
 	class ai
 	{
@@ -67,6 +68,7 @@ class I
 	{
 		file = "library\support";
 		class paraAssaultSquadron;
+		class artilleryPlatoon;
 	};
 	class debug
 	{

@@ -15,7 +15,7 @@ if !(isServer) exitWith {};
 [] execVM "runtime\ads\rt_tickTownDefense.sqf";
 [] execVM "runtime\ads\rt_tickTaskDefense.sqf";
 [] execVM "runtime\ads\rt_tickTaskCount.sqf";
-[] execVM "runtime\support\rt_aiSupport.sqf"
+[] execVM "runtime\support\rt_aiSupport.sqf";
 
 sleep 1;
 

@@ -17,7 +17,7 @@
 [_this select 0, []] params ["_pos", "_return"];
 
 if (isNil "_pos") exitWith {
-	diag_log "I_fnc_findAAPos: _pos not defined."
+	diag_log "I_fnc_findAAPos: _pos not defined.";
 };
 
 for "_i" from ((_pos select 0) - 1000) to ((_pos select 0) + 1000) step 10 do {

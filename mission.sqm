@@ -8,18 +8,18 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=1953;
+		nextID=1957;
 	};
 	class LayerIndexProvider
 	{
-		nextID=269;
+		nextID=274;
 	};
 	class Camera
 	{
-		pos[]={3945.6069,29.789551,9629.9658};
-		dir[]={0.70646065,-0.30499139,-0.63884175};
-		up[]={0.22626999,0.95230722,-0.20460995};
-		aside[]={-0.67079812,3.2410026e-007,-0.74180377};
+		pos[]={3765.5508,208.12196,9736.7461};
+		dir[]={0.61044794,-0.54340756,-0.57631087};
+		up[]={0.39515349,0.83945036,-0.37305504};
+		aside[]={-0.68650728,-1.8684659e-007,-0.72716993};
 	};
 };
 binarizationWanted=0;
@@ -32,14 +32,13 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"CUP_WaterVehicles_LHD",
 	"A3_Characters_F_Common",
-	"rhsusf_c_m1a2",
-	"rhs_c_rva"
+	"rhsusf_c_m1a2"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=7;
 		class Item0
 		{
 			className="rhsusf_c_troops";
@@ -81,13 +80,6 @@ class AddonsMetaData
 		{
 			className="rhsusf_c_m1a2";
 			name="M1A2 Tanks";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item7
-		{
-			className="rhs_c_rva";
-			name="Tochka-U Launcher";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
@@ -152,7 +144,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=13;
+		items=12;
 		class Item0
 		{
 			dataType="Layer";
@@ -4846,65 +4838,6 @@ class Mission
 			id=1903;
 			type="rhsusf_m1a2sep1tuskiiwd_usarmy";
 			atlOffset=6.4849854e-005;
-		};
-		class Item12
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3960.6697,23.955702,9616.3828};
-				angles[]={0.14329153,0,0.17943729};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="UNLOCKED";
-			};
-			id=1952;
-			type="rhs_9k79_B";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="rhs_decalNumber_type";
-					expression="_this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', SS21NumberPlaces, _value]]] call rhs_fnc_decalsInit";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Default";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="rhs_deploy";
-					expression="[_this,_value] call rhs_fnc_ss21_deploy";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
 		};
 	};
 };
