@@ -8,26 +8,24 @@
 
 [[] call I_fnc_findTowns] params ["_towns"];
 
-while {true} do {
-	{
-		[(missionNamespace getVariable format ["ADS_TOWN_%1", [_x select 0, _x select 1]]), ((getPosATL player) select 2)] params ["_var", "_height"];
+while {true} do {	
+	[([(getPos player), _towns] call I_fnc_findNearestPos)] params ["_pos"];
 	
-		if ((vehicle player) isKindOf "Man") then {
-			if (((player distance _x) < 50)) then {
-				if ((round (_var select 2)) >= 21) then {
-					[0.5] call I_fnc_progressBarFade;
-				} else {
-					[(round (_var select 2))] call I_fnc_progressBar;
-				};
-			};
-			
-			if (((player distance _x) > 50) and ((player distance _x) < 150)) then {
+	if (((vehicle player) isKindOf "Man") and (alive player)) then {
+		[(missionNamespace getVariable format ["ADS_TOWN_%1", _pos])] params ["_var"];
+	
+		if (((player distance _pos) < 50)) then {
+			if ((round (_var select 2)) >= 21) then {
 				[0.5] call I_fnc_progressBarFade;
+			} else {
+				[(floor (_var select 2))] call I_fnc_progressBar;
 			};
 		} else {
-			[0.5] call I_fnc_progressBarFade;
+			[0.3] call I_fnc_progressBarFade;
 		};
-	} forEach _towns;
+	} else {
+		[0.3] call I_fnc_progressBarFade;
+	};
 	
 	sleep 1;
 };

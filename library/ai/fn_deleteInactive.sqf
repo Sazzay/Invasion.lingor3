@@ -21,24 +21,18 @@ if (isNil "_group") exitWith {
 
 [_group] spawn {
 	while {true} do {
-		sleep 1200;
+		sleep 600;
 		
-		_exit = false;
-		_fail = false;
-		_array = nearestObjects [(leader (_this select 0)), ["Man", "Air", "LandVehicle"], 1000];
-		
-		{
-			if (_x in _array) exitWith {
-				_fail = true;
-			};
-		} forEach playableUnits;
+		[false] params ["_exit"];
 						
-		if ((((units (_this select 0)) select 0) findNearestEnemy ((units (_this select 0)) select 0) isEqualTo objNull) and (_fail isEqualTo false)) then {
-			{
-				deleteVehicle _x;
-			} forEach (units (_this select 0));
-							
-			_exit = true;
+		if ((((units (_this select 0)) select 0) findNearestEnemy ((units (_this select 0)) select 0)) isEqualTo objNull) then {
+			if ((count ([(getPos (vehicle (leader (_this select 0)))), 2000] call I_fnc_findPlayers)) isEqualTo 0) then {
+				{
+					deleteVehicle _x;
+				} forEach (units (_this select 0));
+								
+				_exit = true;
+			};
 		};
 		
 		if (_exit isEqualTo true) exitWith {
