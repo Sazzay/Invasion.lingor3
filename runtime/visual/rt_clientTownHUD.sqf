@@ -18,7 +18,7 @@ while {true} do {
 			if ((round (_var select 2)) >= 21) then {
 				[0.5] call I_fnc_progressBarFade;
 			} else {
-				[(floor (_var select 2))] call I_fnc_progressBar;
+				[(floor (_var select 2)), "CAPTURE"] call I_fnc_progressBar;
 			};
 		} else {
 			[0.3] call I_fnc_progressBarFade;

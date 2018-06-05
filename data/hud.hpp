@@ -60,7 +60,25 @@ class RscTitles {
 				h = 0.237037 * safezoneH;      
 				style = "0x30+0x800";
 			};
-		 };	
+			class RscStructuredText_1500: RscStructuredText
+			{
+				idc = 1500;
+				text = "";
+				x = 0.5 * safezoneW + safezoneX - (0.3 * safezoneW / 2);
+				y = 0.02 * safezoneH + safezoneY - (0.03 * safezoneH / 2);
+				w = 0.3 * safezoneW;
+				h = 0.03 * safezoneH;
+				size = "0.021 / (getResolution select 5)";
+				
+				class Attributes
+				{
+					font = "PuristaMedium";
+					color = "#ffffff";
+					align = "center";
+					shadow = 1;
+				};
+			};
+		 };
 	};
 	
 	class I_HUD_PROGRESSBAR_TILES {

@@ -17,10 +17,6 @@ if !(isServer) exitWith {};
 [] execVM "runtime\ads\rt_tickTaskCount.sqf";
 [] execVM "runtime\support\rt_aiSupport.sqf";
 
-sleep 1;
-
-//[3, [1244, 637]] call I_fnc_paraAssaultSquadron;
-
 // LHD respawn
 I_RESPAWN_LHD = [west, [6690.31,10032.1,16.6477], "USMC LHD"] call BIS_fnc_addRespawnPosition; // getPosASL player;
 
