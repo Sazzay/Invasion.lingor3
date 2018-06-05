@@ -3,3 +3,6 @@ player addEventHandler ["GetInMan", {
 	
 	//_call = [_unit, _role] call I_fnc_vehicularEligibility;
 }];
+
+// Client runtime
+[] execVM "runtime\visual\rt_clientTownHUD.sqf";

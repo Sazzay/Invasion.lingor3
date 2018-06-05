@@ -12,6 +12,8 @@ class I
 	{
 		file = "library\visual";
 		class notification;
+		class progressBar;
+		class progressBarFade;
 	};
 	class objects
 	{
