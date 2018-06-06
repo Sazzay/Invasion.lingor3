@@ -28,3 +28,23 @@
 	
 	[format ["OBJECTIVE_TASK_%1", (getPos _x)], player, ["", format ["Destroy %1", (_array select _forEachIndex)], ""], (getPos _x), "CREATED", 1, false, false, ((_array select _forEachIndex) select [0, 1]), false] call BIS_fnc_setTask;
 } forEach _tasks;
+
+while {true} do {
+	{
+		[(format ["TOWN_TASK_%1", _x])] params ["_task"];
+	
+		if (!(alive _x) and (_task call BIS_fnc_taskState) isEqualTo "CREATED") then {
+			[_task, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
+		};
+	} forEach _tasks;
+	
+	{
+		[(GLOBAL getVariable [format ["ADS_TOWN_%1_CAP", _x], 0]), (format ["TOWN_TASK_%1", _x])] params ["_var", "_task"];
+	
+		if ((_var >= 21) and (_task call BIS_fnc_taskState) isEqualTo "CREATED") then {
+			[_task, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
+		};
+	} forEach _towns;
+
+	sleep 2.5;
+};

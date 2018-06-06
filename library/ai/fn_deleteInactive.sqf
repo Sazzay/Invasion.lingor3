@@ -20,23 +20,29 @@ if (isNil "_group") exitWith {
 };
 
 [_group] spawn {
+	[0] params ["_count"];
+
 	while {true} do {
-		sleep 1200;
-		
-		[false] params ["_exit"];
+		sleep 300;
 						
 		if ((((units (_this select 0)) select 0) findNearestEnemy ((units (_this select 0)) select 0)) isEqualTo objNull) then {
-			if ((count ([(getPos (vehicle (leader (_this select 0)))), 6000] call I_fnc_findPlayers)) isEqualTo 0) then {
-				{
-					deleteVehicle _x;
-				} forEach (units (_this select 0));
-								
-				_exit = true;
+			if ((count ([(getPos (vehicle (leader (_this select 0)))), 2500] call I_fnc_findPlayers)) isEqualTo 0) then {
+				_count = _count + 1;
+			} else {
+				_count = 0;
 			};
+		} else {
+			_count = 0;
 		};
 		
-		if (_exit isEqualTo true) exitWith {
-			diag_log "I_fnc_deleteInactive: units removed from inactivity."
+		hint str _count;
+		
+		if ((_count) >= 5) exitWith {
+			{
+				deleteVehicle _x;
+			} forEach (units (_this select 0));
+		
+			diag_log "I_fnc_deleteInactive: units removed from inactivity.";
 		};
 	};
 };
