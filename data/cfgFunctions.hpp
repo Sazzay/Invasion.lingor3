@@ -65,6 +65,7 @@ class I
 	{
 		file = "library\logistics";
 		class addMobileRespawn;
+		class addRepairStation;
 	};
 	class support
 	{
