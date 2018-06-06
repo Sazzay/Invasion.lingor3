@@ -2,7 +2,6 @@ author			   = "Markus 'Sazzay' Larsson";
 briefingName 	   = "Lingor Invasion";
 OnLoadName 	       = "Lingor Invasion";
 OnLoadMission 	   = "Change this kickapoo.";
-loadScreen 		   = "";
 overviewPicture	   = "";
 overviewText	   = "Change this kickapoo.";
 overviewTextLocked = "Change this kickapoo.";

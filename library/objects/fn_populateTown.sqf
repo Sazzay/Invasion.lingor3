@@ -27,6 +27,7 @@ if ((count ([_pos, 400] call I_fnc_findEmptyNoRoads)) >= 4) then {
 		_temp = (selectRandom I_DEF_MILITARY_VEHICLE_COVERS) createVehicle ([_pos, ([_pos, 400] call I_fnc_findEmptyNoRoads)] call I_fnc_findNearestPos);
 		_temp setDir (getDir (nearestBuilding _temp));
 		_veh = [(getPos _temp), (getDir _temp) - 180, selectRandom I_DEF_VEHICLES_ARMORED, EAST] call bis_fnc_spawnvehicle;
+		(_veh select 2) deleteGroupWhenEmpty true;
 		// Sort into arrays
 		_static pushBack _temp;
 		_objects pushBack (_veh select 0);
@@ -46,7 +47,7 @@ if ((count ([_pos, 400] call I_fnc_findEmptyNoRoads)) >= 7) then {
 	};
 };
 
-if ((count _static) > 0) then { // 37
+if ((count _static) > 0) then {
 	{
 		[_x] params ["_building"];
 	

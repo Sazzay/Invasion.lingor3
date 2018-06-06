@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=279;
+		nextID=284;
 	};
 	class Camera
 	{
-		pos[]={3863.8936,147.08545,9698.6826};
-		dir[]={0.58379358,-0.67765212,-0.44738212};
-		up[]={0.5378893,0.73533541,-0.41220355};
-		aside[]={-0.60831922,1.0889489e-006,-0.79379463};
+		pos[]={3845.7532,166.29454,9613.6709};
+		dir[]={0.42199072,-0.52399391,-0.73996449};
+		up[]={0.25960812,0.85165781,-0.45522425};
+		aside[]={-0.86874902,4.6059722e-007,-0.49542993};
 	};
 };
 binarizationWanted=0;
@@ -89,6 +89,7 @@ randomSeed=5274257;
 class ScenarioData
 {
 	author="ocd";
+	overViewPicture="textures\loading_logo.paa";
 	disabledAI=1;
 	respawn=3;
 	respawnDelay=10.510403;
@@ -4726,7 +4727,7 @@ class Mission
 					};
 					id=1897;
 					type="rhsusf_usmc_marpat_wd_rifleman_m4";
-					atlOffset=2.1105175;
+					atlOffset=2.1105185;
 				};
 				class Item12
 				{
