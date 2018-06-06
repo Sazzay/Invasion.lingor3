@@ -21,13 +21,7 @@ if (isNil "_progress") exitWith {
 	diag_log "I_fnc_progressBar: _progress can't be nil.";
 };
 
-if ((isNil {(uiNamespace getVariable "I_HUD_PROGRESSBAR")}) and (isNil {(uiNamespace getVariable "I_HUD_PROGRESSBAR_TILES")})) then {
-	{
-		uiNamespace setVariable [_x, displayNull];
-	} forEach ["I_HUD_PROGRESSBAR", "I_HUD_PROGRESSBAR_TILES"];
-};
-
-if ((uiNamespace getVariable "I_HUD_PROGRESSBAR") isEqualTo displayNull and (uiNamespace getVariable "I_HUD_PROGRESSBAR_TILES") isEqualTo displayNull) then {
+if ((uiNamespace getVariable ["I_HUD_PROGRESSBAR", displayNull]) isEqualTo displayNull and (uiNamespace getVariable ["I_HUD_PROGRESSBAR_TILES", displayNull]) isEqualTo displayNull) then {
 	("I_HUD_CAPTURE_BASELAYER" call BIS_fnc_rscLayer) cutRsc ["I_HUD_PROGRESSBAR", "PLAIN"];
 	("I_HUD_CAPTURE_TILES" call BIS_fnc_rscLayer) cutRsc ["I_HUD_PROGRESSBAR_TILES", "PLAIN"];
 };

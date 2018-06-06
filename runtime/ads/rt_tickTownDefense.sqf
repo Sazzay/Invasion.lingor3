@@ -39,7 +39,7 @@
 				};
 			};
 			
-			GLOBAL setVariable [format ["ADS_TOWN_%1_CAP", [_x select 0, _x select 1]], (_var select 2)];
+			GLOBAL setVariable [format ["ADS_TOWN_%1_CAP", [_x select 0, _x select 1]], (_var select 2), true];
 		};
 	} forEach _pos;
 	

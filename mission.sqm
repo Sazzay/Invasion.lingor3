@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1988;
+		nextID=1989;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5578.4971,335.32639,9975.2939};
-		dir[]={0.83234936,-0.54501408,0.10175411};
-		up[]={0.54103786,0.83836508,0.066142507};
-		aside[]={0.12135337,5.0163362e-007,-0.99270403};
+		pos[]={4097.3979,44.864544,9219.7852};
+		dir[]={-0.61646098,-0.69048357,0.37869936};
+		up[]={-0.58835667,0.72329426,0.36143374};
+		aside[]={0.52348888,1.458975e-006,0.85214835};
 	};
 };
 binarizationWanted=0;
@@ -33,7 +33,8 @@ addons[]=
 	"CUP_WaterVehicles_LHD",
 	"A3_Characters_F_Common",
 	"rhsusf_c_m1a2",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"A3_Modules_F_Multiplayer"
 };
 class AddonsMetaData
 {
@@ -186,7 +187,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=13;
+		items=14;
 		class Item0
 		{
 			dataType="Layer";
@@ -4935,6 +4936,116 @@ class Mission
 			id=1987;
 			type="Logic";
 			atlOffset=29.916;
+		};
+		class Item13
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4056.5229,4.165163,9227.2197};
+			};
+			id=1988;
+			type="ModuleRespawnPosition_F";
+			atlOffset=0.00039243698;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleRespawnPosition_F_Marker";
+					expression="_this setVariable ['Marker',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleRespawnPosition_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleRespawnPosition_F_Side";
+					expression="_this setVariable ['Side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleRespawnPosition_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleRespawnPosition_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 };
