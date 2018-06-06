@@ -2,15 +2,15 @@ author			   = "Markus 'Sazzay' Larsson";
 briefingName 	   = "Lingor Invasion";
 OnLoadName 	       = "Lingor Invasion";
 OnLoadMission 	   = "Change this kickapoo.";
+loadScreen		   = "textures\loading_logo.paa";
 overviewPicture	   = "";
 overviewText	   = "Change this kickapoo.";
 overviewTextLocked = "Change this kickapoo.";
+
+#include "data\defines.hpp"
+#include "data\hud.hpp"
 
 class CfgFunctions 
 {
 	#include "data\cfgFunctions.hpp"
 };
-
-#include "data\defines.hpp"
-#include "data\dialogs.hpp"
-#include "data\hud.hpp"

@@ -12,13 +12,13 @@ while {true} do {
 	[([(getPos player), _towns] call I_fnc_findNearestPos)] params ["_pos"];
 	
 	if (((vehicle player) isKindOf "Man") and (alive player)) then {
-		[(missionNamespace getVariable format ["ADS_TOWN_%1", _pos])] params ["_var"];
+		[(GLOBAL getVariable format ["ADS_TOWN_%1_CAP", _pos])] params ["_var"];
 	
-		if (((player distance _pos) < 50)) then {
-			if ((round (_var select 2)) >= 21) then {
+		if ((player distance _pos) < 50) then {
+			if ((round _var) >= 21) then {
 				[0.5] call I_fnc_progressBarFade;
 			} else {
-				[(floor (_var select 2)), "CAPTURE"] call I_fnc_progressBar;
+				[(floor _var), "CAPTURE"] call I_fnc_progressBar;
 			};
 		} else {
 			[0.3] call I_fnc_progressBarFade;

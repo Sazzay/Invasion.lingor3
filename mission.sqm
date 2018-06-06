@@ -8,18 +8,18 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1987;
+		nextID=1988;
 	};
 	class LayerIndexProvider
 	{
-		nextID=284;
+		nextID=299;
 	};
 	class Camera
 	{
-		pos[]={3845.7532,166.29454,9613.6709};
-		dir[]={0.42199072,-0.52399391,-0.73996449};
-		up[]={0.25960812,0.85165781,-0.45522425};
-		aside[]={-0.86874902,4.6059722e-007,-0.49542993};
+		pos[]={5578.4971,335.32639,9975.2939};
+		dir[]={0.83234936,-0.54501408,0.10175411};
+		up[]={0.54103786,0.83836508,0.066142507};
+		aside[]={0.12135337,5.0163362e-007,-0.99270403};
 	};
 };
 binarizationWanted=0;
@@ -32,13 +32,14 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"CUP_WaterVehicles_LHD",
 	"A3_Characters_F_Common",
-	"rhsusf_c_m1a2"
+	"rhsusf_c_m1a2",
+	"A3_Modules_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			className="rhsusf_c_troops";
@@ -83,13 +84,19 @@ class AddonsMetaData
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
+		class Item7
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=5274257;
 class ScenarioData
 {
 	author="ocd";
-	overViewPicture="textures\loading_logo.paa";
 	disabledAI=1;
 	respawn=3;
 	respawnDelay=10.510403;
@@ -179,7 +186,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=12;
+		items=13;
 		class Item0
 		{
 			dataType="Layer";
@@ -4916,6 +4923,18 @@ class Mission
 			id=1903;
 			type="rhsusf_m1a2sep1tuskiiwd_usarmy";
 			atlOffset=6.4849854e-005;
+		};
+		class Item12
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6647.3818,-0.083999634,10634.581};
+			};
+			name="GLOBAL";
+			id=1987;
+			type="Logic";
+			atlOffset=29.916;
 		};
 	};
 };

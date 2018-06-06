@@ -19,4 +19,3 @@ if !(isServer) exitWith {};
 
 // LHD respawn
 I_RESPAWN_LHD = [west, [6690.31,10032.1,16.6477], "USMC LHD"] call BIS_fnc_addRespawnPosition; // getPosASL player;
-
