@@ -36,11 +36,6 @@ if (isNil "_array") exitWith {
 	
 	if (_valid isEqualTo true) then {
 		_return pushBack (createVehicle [(selectRandom I_DEF_TASK_OBJECTS), _pos, [], 0, "CAN_COLLIDE"]);
-	
-		// debug - remove later
-		_markerstr = createMarker [format ["markername%1", _forEachIndex], _pos];
-		_markerstr setMarkerShape "ICON";
-		_markerstr setMarkerType "hd_dot";
 	};
 } forEach (_array call BIS_fnc_arrayShuffle);
 

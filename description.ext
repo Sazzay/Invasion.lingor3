@@ -14,3 +14,15 @@ class CfgFunctions
 {
 	#include "data\cfgFunctions.hpp"
 };
+
+class CfgTaskTypes
+{
+	class City
+	{
+		icon = textures\cityicon-32.paa;
+	};
+	class Town
+	{
+		icon = textures\townicon-32.paa;
+	};
+};

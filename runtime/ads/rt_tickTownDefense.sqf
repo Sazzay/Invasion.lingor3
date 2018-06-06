@@ -11,7 +11,7 @@
 
 {
 	[format ["ADS_TOWN_%1", [_x select 0, _x select 1]], [false, [], 0, false]] call I_fnc_setVariable;
-	GLOBAL setVariable [format ["ADS_TOWN_%1_CAP", [_x select 0, _x select 1]], 0];
+	GLOBAL setVariable [format ["ADS_TOWN_%1_CAP", [_x select 0, _x select 1]], 0, true];
 } forEach _towns;
 
 [{

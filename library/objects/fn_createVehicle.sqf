@@ -43,6 +43,10 @@ _vehicle = createVehicle [_type, [_pos select 0, _pos select 1], [], 0, "CAN_COL
 _vehicle setPosATL _pos;
 _vehicle setDir _dir;
 
+if (((typeOf _vehicle) isEqualTo "CUP_B_M1128_MGS_Woodland") or ((typeOf _vehicle) isEqualTo "CUP_B_M1129_MC_MK19_Woodland")) then {
+	_vehicle setMass 13500;
+};
+
 clearItemCargoGlobal 	 _vehicle;
 clearWeaponCargoGlobal 	 _vehicle;
 clearMagazineCargoGlobal _vehicle;
