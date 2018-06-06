@@ -20,28 +20,28 @@
 		_icon = "Town"
 	};
 
-	[format ["TOWN_TASK_%1", _x], player, ["", format ["Capture %1", _name], ""], _x, "CREATED", 1, false, false, _icon, false] call BIS_fnc_setTask;
+	[player, format ["TOWN_TASK_%1", [_x select 0, _x select 1]], ["", format ["Capture %1", _name], ""], _x, "CREATED", 1, false, _icon, false] call BIS_fnc_taskCreate;
 } forEach _towns;
 
 {
 	["NIL", ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliett", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "Xray", "Yankee", "Zulu"]] params ["_name", "_array"];
 	
-	[format ["OBJECTIVE_TASK_%1", (getPos _x)], player, ["", format ["Destroy %1", (_array select _forEachIndex)], ""], (getPos _x), "CREATED", 1, false, false, ((_array select _forEachIndex) select [0, 1]), false] call BIS_fnc_setTask;
+	[player, format ["OBJECTIVE_TASK_%1", _x], ["", format ["Destroy %1", (_array select _forEachIndex)], ""], _x, "CREATED", 1, false, ((_array select _forEachIndex) select [0, 1]), false] call BIS_fnc_taskCreate;
 } forEach _tasks;
 
 while {true} do {
 	{
-		[(format ["TOWN_TASK_%1", _x])] params ["_task"];
+		[(format ["OBJECTIVE_TASK_%1", _x])] params ["_task"];
 	
-		if (!(alive _x) and (_task call BIS_fnc_taskState) isEqualTo "CREATED") then {
+		if (!(alive _x) and !([_task] call BIS_fnc_taskCompleted)) then {
 			[_task, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 		};
 	} forEach _tasks;
 	
 	{
-		[(GLOBAL getVariable [format ["ADS_TOWN_%1_CAP", _x], 0]), (format ["TOWN_TASK_%1", _x])] params ["_var", "_task"];
-	
-		if ((_var >= 21) and (_task call BIS_fnc_taskState) isEqualTo "CREATED") then {
+		[(GLOBAL getVariable [format ["ADS_TOWN_%1_CAP", [_x select 0, _x select 1]], 0]), (format ["TOWN_TASK_%1", [_x select 0, _x select 1]])] params ["_var", "_task"];
+		
+		if ((_var >= 21) and !([_task] call BIS_fnc_taskCompleted)) then {
 			[_task, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 		};
 	} forEach _towns;

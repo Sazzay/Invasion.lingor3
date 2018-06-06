@@ -39,7 +39,7 @@
 				};
 			};
 			
-			GLOBAL setVariable [format ["ADS_TOWN_%1_CAP", [_x select 0, _x select 1]], (_var select 2), true];
+			GLOBAL setVariable [format ["ADS_TOWN_%1_CAP", [_x select 0, _x select 1]], ((missionNamespace getVariable format ["ADS_TOWN_%1", [_x select 0, _x select 1]]) select 2), true];
 		};
 	} forEach _pos;
 	
