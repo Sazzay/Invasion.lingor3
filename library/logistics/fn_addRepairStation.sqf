@@ -52,19 +52,6 @@ _repairDepot2 hideObjectGlobal true;
 _repairDepot setVariable ["INVASION_DEPOT_DEPLOYED",false,true];
 publicVariable "INVASION_DEPOT_DEPLOYED";
 
-_repairdepot_Marker = format["repairdepot_%1",(random 99999)];
-
-[_repairdepot_Marker,(getPos _repairDepot),"b_support","Default","Ground Vehicle Repair Depot - Inactive"] call framework_fnc_createMarkerIcon;
-
-[_repairDepot,_repairdepot_Marker] spawn 
-{
-	while {true} do
-	{
-		sleep 1;
-		(_this select 1) setMarkerPos (getPos (_this select 0));
-	};
-};
-
 [_repairDepot,_repairDepot2,_repairdepot_Marker] spawn
 {
 	while {true} do
