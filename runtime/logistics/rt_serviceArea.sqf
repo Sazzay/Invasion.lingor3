@@ -28,7 +28,7 @@ while {true} do {
 						
 						for "_i" from 0 to (((fuel (_this select 0)) * 100) + (100 - ((damage (_this select 0)) * 100))) do {
 							(_this select 0) engineOn false;
-							sleep 0.1;
+							sleep 0.2;
 						};
 						
 						{

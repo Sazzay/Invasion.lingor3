@@ -24,7 +24,7 @@ if (_object isEqualTo objNull) exitWith {
 		for "_i" from (damage (_this select 0)) to 0 step -0.01 do {
 			(_this select 0) setDamage _i;
 			
-			sleep 0.05;
+			sleep 0.1;
 		};
 	};
 	
@@ -32,7 +32,7 @@ if (_object isEqualTo objNull) exitWith {
 		for "_i" from (fuel (_this select 0)) to 1 step 0.01 do {
 			(_this select 0) setFuel _i;
 			
-			sleep 0.05;
+			sleep 0.1;
 		};
 	};
 	

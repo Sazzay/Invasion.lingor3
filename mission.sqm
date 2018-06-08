@@ -8,7 +8,11 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2072;
+		nextID=2075;
+	};
+	class MarkerIDProvider
+	{
+		nextID=3;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6657.4775,61.823051,10103.744};
-		dir[]={0.099150956,-0.51291591,-0.85283613};
-		up[]={0.059250459,0.85821915,-0.5096035};
-		aside[]={-0.99347025,-6.723858e-007,-0.11549748};
+		pos[]={6614.3618,61.507439,10141.076};
+		dir[]={0.92667943,-0.32431489,-0.19057439};
+		up[]={0.31786209,0.94574773,-0.06536454};
+		aside[]={-0.20147446,-7.757917e-007,-0.97966361};
 	};
 };
 binarizationWanted=0;
@@ -33,7 +37,7 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"A3_Characters_F_Common",
 	"A3_Modules_F",
-	"RHS_US_A2_AirImport"
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
@@ -86,10 +90,10 @@ class AddonsMetaData
 		};
 		class Item7
 		{
-			className="RHS_US_A2_AirImport";
-			name="RHSUSF A2 Air Ports";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -186,7 +190,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
 			dataType="Layer";
@@ -4586,21 +4590,23 @@ class Mission
 		};
 		class Item5
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6677.938,18.594891,10044.17};
-			};
-			side="Empty";
-			class Attributes
-			{
-				health=0.54220128;
-				ammo=0.16239019;
-				fuel=0.15957686;
-			};
-			id=2070;
-			type="RHS_AH1Z_wd";
-			atlOffset=9.0238085;
+			dataType="Marker";
+			position[]={6841.2402,0.36000001,10095};
+			name="I_SERVICE_M";
+			text="LHD - Service Pad";
+			type="b_service";
+			id=2072;
+			atlOffset=30.360001;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={6817.8398,0.021,10085.7};
+			name="I_CRATE_M";
+			text="LHD - Ammo Crate Dump";
+			type="b_support";
+			id=2074;
+			atlOffset=30.021;
 		};
 	};
 };
