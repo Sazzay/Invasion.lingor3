@@ -39,7 +39,7 @@ if (isNil "_isMHQ") then {
 	_isMHQ = false;
 };
 
-_vehicle = createVehicle [_type, [_pos select 0, _pos select 1], [], 0, "CAN_COLLIDE"];
+_vehicle = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
 _vehicle setPosATL _pos;
 _vehicle setDir _dir;
 
@@ -61,8 +61,12 @@ if !(_vehicle isEqualTo objNull) then {
 		[_vehicle, _type, _pos, _dir, _respawn,_isMHQ] spawn {
 			waitUntil {!(alive (_this select 0))};
 			
-			sleep 5; // add param delay
+			sleep 60;
+			
 			deleteVehicle (_this select 0);
+			
+			sleep 1;
+			
 			_call = [_this select 1, _this select 2, _this select 3, _this select 4, _this select 5] call I_fnc_createVehicle;
 		};
 	};
