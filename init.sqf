@@ -7,6 +7,7 @@ if !(isServer) exitWith {};
 [] execVM "definitions\objects.sqf";
 [] execVM "definitions\units.sqf";
 [] execVM "definitions\factions.sqf";
+[] execVM "definitions\magazines.sqf";
 
 // Runtime
 [] execVM "runtime\spawns\rt_vehicularSpawns.sqf";
@@ -17,7 +18,10 @@ if !(isServer) exitWith {};
 [] execVM "runtime\ads\rt_tickTaskDefense.sqf";
 [] execVM "runtime\ads\rt_tickTaskCount.sqf";
 [] execVM "runtime\support\rt_aiSupport.sqf";
-//[] execVM "runtime\maintenance\rt_deleteInactiveVehicles.sqf";
+[] execVM "runtime\maintenance\rt_deleteInactiveVehicles.sqf";
+[] execVM "runtime\logistics\rt_crateRespawner.sqf";
+
+//[[6665.361, 10033.129, 47]] call I_fnc_createAmmoCrate;
 
 // LHD respawn
 I_RESPAWN_LHD = [west, [6690.31,10032.1,16.6477], "USMC LHD"] call BIS_fnc_addRespawnPosition; // getPosASL player;

@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2062;
+		nextID=2070;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6689.9185,275.81732,10350.543};
-		dir[]={-0.76384854,-0.48927286,-0.42115524};
-		up[]={-0.42855003,0.87197459,-0.23628581};
-		aside[]={-0.48289371,3.3408869e-006,0.87584639};
+		pos[]={6803.0625,69.873009,10146.254};
+		dir[]={0.22105604,-0.55485135,-0.80218631};
+		up[]={0.14743121,0.83176458,-0.53500593};
+		aside[]={-0.96420616,3.8719154e-006,-0.26569188};
 	};
 };
 binarizationWanted=0;
@@ -1835,7 +1835,6 @@ class Mission
 											{
 												rank="SERGEANT";
 												description="Commander";
-												isPlayer=1;
 												isPlayable=1;
 											};
 											id=1403;
@@ -2775,18 +2774,20 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6678.8418,16.647728,10029.297};
+												position[]={6678.8418,16.647438,10029.297};
 												angles[]={0,5.8490348,0};
 											};
 											side="West";
-											flags=6;
+											flags=2;
 											class Attributes
 											{
 												rank="SERGEANT";
+												isPlayer=1;
 												isPlayable=1;
 											};
 											id=2037;
 											type="rhsusf_socom_marsoc_sniper_m107";
+											atlOffset=9.0230465;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2896,6 +2897,7 @@ class Mission
 									{
 									};
 									id=2034;
+									atlOffset=9.0230465;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2922,7 +2924,7 @@ class Mission
 								};
 							};
 							id=209;
-							atlOffset=7.3199987;
+							atlOffset=7.3198538;
 						};
 						class Item1
 						{
@@ -4351,11 +4353,11 @@ class Mission
 						};
 					};
 					id=725;
-					atlOffset=38.596397;
+					atlOffset=38.596329;
 				};
 			};
 			id=722;
-			atlOffset=38.596397;
+			atlOffset=38.596329;
 		};
 		class Item1
 		{
@@ -4391,7 +4393,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="TESTINGSTUFF";
+									value="#adminLogged";
 								};
 							};
 						};
