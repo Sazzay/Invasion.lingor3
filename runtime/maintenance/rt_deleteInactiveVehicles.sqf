@@ -35,5 +35,5 @@ while {true} do {
 		};
 	} forEach vehicles;
 	
-	sleep 10;
+	sleep 120;
 };

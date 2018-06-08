@@ -8,7 +8,7 @@
 while {true} do {
 	sleep 20;
 
-	[(missionNamespace getVariable "ADS_TASK_ALLOBJECTS"), 0, 0, 0] params ["_array", "_radar", "_reinforcement", "_support"];
+	[(GLOBAL getVariable "ADS_TASK_ALLOBJECTS"), 0, 0, 0] params [["_array", []], "_radar", "_reinforcement", "_support"];
 
 	{
 		if ((typeOf _x) in ["rhs_prv13", "rhs_p37", "RU_WarfareBArtilleryRadar", "RU_WarfareBAntiAirRadar"] and (alive _x)) then {

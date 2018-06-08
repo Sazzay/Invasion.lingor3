@@ -6,7 +6,9 @@
 	and then it removes the task from the map.
 */
 
-[[] call I_fnc_findTowns, (GLOBAL getVariable "ADS_TASK_OBJECTS")] params ["_towns", "_tasks"];
+waitUntil {!((GLOBAL getVariable "ADS_TASK_ALLOBJECTS") isEqualTo [])};
+
+[[] call I_fnc_findTowns, (GLOBAL getVariable "ADS_TASK_ALLOBJECTS")] params ["_towns", "_tasks"];
 
 {
 	["NIL", "attack", (nearestLocations [_x, ["NameCity", "NameCityCapital", "NameVillage"], 500, _x])] params ["_name", "_icon", "_locations"];
@@ -28,6 +30,8 @@
 	
 	[player, format ["OBJECTIVE_TASK_%1", _x], ["", format ["Destroy %1", (_array select _forEachIndex)], ""], _x, "CREATED", 1, false, ((_array select _forEachIndex) select [0, 1]), false] call BIS_fnc_taskCreate;
 } forEach _tasks;
+
+["Tasks have been added to your map."] call I_fnc_notification;
 
 while {true} do {
 	{

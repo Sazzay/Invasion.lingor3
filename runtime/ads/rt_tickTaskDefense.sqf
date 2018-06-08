@@ -9,8 +9,9 @@
 
 [([(call I_fnc_findTaskPos)] call I_fnc_populateTask)] params ["_array"];
 
-["ADS_TASK_ALLOBJECTS", _array] call I_fnc_setVariable;
-GLOBAL setVariable ["ADS_TASK_OBJECTS", _array, true];
+waitUntil {!(_array isEqualTo [])};
+
+GLOBAL setVariable ["ADS_TASK_ALLOBJECTS", _array, true];
 
 {
 	[format ["ADS_TASK_%1", (getPos _x)], [false, [], false]] call I_fnc_setVariable;

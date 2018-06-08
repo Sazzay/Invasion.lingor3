@@ -13,7 +13,7 @@
 	_call = [] call I_fnc_findTaskPos;
 */
 
-[[], ([] call I_fnc_findAirports), false] params ["_return", "_airports", "_fail"];
+[[], (call I_fnc_findAirports), false] params ["_return", "_airports", "_fail"];
 
 for "_i" from 50 to worldSize step 25 do {
 	for "_i2" from 50 to worldSize step 25 do {
