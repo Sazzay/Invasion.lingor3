@@ -8,18 +8,18 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2070;
+		nextID=2072;
 	};
 	class LayerIndexProvider
 	{
-		nextID=319;
+		nextID=329;
 	};
 	class Camera
 	{
-		pos[]={6803.0625,69.873009,10146.254};
-		dir[]={0.22105604,-0.55485135,-0.80218631};
-		up[]={0.14743121,0.83176458,-0.53500593};
-		aside[]={-0.96420616,3.8719154e-006,-0.26569188};
+		pos[]={6657.4775,61.823051,10103.744};
+		dir[]={0.099150956,-0.51291591,-0.85283613};
+		up[]={0.059250459,0.85821915,-0.5096035};
+		aside[]={-0.99347025,-6.723858e-007,-0.11549748};
 	};
 };
 binarizationWanted=0;
@@ -32,13 +32,14 @@ addons[]=
 	"CUP_WaterVehicles_LHD",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Characters_F_Common",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"RHS_US_A2_AirImport"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			className="rhsusf_c_troops";
@@ -82,6 +83,13 @@ class AddonsMetaData
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="RHS_US_A2_AirImport";
+			name="RHSUSF A2 Air Ports";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -178,7 +186,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			dataType="Layer";
@@ -197,6 +205,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Playable Units";
+							state=1;
 							class Entities
 							{
 								items=11;
@@ -660,7 +669,7 @@ class Mission
 									{
 									};
 									id=862;
-									atlOffset=0.042648315;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1271,7 +1280,7 @@ class Mission
 									{
 									};
 									id=889;
-									atlOffset=0.042709351;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1431,6 +1440,7 @@ class Mission
 									{
 									};
 									id=902;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1591,7 +1601,7 @@ class Mission
 									{
 									};
 									id=905;
-									atlOffset=46.646;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1628,11 +1638,11 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6672.9868,16.647438,10022.586};
+												position[]={6667.7773,16.647728,10021.912};
 												angles[]={0,5.8685822,0};
 											};
 											side="West";
-											flags=3;
+											flags=7;
 											class Attributes
 											{
 												rank="CAPTAIN";
@@ -1641,7 +1651,6 @@ class Mission
 											};
 											id=909;
 											type="rhsusf_airforce_jetpilot";
-											atlOffset=9.0230446;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1690,7 +1699,7 @@ class Mission
 									{
 									};
 									id=908;
-									atlOffset=9.0230446;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1727,11 +1736,11 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6659.8862,16.647438,10016.254};
+												position[]={6659.4614,16.647728,10018.354};
 												angles[]={0,5.8685822,0};
 											};
 											side="West";
-											flags=3;
+											flags=7;
 											class Attributes
 											{
 												rank="CAPTAIN";
@@ -1740,7 +1749,6 @@ class Mission
 											};
 											id=911;
 											type="rhsusf_airforce_jetpilot";
-											atlOffset=9.0230446;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1789,7 +1797,7 @@ class Mission
 									{
 									};
 									id=910;
-									atlOffset=9.0230446;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2012,7 +2020,7 @@ class Mission
 									{
 									};
 									id=1402;
-									atlOffset=6.8187714e-005;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2235,7 +2243,7 @@ class Mission
 									{
 									};
 									id=1406;
-									atlOffset=6.8187714e-005;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2457,6 +2465,7 @@ class Mission
 									{
 									};
 									id=1494;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2501,6 +2510,7 @@ class Mission
 											class Attributes
 											{
 												rank="SERGEANT";
+												isPlayer=1;
 												isPlayable=1;
 											};
 											id=2049;
@@ -2737,7 +2747,7 @@ class Mission
 									{
 									};
 									id=2048;
-									atlOffset=9.0230417;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2782,7 +2792,6 @@ class Mission
 											class Attributes
 											{
 												rank="SERGEANT";
-												isPlayer=1;
 												isPlayable=1;
 											};
 											id=2037;
@@ -2897,7 +2906,7 @@ class Mission
 									{
 									};
 									id=2034;
-									atlOffset=9.0230465;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2924,7 +2933,7 @@ class Mission
 								};
 							};
 							id=209;
-							atlOffset=7.3198538;
+							atlOffset=17.27;
 						};
 						class Item1
 						{
@@ -4353,11 +4362,11 @@ class Mission
 						};
 					};
 					id=725;
-					atlOffset=38.596329;
+					atlOffset=-11.651658;
 				};
 			};
 			id=722;
-			atlOffset=38.596329;
+			atlOffset=-11.651658;
 		};
 		class Item1
 		{
@@ -4574,6 +4583,24 @@ class Mission
 			id=1987;
 			type="Logic";
 			atlOffset=29.916;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6677.938,18.594891,10044.17};
+			};
+			side="Empty";
+			class Attributes
+			{
+				health=0.54220128;
+				ammo=0.16239019;
+				fuel=0.15957686;
+			};
+			id=2070;
+			type="RHS_AH1Z_wd";
+			atlOffset=9.0238085;
 		};
 	};
 };

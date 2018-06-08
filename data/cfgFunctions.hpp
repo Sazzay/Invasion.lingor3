@@ -67,6 +67,7 @@ class I
 		class addMobileRespawn;
 		class addRepairStation;
 		class createAmmoCrate;
+		class serviceVehicle;
 	};
 	class support
 	{

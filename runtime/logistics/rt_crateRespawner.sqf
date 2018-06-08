@@ -10,8 +10,6 @@
 while {true} do {
 	{
 		[((_objects select _forEachIndex) getVariable "I_BOX_RESPAWN_COUNT")] params [["_var", 0]];
-		
-		hint str _var;
 	
 		if ((_objects select _forEachIndex) isEqualTo objNull) then {
 			_objects set [_forEachIndex, ([_x] call I_fnc_createAmmoCrate)];
@@ -20,7 +18,7 @@ while {true} do {
 				_objects set [_forEachIndex, objNull];
 			};
 			
-			if (((getPos (_objects select _forEachIndex)) distance _x) > 60) then {
+			if (((getPos (_objects select _forEachIndex)) distance _x) > 200) then {
 				(_objects select _forEachIndex) setVariable ["I_BOX_RESPAWN_COUNT", _var + 1];
 			} else {
 				if (_var > 0) then {

@@ -20,6 +20,7 @@ if !(isServer) exitWith {};
 [] execVM "runtime\support\rt_aiSupport.sqf";
 [] execVM "runtime\maintenance\rt_deleteInactiveVehicles.sqf";
 [] execVM "runtime\logistics\rt_crateRespawner.sqf";
+[] execVM "runtime\logistics\rt_serviceArea.sqf";
 
 //[[6665.361, 10033.129, 47]] call I_fnc_createAmmoCrate;
 
