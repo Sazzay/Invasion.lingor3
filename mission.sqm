@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=334;
+		nextID=339;
 	};
 	class Camera
 	{
-		pos[]={6699.1523,39.321648,10096.776};
-		dir[]={-0.4725965,-0.40440482,-0.78316569};
-		up[]={-0.20902729,0.91432548,-0.34639665};
-		aside[]={-0.85632807,-2.8433278e-006,0.5167402};
+		pos[]={6738.3706,175.04227,10315.479};
+		dir[]={-0.4835141,-0.38974541,-0.78392124};
+		up[]={-0.20469528,0.92065376,-0.33187705};
+		aside[]={-0.85126042,-2.8772047e-006,0.525042};
 	};
 };
 binarizationWanted=0;
@@ -101,14 +101,15 @@ randomSeed=5274257;
 class ScenarioData
 {
 	author="ocd";
+	saving=0;
 	disabledAI=1;
 	respawn=3;
 	respawnDelay=10.510403;
 	class Header
 	{
 		gameType="Coop";
-		minPlayers=5;
-		maxPlayers=40;
+		minPlayers=45;
+		maxPlayers=45;
 	};
 };
 class CustomAttributes
@@ -168,11 +169,36 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
 	class Intel
 	{
+		briefingName="Invasion";
 		timeOfChanges=1800.0002;
 		startWeather=0.34999999;
 		startWind=0.1;
@@ -209,6 +235,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Playable Units";
+							state=1;
 							class Entities
 							{
 								items=11;
@@ -714,7 +741,7 @@ class Mission
 									{
 									};
 									id=862;
-									atlOffset=0.042648315;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1325,7 +1352,7 @@ class Mission
 									{
 									};
 									id=889;
-									atlOffset=0.042709351;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1486,7 +1513,7 @@ class Mission
 									{
 									};
 									id=902;
-									atlOffset=18.377436;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1647,7 +1674,7 @@ class Mission
 									{
 									};
 									id=905;
-									atlOffset=46.646;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1745,6 +1772,7 @@ class Mission
 									{
 									};
 									id=908;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1842,6 +1870,7 @@ class Mission
 									{
 									};
 									id=910;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2064,7 +2093,7 @@ class Mission
 									{
 									};
 									id=1402;
-									atlOffset=6.8187714e-005;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2287,7 +2316,7 @@ class Mission
 									{
 									};
 									id=1406;
-									atlOffset=6.8187714e-005;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2509,6 +2538,7 @@ class Mission
 									{
 									};
 									id=1494;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2785,6 +2815,7 @@ class Mission
 									{
 									};
 									id=2048;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2943,7 +2974,7 @@ class Mission
 									{
 									};
 									id=2034;
-									atlOffset=9.0230465;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2970,7 +3001,7 @@ class Mission
 								};
 							};
 							id=209;
-							atlOffset=7.3191767;
+							atlOffset=17.27;
 						};
 						class Item1
 						{
@@ -4399,11 +4430,11 @@ class Mission
 						};
 					};
 					id=725;
-					atlOffset=38.596359;
+					atlOffset=-11.651658;
 				};
 			};
 			id=722;
-			atlOffset=38.596359;
+			atlOffset=-11.651658;
 		};
 		class Item1
 		{

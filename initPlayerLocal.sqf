@@ -7,4 +7,5 @@ player addEventHandler ["GetInMan", {
 // Client runtime
 [] execVM "runtime\visual\rt_clientTownHUD.sqf";
 [] execVM "runtime\visual\rt_clientTaskHandler.sqf";
+[] execVM "runtime\visual\rt_clientCreateDiary.sqf";
 [] execVM "runtime\logistics\rt_clientLoadoutSpawn.sqf";

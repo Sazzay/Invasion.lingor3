@@ -1,11 +1,11 @@
 author			   = "Markus 'Sazzay' Larsson";
 briefingName 	   = "Lingor Invasion";
 OnLoadName 	       = "Lingor Invasion";
-OnLoadMission 	   = "Change this kickapoo.";
+OnLoadMission 	   = "Invade and capture the lush island of Lingor.";
 loadScreen		   = "textures\loading_logo.paa";
 overviewPicture	   = "";
-overviewText	   = "Change this kickapoo.";
-overviewTextLocked = "Change this kickapoo.";
+overviewText	   = "Invade and capture the lush island of Lingor.";
+overviewTextLocked = "";
 
 #include "data\defines.hpp"
 #include "data\hud.hpp"
