@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2077;
+		nextID=2089;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6762.2681,43.126312,10155.057};
-		dir[]={0.60715318,-0.46136346,-0.64711058};
-		up[]={0.31578708,0.88698441,-0.33656278};
-		aside[]={-0.7293911,1.2249802e-007,-0.68434757};
+		pos[]={6699.1523,39.321648,10096.776};
+		dir[]={-0.4725965,-0.40440482,-0.78316569};
+		up[]={-0.20902729,0.91432548,-0.34639665};
+		aside[]={-0.85632807,-2.8433278e-006,0.5167402};
 	};
 };
 binarizationWanted=0;
@@ -1362,19 +1362,81 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
+												position[]={6627.48,16.647438,10001.289};
+												angles[]={0,2.6937237,0};
+											};
+											side="West";
+											flags=2;
+											class Attributes
+											{
+												rank="CAPTAIN";
+												description="Pilot";
+												isPlayer=1;
+												isPlayable=1;
+											};
+											id=2078;
+											type="rhsusf_usmc_marpat_wd_helipilot";
+											atlOffset=18.377436;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="speaker";
+													expression="_this setspeaker _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Male09ENG";
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="pitch";
+													expression="_this setpitch _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"SCALAR"
+																};
+															};
+															value=1.03;
+														};
+													};
+												};
+												nAttributes=2;
+											};
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
 												position[]={6628.5659,16.647438,10001.893};
 												angles[]={0,2.7283685,0};
 											};
 											side="West";
-											flags=1;
 											class Attributes
 											{
 												rank="LIEUTENANT";
 												description="Co-Pilot";
 												isPlayable=1;
 											};
-											id=903;
-											type="rhsusf_airforce_pilot";
+											id=2077;
+											type="rhsusf_usmc_marpat_wd_helipilot";
 											atlOffset=18.377436;
 											class CustomAttributes
 											{
@@ -1419,72 +1481,12 @@ class Mission
 												nAttributes=2;
 											};
 										};
-										class Item1
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={6627.4805,16.6476,10001.289};
-												angles[]={0,2.6937156,0};
-											};
-											side="West";
-											flags=7;
-											class Attributes
-											{
-												rank="CAPTAIN";
-												description="Pilot";
-												isPlayable=1;
-											};
-											id=904;
-											type="rhsusf_airforce_pilot";
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male09ENG";
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=1.03;
-														};
-													};
-												};
-												nAttributes=2;
-											};
-										};
 									};
 									class Attributes
 									{
 									};
 									id=902;
+									atlOffset=18.377436;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1521,81 +1523,19 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6793.6362,16.648102,10097.392};
-												angles[]={0,2.5834434,0};
-											};
-											side="West";
-											flags=5;
-											class Attributes
-											{
-												rank="LIEUTENANT";
-												description="Co-Pilot";
-												isPlayable=1;
-											};
-											id=906;
-											type="rhsusf_airforce_pilot";
-											atlOffset=0.0005531311;
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male03ENG";
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=0.99000001;
-														};
-													};
-												};
-												nAttributes=2;
-											};
-										};
-										class Item1
-										{
-											dataType="Object";
-											class PositionInfo
-											{
 												position[]={6792.542,16.647438,10096.852};
 												angles[]={0,2.4794846,0};
 											};
 											side="West";
-											flags=3;
+											flags=2;
 											class Attributes
 											{
 												rank="CAPTAIN";
 												description="Pilot";
 												isPlayable=1;
 											};
-											id=907;
-											type="rhsusf_airforce_pilot";
+											id=2080;
+											type="rhsusf_usmc_marpat_wd_helipilot";
 											atlOffset=46.646;
 											class CustomAttributes
 											{
@@ -1634,6 +1574,68 @@ class Mission
 																};
 															};
 															value=1.03;
+														};
+													};
+												};
+												nAttributes=2;
+											};
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={6793.6362,16.648438,10097.392};
+												angles[]={0,2.5834365,0};
+											};
+											side="West";
+											flags=4;
+											class Attributes
+											{
+												rank="LIEUTENANT";
+												description="Co-Pilot";
+												isPlayable=1;
+											};
+											id=2079;
+											type="rhsusf_usmc_marpat_wd_helipilot";
+											atlOffset=0.00088882446;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="speaker";
+													expression="_this setspeaker _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Male03ENG";
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="pitch";
+													expression="_this setpitch _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"SCALAR"
+																};
+															};
+															value=0.99000001;
 														};
 													};
 												};
@@ -2543,20 +2545,18 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6676.8311,16.647438,10019.334};
+												position[]={6703.9883,16.647692,10051.059};
 												angles[]={0,5.8267288,0};
 											};
 											side="West";
-											flags=3;
+											flags=7;
 											class Attributes
 											{
 												rank="SERGEANT";
-												isPlayer=1;
 												isPlayable=1;
 											};
 											id=2049;
 											type="rhsusf_usmc_marpat_wd_teamleader";
-											atlOffset=9.0230417;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2605,11 +2605,11 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6674.5469,16.647438,10012.642};
+												position[]={6701.7041,16.647692,10044.366};
 												angles[]={0,5.8267288,0};
 											};
 											side="West";
-											flags=1;
+											flags=5;
 											class Attributes
 											{
 												skill=0.40000001;
@@ -2617,7 +2617,6 @@ class Mission
 											};
 											id=2050;
 											type="rhsusf_usmc_marpat_wd_autorifleman";
-											atlOffset=9.0230389;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2666,11 +2665,11 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6681.728,16.647438,10016.168};
+												position[]={6708.8853,16.647692,10047.893};
 												angles[]={0,5.8267288,0};
 											};
 											side="West";
-											flags=1;
+											flags=5;
 											class Attributes
 											{
 												skill=0.40000001;
@@ -2678,7 +2677,6 @@ class Mission
 											};
 											id=2051;
 											type="rhsusf_usmc_marpat_wd_rifleman_m4";
-											atlOffset=9.0230389;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2727,11 +2725,11 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6683.5229,16.647438,10017.05};
+												position[]={6710.6802,16.647692,10048.774};
 												angles[]={0,5.8267288,0};
 											};
 											side="West";
-											flags=1;
+											flags=5;
 											class Attributes
 											{
 												skill=0.40000001;
@@ -2739,7 +2737,6 @@ class Mission
 											};
 											id=2052;
 											type="rhsusf_usmc_marpat_wd_javelin";
-											atlOffset=9.0230389;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2788,7 +2785,6 @@ class Mission
 									{
 									};
 									id=2048;
-									atlOffset=9.0230417;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2974,7 +2970,7 @@ class Mission
 								};
 							};
 							id=209;
-							atlOffset=7.3198595;
+							atlOffset=7.3191767;
 						};
 						class Item1
 						{
@@ -4403,11 +4399,11 @@ class Mission
 						};
 					};
 					id=725;
-					atlOffset=38.596329;
+					atlOffset=38.596359;
 				};
 			};
 			id=722;
-			atlOffset=38.596329;
+			atlOffset=38.596359;
 		};
 		class Item1
 		{

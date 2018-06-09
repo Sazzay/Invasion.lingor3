@@ -13,33 +13,21 @@
 	_call = [player] call I_fnc_vehicularEligibility;
 */
 
-[objNull, false, false] params ["_object", "_fail", "_exit"];
+[_this select 0, false, false] params ["_object", "_fail", "_exit"];
 
-if ((_this select 0) != objNull) then {
-	_object = _this select 0;
-} else {
-	diag_log format ["vehicularEligibility error, object: ", _object];
+if (isNil "_object") exitWith {
+	diag_log "I_fnc_vehicularEligibility: no object provided.";
 };
 
 if ((_this select 1) isEqualTo "cargo") exitWith {};
 
-if ((vehicle _object) isKindOf "Plane")  then {
-	if ((typeOf _object) != "rhsusf_airforce_jetpilot") then {
-		_fail = true;
+{
+	if (((vehicle _object) isKindOf (_x select 0)) and !((typeOf (vehicle _object)) isEqualTo "Steerable_Parachute_F")) then {
+		if ((typeOf _object) != (_x select 1)) then {
+			_fail = true;
+		};
 	};
-};
-
-if ((vehicle _object) isKindOf "Tank") then {
-	if ((typeOf _object) != "rhsusf_army_ocp_crewman") then {
-		_fail = true;
-	};	
-};
-
-if (((vehicle _object) isKindOf "Helicopter") and !((typeOf (vehicle _object)) isEqualTo "Steerable_Parachute_F")) then {
-	if ((typeOf _object) != "rhsusf_airforce_pilot") then {
-		_fail = true;
-	};
-};
+} forEach [["Plane", "rhsusf_airforce_jetpilot"], ["Wheeled_APC_F", "rhsusf_usmc_marpat_wd_combatcrewman"], ["Helicopter", "rhsusf_usmc_marpat_wd_helipilot"]];
 
 if ((_fail) isEqualTo true) then {
 	moveOut _object;

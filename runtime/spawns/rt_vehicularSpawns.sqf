@@ -1,5 +1,5 @@
-["RHS_UH1Y", [6637.176,10023.523,46.646], 153.694, true,false] call I_fnc_createVehicle;
-["RHS_UH1Y", [6622.403,10016.349,46.646], 153.694, true,false] call I_fnc_createVehicle;
+["RHS_UH1Y_FFAR", [6637.176,10023.523,46.646], 153.694, true,false] call I_fnc_createVehicle;
+["RHS_UH1Y_FFAR", [6622.403,10016.349,46.646], 153.694, true,false] call I_fnc_createVehicle;
 ["RHS_AH1Z_wd", [6794.132,10075.462,46.646], 333.838, true,false] call I_fnc_createVehicle;
 ["RHS_AH1Z_wd", [6780.599,10069.069,46.646], 333.838, true,false] call I_fnc_createVehicle;
 ["rhsusf_CH53E_USMC", [6635.461,9998.054,47], 244.993, true,false] call I_fnc_createVehicle;
@@ -12,6 +12,7 @@
 ["rhsusf_rg33_m2_usmc_wd", [6672.94, 10021.218, 37.623], 292.065, true,false] call I_fnc_createVehicle;
 ["rhsusf_rg33_m2_usmc_wd", [6667.367, 10018.534, 37.623], 292.065, true,false] call I_fnc_createVehicle;
 ["rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy", [6672.881, 10041.740, 37.623], 245.676, true, true] call I_fnc_createVehicle;
+["rhsusf_m113_usarmy_supply", [6658.85,10034.9,37.6229], 245.676, true, false] call I_fnc_createVehicle;
 ["CUP_B_LAV25M240_USMC", [6697.741, 10052.556, 39.783], 192.492, true,false] call I_fnc_createVehicle;
 ["CUP_B_LAV25M240_USMC", [6702.353, 10054.708, 39.784], 192.492, true,false] call I_fnc_createVehicle;
 ["CUP_B_M1128_MGS_Woodland", [6733.021, 10069.643, 39.781], 243.695, true,false] call I_fnc_createVehicle;
