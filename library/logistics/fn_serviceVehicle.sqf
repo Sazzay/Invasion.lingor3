@@ -43,4 +43,8 @@ if (_object isEqualTo objNull) exitWith {
 			(_this select 0) setVehicleAmmo 1;
 		};
 	} forEach (allTurrets (_this select 0));
+	
+	if ((_this select 0) isKindOf "Plane") then {
+		(_this select 0) setVehicleAmmo 1;
+	};
 };

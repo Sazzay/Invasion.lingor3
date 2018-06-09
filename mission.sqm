@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2075;
+		nextID=2077;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=329;
+		nextID=334;
 	};
 	class Camera
 	{
-		pos[]={6614.3618,61.507439,10141.076};
-		dir[]={0.92667943,-0.32431489,-0.19057439};
-		up[]={0.31786209,0.94574773,-0.06536454};
-		aside[]={-0.20147446,-7.757917e-007,-0.97966361};
+		pos[]={6762.2681,43.126312,10155.057};
+		dir[]={0.60715318,-0.46136346,-0.64711058};
+		up[]={0.31578708,0.88698441,-0.33656278};
+		aside[]={-0.7293911,1.2249802e-007,-0.68434757};
 	};
 };
 binarizationWanted=0;
@@ -209,7 +209,6 @@ class Mission
 						{
 							dataType="Layer";
 							name="Playable Units";
-							state=1;
 							class Entities
 							{
 								items=11;
@@ -467,26 +466,6 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6690.5601,16.690376,10019.328};
-												angles[]={0,5.8212342,0};
-											};
-											side="West";
-											flags=5;
-											class Attributes
-											{
-												skill=0.44999999;
-												rank="CORPORAL";
-												isPlayable=1;
-											};
-											id=873;
-											type="rhsusf_socom_marsoc_cso_mechanic";
-											atlOffset=0.042648315;
-										};
-										class Item9
-										{
-											dataType="Object";
-											class PositionInfo
-											{
 												position[]={6691.7773,16.690376,10019.764};
 												angles[]={0,5.6462278,0};
 											};
@@ -544,7 +523,7 @@ class Mission
 												nAttributes=2;
 											};
 										};
-										class Item10
+										class Item9
 										{
 											dataType="Object";
 											class PositionInfo
@@ -606,7 +585,7 @@ class Mission
 												nAttributes=2;
 											};
 										};
-										class Item11
+										class Item10
 										{
 											dataType="Object";
 											class PositionInfo
@@ -668,12 +647,74 @@ class Mission
 												nAttributes=2;
 											};
 										};
+										class Item11
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={6690.5601,16.690437,10019.328};
+												angles[]={0,5.8212318,0};
+											};
+											side="West";
+											flags=4;
+											class Attributes
+											{
+												skill=0.44999999;
+												rank="CORPORAL";
+												isPlayable=1;
+											};
+											id=2076;
+											type="rhsusf_socom_marsoc_cso_eod";
+											atlOffset=0.042709351;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="speaker";
+													expression="_this setspeaker _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Male11ENG";
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="pitch";
+													expression="_this setpitch _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"SCALAR"
+																};
+															};
+															value=1;
+														};
+													};
+												};
+												nAttributes=2;
+											};
+										};
 									};
 									class Attributes
 									{
 									};
 									id=862;
-									atlOffset=17.27;
+									atlOffset=0.042648315;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1233,8 +1274,8 @@ class Mission
 												rank="CORPORAL";
 												isPlayable=1;
 											};
-											id=2038;
-											type="rhsusf_usmc_recon_marpat_wd_rifleman_at";
+											id=2075;
+											type="rhsusf_socom_marsoc_cso_eod";
 											atlOffset=0.042709351;
 											class CustomAttributes
 											{
@@ -1284,7 +1325,7 @@ class Mission
 									{
 									};
 									id=889;
-									atlOffset=17.27;
+									atlOffset=0.042709351;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1444,7 +1485,6 @@ class Mission
 									{
 									};
 									id=902;
-									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1605,7 +1645,7 @@ class Mission
 									{
 									};
 									id=905;
-									atlOffset=17.27;
+									atlOffset=46.646;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1703,7 +1743,6 @@ class Mission
 									{
 									};
 									id=908;
-									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1801,7 +1840,6 @@ class Mission
 									{
 									};
 									id=910;
-									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2024,7 +2062,7 @@ class Mission
 									{
 									};
 									id=1402;
-									atlOffset=17.27;
+									atlOffset=6.8187714e-005;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2247,7 +2285,7 @@ class Mission
 									{
 									};
 									id=1406;
-									atlOffset=17.27;
+									atlOffset=6.8187714e-005;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2469,7 +2507,6 @@ class Mission
 									{
 									};
 									id=1494;
-									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2751,7 +2788,7 @@ class Mission
 									{
 									};
 									id=2048;
-									atlOffset=17.27;
+									atlOffset=9.0230417;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2910,7 +2947,7 @@ class Mission
 									{
 									};
 									id=2034;
-									atlOffset=17.27;
+									atlOffset=9.0230465;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2937,7 +2974,7 @@ class Mission
 								};
 							};
 							id=209;
-							atlOffset=17.27;
+							atlOffset=7.3198595;
 						};
 						class Item1
 						{
@@ -4366,11 +4403,11 @@ class Mission
 						};
 					};
 					id=725;
-					atlOffset=-11.651658;
+					atlOffset=38.596329;
 				};
 			};
 			id=722;
-			atlOffset=-11.651658;
+			atlOffset=38.596329;
 		};
 		class Item1
 		{

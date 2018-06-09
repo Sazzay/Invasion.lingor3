@@ -33,7 +33,7 @@ I_DEF_TASK_OBJECTS = [
 "RU_WarfareBArtilleryRadar",
 "RU_WarfareBAntiAirRadar",
 "RU_WarfareBBarracks",
-"Land_fort_artillery_nest",
+"RU_WarfareBLightFactory",
 "RU_WarfareBUAVterminal",
 "RU_WarfareBHeavyFactory"
 ];

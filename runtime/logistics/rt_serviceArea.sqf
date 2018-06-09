@@ -26,7 +26,7 @@ while {true} do {
 							["Vehicle is being serviced."] remoteExec ["I_fnc_notification", _x, false];
 						} forEach (crew (_this select 0));
 						
-						for "_i" from 0 to (((fuel (_this select 0)) * 100) + (100 - ((damage (_this select 0)) * 100))) do {
+						for "_i" from 0 to ((100 - ((fuel (_this select 0)) * 100)) + ((damage (_this select 0)) * 100)) do {
 							(_this select 0) engineOn false;
 							sleep 0.2;
 						};
