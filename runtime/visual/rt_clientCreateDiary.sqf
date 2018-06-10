@@ -4,7 +4,7 @@
 
 player createDiaryRecord ["Diary", ["Information", 
 "Report bugs and leave feedback to discord tag ocd#0644 or Panda#8990.<br/><br/>
-Admins have access to debug console and Zeus, if needed they can assist if something breaks.<br/><br/>
+Admins have access to debug console and Zeus, if needed they can assist if something breaks or a bug is found.<br/><br/>
 All air vehicles are located on deck, all land vehicles are located middle deck and there are also patrol boats at the 
 bottom of the boat. The mission relies heavily on pilots so make sure you have some, otherwise dealing with armor
 will be very difficult.<br/><br/>

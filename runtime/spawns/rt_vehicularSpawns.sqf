@@ -1,8 +1,8 @@
-["RHS_UH1Y_FFAR", [6637.176,10023.523,46.646], 153.694, true,false] call I_fnc_createVehicle;
-["RHS_UH1Y_FFAR", [6622.403,10016.349,46.646], 153.694, true,false] call I_fnc_createVehicle;
-["RHS_AH1Z_wd", [6794.132,10075.462,46.646], 333.838, true,false] call I_fnc_createVehicle;
-["RHS_AH1Z_wd", [6780.599,10069.069,46.646], 333.838, true,false] call I_fnc_createVehicle;
-["rhsusf_CH53E_USMC", [6635.461,9998.054,47], 244.993, true,false] call I_fnc_createVehicle;
+["RHS_UH1Y_FFAR", [6637.176,10023.523,48], 153.694, true,false] call I_fnc_createVehicle;
+["RHS_UH1Y_FFAR", [6622.403,10016.349,48], 153.694, true,false] call I_fnc_createVehicle;
+["RHS_AH1Z_wd", [6794.132,10075.462,48], 333.838, true,false] call I_fnc_createVehicle;
+["RHS_AH1Z_wd", [6780.599,10069.069,48], 333.838, true,false] call I_fnc_createVehicle;
+["rhsusf_CH53E_USMC", [6635.461,9998.054,48], 244.993, true,false] call I_fnc_createVehicle;
 ["CUP_B_AV8B_DYN_USMC", [6675.756, 10019.562, 46.646], 5.366, true,false] call I_fnc_createVehicle;
 ["CUP_B_AV8B_DYN_USMC", [6662.738, 10013.249, 46.647], 5.366, true,false] call I_fnc_createVehicle;
 ["rhsusf_mkvsoc", [6664.707, 10018.322, 28.817], 245.249, true,false] call I_fnc_createVehicle;
