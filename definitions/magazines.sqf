@@ -10,6 +10,9 @@ I_USMC_MAGAZINES = [
 ["rhs_mag_m67", 20],
 ["rhs_mag_mk84", 20],
 ["rhs_mag_mk3a2", 20],
+["rhs_mag_M433_HEDP", 30],
+["rhs_mag_M441_HE", 30],
+["rhs_mag_M585_white", 30],
 ["Chemlight_red", 50],
 ["Chemlight_green", 50]
 ];

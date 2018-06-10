@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=349;
+		nextID=359;
 	};
 	class Camera
 	{
-		pos[]={6695.061,38.398895,10072.207};
-		dir[]={0.15696479,-0.79981077,-0.57955867};
-		up[]={0.209075,0.60000032,-0.77196229};
-		aside[]={-0.96538877,-5.6251884e-006,-0.26146546};
+		pos[]={6650.6167,112.78352,10180.452};
+		dir[]={0.57030255,-0.40090743,-0.71711475};
+		up[]={0.24965453,0.91584229,-0.31392178};
+		aside[]={-0.7828002,-2.8972281e-006,-0.62254888};
 	};
 };
 binarizationWanted=0;
@@ -257,7 +257,7 @@ class Mission
 												angles[]={0,2.6381161,0};
 											};
 											side="West";
-											flags=7;
+											flags=3;
 											class Attributes
 											{
 												skill=0.60000002;
@@ -266,7 +266,7 @@ class Mission
 											};
 											id=863;
 											type="rhsusf_socom_marsoc_teamleader";
-											atlOffset=0.042648315;
+											atlOffset=8.9044266;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -319,7 +319,7 @@ class Mission
 												angles[]={0,2.6573529,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.55000001;
@@ -328,7 +328,7 @@ class Mission
 											};
 											id=864;
 											type="rhsusf_socom_marsoc_teamchief";
-											atlOffset=0.042648315;
+											atlOffset=8.9044266;
 										};
 										class Item2
 										{
@@ -339,7 +339,7 @@ class Mission
 												angles[]={0,2.7662072,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												rank="SERGEANT";
@@ -347,7 +347,7 @@ class Mission
 											};
 											id=865;
 											type="rhsusf_socom_marsoc_elementleader";
-											atlOffset=0.042201996;
+											atlOffset=8.9032125;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -400,7 +400,7 @@ class Mission
 												angles[]={0,5.9044471,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -409,7 +409,7 @@ class Mission
 											};
 											id=866;
 											type="rhsusf_socom_marsoc_cso";
-											atlOffset=0.042648315;
+											atlOffset=8.903657;
 										};
 										class Item4
 										{
@@ -420,7 +420,7 @@ class Mission
 												angles[]={0,5.9044471,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -429,7 +429,7 @@ class Mission
 											};
 											id=868;
 											type="rhsusf_socom_marsoc_cso_mechanic";
-											atlOffset=0.042648315;
+											atlOffset=8.903656;
 										};
 										class Item5
 										{
@@ -440,7 +440,7 @@ class Mission
 												angles[]={0,5.7212329,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -449,7 +449,7 @@ class Mission
 											};
 											id=869;
 											type="rhsusf_socom_marsoc_sarc";
-											atlOffset=0.042648315;
+											atlOffset=8.903656;
 										};
 										class Item6
 										{
@@ -460,7 +460,7 @@ class Mission
 												angles[]={0,2.7062516,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												rank="SERGEANT";
@@ -468,7 +468,7 @@ class Mission
 											};
 											id=870;
 											type="rhsusf_socom_marsoc_elementleader";
-											atlOffset=0.042648315;
+											atlOffset=8.9044266;
 										};
 										class Item7
 										{
@@ -479,7 +479,7 @@ class Mission
 												angles[]={0,5.888392,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -488,7 +488,7 @@ class Mission
 											};
 											id=871;
 											type="rhsusf_socom_marsoc_cso";
-											atlOffset=0.042648315;
+											atlOffset=8.9044266;
 										};
 										class Item8
 										{
@@ -499,7 +499,7 @@ class Mission
 												angles[]={0,5.6462278,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -508,7 +508,7 @@ class Mission
 											};
 											id=874;
 											type="rhsusf_socom_marsoc_sarc";
-											atlOffset=0.042648315;
+											atlOffset=8.9044266;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -561,7 +561,6 @@ class Mission
 												angles[]={0,5.9044485,0};
 											};
 											side="West";
-											flags=4;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -570,7 +569,7 @@ class Mission
 											};
 											id=2012;
 											type="rhsusf_socom_marsoc_cso_grenadier";
-											atlOffset=0.042709351;
+											atlOffset=8.903718;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -623,7 +622,6 @@ class Mission
 												angles[]={0,5.691833,0};
 											};
 											side="West";
-											flags=4;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -632,7 +630,7 @@ class Mission
 											};
 											id=2013;
 											type="rhsusf_socom_marsoc_sniper";
-											atlOffset=0.042709351;
+											atlOffset=8.9044876;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -685,7 +683,6 @@ class Mission
 												angles[]={0,5.8212318,0};
 											};
 											side="West";
-											flags=4;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -694,7 +691,7 @@ class Mission
 											};
 											id=2076;
 											type="rhsusf_socom_marsoc_cso_eod";
-											atlOffset=0.042709351;
+											atlOffset=8.9044876;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -784,7 +781,7 @@ class Mission
 												angles[]={0,2.6304727,0};
 											};
 											side="West";
-											flags=7;
+											flags=3;
 											class Attributes
 											{
 												skill=0.60000002;
@@ -793,7 +790,7 @@ class Mission
 											};
 											id=890;
 											type="rhsusf_socom_marsoc_teamleader";
-											atlOffset=0.042709351;
+											atlOffset=8.9044876;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -846,7 +843,7 @@ class Mission
 												angles[]={0,2.6843846,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.55000001;
@@ -855,7 +852,7 @@ class Mission
 											};
 											id=891;
 											type="rhsusf_socom_marsoc_teamchief";
-											atlOffset=0.042648315;
+											atlOffset=8.9044266;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -908,7 +905,7 @@ class Mission
 												angles[]={0,2.7662075,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												rank="SERGEANT";
@@ -916,7 +913,7 @@ class Mission
 											};
 											id=892;
 											type="rhsusf_socom_marsoc_elementleader";
-											atlOffset=0.056308746;
+											atlOffset=8.9173241;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -969,7 +966,7 @@ class Mission
 												angles[]={0,5.888392,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -978,7 +975,7 @@ class Mission
 											};
 											id=893;
 											type="rhsusf_socom_marsoc_cso";
-											atlOffset=0.042648315;
+											atlOffset=8.9036617;
 										};
 										class Item4
 										{
@@ -989,7 +986,7 @@ class Mission
 												angles[]={0,5.888392,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -998,7 +995,7 @@ class Mission
 											};
 											id=895;
 											type="rhsusf_socom_marsoc_cso_mechanic";
-											atlOffset=0.056310654;
+											atlOffset=8.9173241;
 										};
 										class Item5
 										{
@@ -1009,7 +1006,7 @@ class Mission
 												angles[]={0,5.7051778,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -1018,7 +1015,7 @@ class Mission
 											};
 											id=896;
 											type="rhsusf_socom_marsoc_sarc";
-											atlOffset=0.056310654;
+											atlOffset=8.9173241;
 										};
 										class Item6
 										{
@@ -1029,7 +1026,7 @@ class Mission
 												angles[]={0,2.8167591,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												rank="SERGEANT";
@@ -1037,7 +1034,7 @@ class Mission
 											};
 											id=897;
 											type="rhsusf_socom_marsoc_elementleader";
-											atlOffset=0.042648315;
+											atlOffset=8.9044266;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1090,7 +1087,7 @@ class Mission
 												angles[]={0,5.888392,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -1099,7 +1096,7 @@ class Mission
 											};
 											id=898;
 											type="rhsusf_socom_marsoc_cso";
-											atlOffset=0.042648315;
+											atlOffset=8.9044266;
 										};
 										class Item8
 										{
@@ -1110,7 +1107,7 @@ class Mission
 												angles[]={0,5.6462278,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -1119,7 +1116,7 @@ class Mission
 											};
 											id=901;
 											type="rhsusf_socom_marsoc_sarc";
-											atlOffset=0.042201996;
+											atlOffset=8.9039803;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1172,7 +1169,6 @@ class Mission
 												angles[]={0,5.888392,0};
 											};
 											side="West";
-											flags=4;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -1181,7 +1177,7 @@ class Mission
 											};
 											id=2011;
 											type="rhsusf_socom_marsoc_cso_grenadier";
-											atlOffset=0.042709351;
+											atlOffset=8.9037237;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1234,7 +1230,6 @@ class Mission
 												angles[]={0,5.691833,0};
 											};
 											side="West";
-											flags=4;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -1243,7 +1238,7 @@ class Mission
 											};
 											id=2014;
 											type="rhsusf_socom_marsoc_sniper";
-											atlOffset=0.042709351;
+											atlOffset=8.9044876;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1296,7 +1291,6 @@ class Mission
 												angles[]={0,5.8212318,0};
 											};
 											side="West";
-											flags=4;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -1305,7 +1299,7 @@ class Mission
 											};
 											id=2075;
 											type="rhsusf_socom_marsoc_cso_eod";
-											atlOffset=0.042709351;
+											atlOffset=8.9044876;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1405,7 +1399,7 @@ class Mission
 											};
 											id=2078;
 											type="rhsusf_usmc_marpat_wd_helipilot";
-											atlOffset=18.377436;
+											atlOffset=18.215117;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1466,7 +1460,7 @@ class Mission
 											};
 											id=2077;
 											type="rhsusf_usmc_marpat_wd_helipilot";
-											atlOffset=18.377436;
+											atlOffset=18.215117;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1618,7 +1612,6 @@ class Mission
 												angles[]={0,2.5834365,0};
 											};
 											side="West";
-											flags=4;
 											class Attributes
 											{
 												rank="LIEUTENANT";
@@ -1627,7 +1620,7 @@ class Mission
 											};
 											id=2079;
 											type="rhsusf_usmc_marpat_wd_helipilot";
-											atlOffset=0.00088882446;
+											atlOffset=46.646999;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1717,7 +1710,7 @@ class Mission
 												angles[]={0,5.8685822,0};
 											};
 											side="West";
-											flags=7;
+											flags=3;
 											class Attributes
 											{
 												rank="CAPTAIN";
@@ -1726,6 +1719,7 @@ class Mission
 											};
 											id=909;
 											type="rhsusf_airforce_jetpilot";
+											atlOffset=8.8610153;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1815,7 +1809,7 @@ class Mission
 												angles[]={0,5.8685822,0};
 											};
 											side="West";
-											flags=7;
+											flags=3;
 											class Attributes
 											{
 												rank="CAPTAIN";
@@ -1824,6 +1818,7 @@ class Mission
 											};
 											id=911;
 											type="rhsusf_airforce_jetpilot";
+											atlOffset=8.8610153;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1913,7 +1908,7 @@ class Mission
 												angles[]={0,2.9430964,0};
 											};
 											side="West";
-											flags=7;
+											flags=3;
 											class Attributes
 											{
 												rank="SERGEANT";
@@ -1922,7 +1917,7 @@ class Mission
 											};
 											id=1403;
 											type="rhsusf_usmc_marpat_wd_combatcrewman";
-											atlOffset=6.8187714e-005;
+											atlOffset=5.4660292;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1975,7 +1970,7 @@ class Mission
 												angles[]={0,2.6767941,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												rank="CORPORAL";
@@ -1984,7 +1979,7 @@ class Mission
 											};
 											id=1404;
 											type="rhsusf_usmc_marpat_wd_combatcrewman";
-											atlOffset=6.8664551e-005;
+											atlOffset=37.623001;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2037,7 +2032,7 @@ class Mission
 												angles[]={0,2.7465723,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												rank="CORPORAL";
@@ -2046,7 +2041,7 @@ class Mission
 											};
 											id=1405;
 											type="rhsusf_usmc_marpat_wd_combatcrewman";
-											atlOffset=6.8664551e-005;
+											atlOffset=37.623001;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2136,7 +2131,7 @@ class Mission
 												angles[]={0,2.759191,0};
 											};
 											side="West";
-											flags=7;
+											flags=3;
 											class Attributes
 											{
 												rank="SERGEANT";
@@ -2145,7 +2140,7 @@ class Mission
 											};
 											id=1407;
 											type="rhsusf_usmc_marpat_wd_combatcrewman";
-											atlOffset=6.8187714e-005;
+											atlOffset=5.4666195;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2198,7 +2193,7 @@ class Mission
 												angles[]={0,2.6767941,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												rank="CORPORAL";
@@ -2207,7 +2202,7 @@ class Mission
 											};
 											id=1408;
 											type="rhsusf_usmc_marpat_wd_combatcrewman";
-											atlOffset=6.8664551e-005;
+											atlOffset=37.623001;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2260,7 +2255,7 @@ class Mission
 												angles[]={0,2.7465723,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												rank="CORPORAL";
@@ -2269,7 +2264,7 @@ class Mission
 											};
 											id=1409;
 											type="rhsusf_usmc_marpat_wd_combatcrewman";
-											atlOffset=0.00080966949;
+											atlOffset=37.623001;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2359,7 +2354,7 @@ class Mission
 												angles[]={0,4.2719221,0};
 											};
 											side="West";
-											flags=7;
+											flags=3;
 											class Attributes
 											{
 												rank="SERGEANT";
@@ -2368,6 +2363,7 @@ class Mission
 											};
 											id=1495;
 											type="rhsusf_usmc_marpat_wd_combatcrewman";
+											atlOffset=7.656774;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2429,7 +2425,7 @@ class Mission
 											};
 											id=1496;
 											type="rhsusf_usmc_marpat_wd_combatcrewman";
-											atlOffset=7.8183203;
+											atlOffset=7.6559997;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2491,7 +2487,7 @@ class Mission
 											};
 											id=1497;
 											type="rhsusf_usmc_marpat_wd_combatcrewman";
-											atlOffset=7.8184743;
+											atlOffset=7.6561537;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2581,7 +2577,7 @@ class Mission
 												angles[]={0,5.8267288,0};
 											};
 											side="West";
-											flags=7;
+											flags=3;
 											class Attributes
 											{
 												rank="SERGEANT";
@@ -2589,6 +2585,7 @@ class Mission
 											};
 											id=2049;
 											type="rhsusf_usmc_marpat_wd_teamleader";
+											atlOffset=6.699852;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2641,7 +2638,7 @@ class Mission
 												angles[]={0,5.8267288,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.40000001;
@@ -2649,6 +2646,7 @@ class Mission
 											};
 											id=2050;
 											type="rhsusf_usmc_marpat_wd_autorifleman";
+											atlOffset=6.7007713;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2701,7 +2699,7 @@ class Mission
 												angles[]={0,5.8267288,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.40000001;
@@ -2709,6 +2707,7 @@ class Mission
 											};
 											id=2051;
 											type="rhsusf_usmc_marpat_wd_rifleman_m4";
+											atlOffset=6.6992731;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2761,7 +2760,7 @@ class Mission
 												angles[]={0,5.8267288,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.40000001;
@@ -2769,6 +2768,7 @@ class Mission
 											};
 											id=2052;
 											type="rhsusf_usmc_marpat_wd_javelin";
+											atlOffset=6.6988983;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2866,7 +2866,7 @@ class Mission
 											};
 											id=2037;
 											type="rhsusf_socom_marsoc_sniper_m107";
-											atlOffset=9.0230465;
+											atlOffset=8.8607264;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2919,7 +2919,7 @@ class Mission
 												angles[]={0,5.8490348,0};
 											};
 											side="West";
-											flags=5;
+											flags=1;
 											class Attributes
 											{
 												skill=0.44999999;
@@ -2928,6 +2928,7 @@ class Mission
 											};
 											id=2058;
 											type="rhsusf_socom_marsoc_spotter";
+											atlOffset=8.8610144;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -4242,12 +4243,13 @@ class Mission
 										angles[]={0,1.1321636,0};
 									};
 									side="West";
-									flags=6;
+									flags=2;
 									class Attributes
 									{
 									};
 									id=1523;
 									type="CUP_WV_B_CRAM";
+									atlOffset=3.3033848;
 								};
 								class Item5
 								{
@@ -4378,12 +4380,13 @@ class Mission
 										angles[]={0,4.272006,0};
 									};
 									side="West";
-									flags=6;
+									flags=2;
 									class Attributes
 									{
 									};
 									id=1527;
 									type="CUP_WV_B_CRAM";
+									atlOffset=2.8141375;
 								};
 								class Item10
 								{
@@ -4556,12 +4559,13 @@ class Mission
 						angles[]={0,1.1321636,0};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=1524;
 					type="B_UAV_AI";
+					atlOffset=3.3033848;
 				};
 			};
 			class Attributes
@@ -4590,6 +4594,7 @@ class Mission
 				};
 			};
 			id=1522;
+			atlOffset=3.3033848;
 		};
 		class Item3
 		{
@@ -4607,12 +4612,13 @@ class Mission
 						angles[]={0,4.272006,0};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=1526;
 					type="B_UAV_AI";
+					atlOffset=2.8141375;
 				};
 			};
 			class Attributes
@@ -4641,6 +4647,7 @@ class Mission
 				};
 			};
 			id=1525;
+			atlOffset=2.8141375;
 		};
 		class Item4
 		{
