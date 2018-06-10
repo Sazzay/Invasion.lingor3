@@ -7,6 +7,7 @@ class I
 		class timedBool;
 		class setVariable;
 		class getVariable;
+		class isAddonActive;
 	};
 	class visual
 	{

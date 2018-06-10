@@ -28,4 +28,10 @@ _return = createVehicle ["CargoNet_01_box_F", _pos, [], 0, "CAN_COLLIDE"];
 	_return addMagazineCargoGlobal [_x select 0, _x select 1];
 } forEach I_USMC_MAGAZINES;
 
+if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
+	{
+		_return addItemCargoGlobal [_x select 0, _x select 1];
+	} forEach I_USMC_ACE_MEDICINE;
+};
+
 _return

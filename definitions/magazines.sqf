@@ -13,3 +13,26 @@ I_USMC_MAGAZINES = [
 ["Chemlight_red", 50],
 ["Chemlight_green", 50]
 ];
+
+I_USMC_ACE_MEDICINE = [
+["ACE_atropine", 30],
+["ACE_fieldDressing", 30],
+["ACE_elasticBandage", 30],
+["ACE_quikclot", 30],
+["ACE_bloodIV", 10],
+["ACE_bloodIV_500", 15],
+["ACE_bloodIV_250", 20],
+["ACE_bodyBag", 10],
+["ACE_epinephrine", 30],
+["ACE_morphine", 30],
+["ACE_packingBandage", 30],
+["ACE_personalAidKit", 30],
+["ACE_plasmaIV", 10],
+["ACE_plasmaIV_500", 15],
+["ACE_plasmaIV_250", 20],
+["ACE_salineIV", 10],
+["ACE_salineIV_500", 15],
+["ACE_salineIV_250", 20],
+["ACE_surgicalKit", 20],
+["ACE_tourniquet", 20]
+];
