@@ -21,6 +21,7 @@ class I
 		file = "library\objects";
 		class createVehicle;
 		class createGroup;
+		class createGroupEfficient;
 		class findPlayers;
 		class populateTown;
 		class populateTask;

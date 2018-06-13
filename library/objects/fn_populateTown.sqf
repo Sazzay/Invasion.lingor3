@@ -85,6 +85,7 @@ for "_i" from 0 to 6 do {
 		
 		if !(_scan isEqualTo []) then {
 			_group = [selectRandom ["VDV-INFANTRY-SQUAD", "MSV-INFANTRY-SQUAD"], [_scan select 0, _scan select 1]] call I_fnc_createGroup;
+			//_group = [[_scan select 0, _scan select 1], selectRandom ["MSV-EMR-SQUAD", "VDV-EMR_SQUAD-SPC", "MSV-EMR-SQUAD-MM"], false] call I_fnc_createGroupEfficient;
 			[_group, _pos, 400] call CBA_fnc_taskPatrol;
 			
 			{

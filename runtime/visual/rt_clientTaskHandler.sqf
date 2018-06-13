@@ -31,8 +31,6 @@ waitUntil {!((GLOBAL getVariable "ADS_TASK_ALLOBJECTS") isEqualTo [])};
 	[player, format ["OBJECTIVE_TASK_%1", _x], ["", format ["Destroy %1", (_array select _forEachIndex)], ""], _x, "CREATED", 1, false, ((_array select _forEachIndex) select [0, 1]), false] call BIS_fnc_taskCreate;
 } forEach _tasks;
 
-["Tasks have been added to your map."] call I_fnc_notification;
-
 while {true} do {
 	{
 		[(format ["OBJECTIVE_TASK_%1", _x])] params ["_task"];
@@ -45,7 +43,7 @@ while {true} do {
 	{
 		[(GLOBAL getVariable [format ["ADS_TOWN_%1_CAP", [_x select 0, _x select 1]], 0]), (format ["TOWN_TASK_%1", [_x select 0, _x select 1]])] params ["_var", "_task"];
 		
-		if ((_var >= 21) and !([_task] call BIS_fnc_taskCompleted)) then {
+		if (((round _var) >= 21) and !([_task] call BIS_fnc_taskCompleted)) then {
 			[_task, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 		};
 	} forEach _towns;

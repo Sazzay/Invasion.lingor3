@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2275;
+		nextID=2505;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=364;
+		nextID=369;
 	};
 	class Camera
 	{
-		pos[]={5484.1255,443.63934,8897.6875};
-		dir[]={-0.82039493,-0.57119894,-0.030190799};
-		up[]={-0.5709222,0.8205092,-0.02101058};
-		aside[]={-0.036790691,-5.388225e-006,0.99949604};
+		pos[]={3866.8308,28.681509,9763.0488};
+		dir[]={0.16331308,-0.37591326,-0.91227949};
+		up[]={0.066276878,0.92634982,-0.37023112};
+		aside[]={-0.98450452,-3.2646931e-006,-0.17625177};
 	};
 };
 binarizationWanted=0;
@@ -218,7 +218,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			dataType="Layer";
@@ -4679,6 +4679,78 @@ class Mission
 			type="b_support";
 			id=2074;
 			atlOffset=30.021;
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3878.7151,3.3877964,9722.7588};
+						angles[]={0,3.3308794,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=2366;
+					type="B_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2365;
 		};
 	};
 };
