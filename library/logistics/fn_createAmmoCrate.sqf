@@ -32,6 +32,10 @@ if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
 	{
 		_return addItemCargoGlobal [_x select 0, _x select 1];
 	} forEach I_USMC_ACE_MEDICINE;
+} else {
+	{
+		_return addItemCargoGlobal [_x select 0, _x select 1];
+	} forEach I_USMC_DEFAULT_MEDICINE;
 };
 
 _return

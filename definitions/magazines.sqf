@@ -17,6 +17,11 @@ I_USMC_MAGAZINES = [
 ["Chemlight_green", 50]
 ];
 
+I_USMC_DEFAULT_MEDICINE = [
+["Medikit",30],
+["FirstAidKit",30]
+];
+
 I_USMC_ACE_MEDICINE = [
 ["ACE_atropine", 30],
 ["ACE_fieldDressing", 30],
