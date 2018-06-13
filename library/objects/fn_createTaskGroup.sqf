@@ -33,6 +33,10 @@ for "_i" from 0 to 2 do {
 					
 		{
 			_objects pushBack _x;
+			
+			if (!((vehicle _x) isEqualTo _x) and !((vehicle _x) in _objects)) then {
+				_objects pushBack (vehicle _x);
+			};
 		} forEach (units _group);
 	};
 };

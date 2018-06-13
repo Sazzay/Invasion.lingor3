@@ -32,7 +32,7 @@ if ((typeName _gs) isEqualTo "GROUP") then {
 };
 
 if ((typeName _gs) isEqualTo "SIDE") then {
-	_group = createGroup _gs;
+	_group = createGroup [_gs, true];
 };
 
 if !(((typeName _gs) isEqualTo "GROUP") or (typeName _gs) isEqualTo "SIDE") exitWith {
@@ -42,9 +42,9 @@ if !(((typeName _gs) isEqualTo "GROUP") or (typeName _gs) isEqualTo "SIDE") exit
 _veh = createVehicle [_type, _pos, [], 0, _special];
 _veh setDir _dir;
 createVehicleCrew _veh;
+(group ((crew _veh) select 0)) deleteGroupWhenEmpty true;
+(crew _veh) joinSilent _group;
 
-_group deleteGroupWhenEmpty true;
-
-_return = [_veh,_group];
+_return = [_veh, _group];
 
 _return

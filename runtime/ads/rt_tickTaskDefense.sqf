@@ -33,6 +33,7 @@ GLOBAL setVariable ["ADS_TASK_ALLOBJECTS", _array, true];
 							};
 						} forEach _objects;
 						
+						[format ["ADS_TASK_%1_DYN_OBJECTS", (_this select 0)], []] call I_fnc_setVariable;
 						diag_log format ["ADS_TASK_%1: Inactive, deleted objects due to timeout.", (_this select 0)];
 					};
 				};
@@ -46,14 +47,15 @@ GLOBAL setVariable ["ADS_TASK_ALLOBJECTS", _array, true];
 					[format ["ADS_TASK_%1", (_this select 0)], [(_var select 0), (_var select 1), 0]] call I_fnc_setVariable;
 				};
 				
-				if ((_var select 2) >= 30) then { // if timeout reaches 30, then set var select 0 as false AKA inactive.
+				if ((_var select 2) >= 20) then { // if timeout reaches 30, then set var select 0 as false AKA inactive.
 					[format ["ADS_TASK_%1", (_this select 0)], [false, (_var select 1), 0]] call I_fnc_setVariable;
 				};
 			};
-		};
-		
-		if !(alive (_this select 0)) then {
-			[format ["ADS_TASK_%1", (_this select 0)], [(_var select 0), true, (_var select 2)]] call I_fnc_setVariable;
+			
+			if !(alive (_this select 0)) then {
+				[format ["ADS_TASK_%1", (_this select 0)], [(_var select 0), true, (_var select 2)]] call I_fnc_setVariable;
+				diag_log format ["ADS_TASK_%1: Task object destroyed, PFH is now mute.", (_this select 0)];
+			};
 		};
 	}, 5, _x] call CBA_fnc_addPerFrameHandler;
 } forEach _array;
