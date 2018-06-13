@@ -31,19 +31,26 @@ if !(_vehicle isEqualTo objNull) then {
 		if !((typeOf _x) in I_DEF_UNITS_CREW) then {
 			_x moveInAny _vehicle;
 		};
+		
+		_x disableAI "AUTOCOMBAT";
+		_x disableAI "CHECKVISIBLE";
 	} forEach (units _group);
 };
 
 _group move _pos;
+_group setBehaviour "CARELESS";
 
 [_group, _pos, _vehicle] spawn {
-	waitUntil {((leader(_this select 0)) distance (_this select 1)) < 200};
+	waitUntil {(((leader(_this select 0)) distance (_this select 1)) < 200) or !(((leader (_this select 0)) findNearestEnemy (getPos (leader (_this select 0)))) isEqualTo objNull)};
 	
 	if !((_this select 2) isEqualTo objNull) then {
 		{
 			if !((typeOf _x) in I_DEF_UNITS_CREW) then {
 				unassignVehicle _x;
 			};
+			
+			_x enableAI "AUTOCOMBAT";
+			_x enableAI "CHECKVISIBLE";
 		} forEach (units (_this select 0));
 	};
 
