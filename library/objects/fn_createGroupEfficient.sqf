@@ -3,7 +3,8 @@
 	
 	Description: 
 	Crates a group very efficiently by delaying execution by 80 ms. Uses pvar's to fetch the units. If the bool is specified
-	as true, it will spawn with a random vehicle (wip) attached to the squad. Only run this function
+	as true, it will spawn with a random vehicle (wip) attached to the squad. This function won't work well in a non scheduled
+	enviroment, be mindful of this. So make sure you call it from a scheduled enviroment.
 	
 	Parameters:
 	_this select 0: Position2D
@@ -36,18 +37,22 @@ if (isNil "_index") exitWith {
 	diag_log "I_fnc_createGroupEfficient: _type is not valid";
 };
 
-_return = [createGroup east, (count (I_DEF_OPFOR_GROUPS select _index select 1))];
+_return = createGroup east;
 
 {
-	[{[((_this select 0) createUnit [(_this select 1), (_this select 2), [], 0, "FORM"])] call I_fnc_aiSkill;}, [_return select 0, _x, _pos], (0.15 * _forEachIndex)] call CBA_fnc_waitAndExecute;
+	[{[((_this select 0) createUnit [(_this select 1), (_this select 2), [], 0, "FORM"])] call I_fnc_aiSkill;}, [_return, _x, _pos], (0.2 * _forEachIndex)] call CBA_fnc_waitAndExecute;
 } forEach (I_DEF_OPFOR_GROUPS select _index select 1);
 
-[{(_this select 0) deleteGroupWhenEmpty true;}, [_return select 0], (0.2 * (count (I_DEF_OPFOR_GROUPS select _index select 1)))] call CBA_fnc_waitAndExecute;
 
 if ((_vehbool) isEqualTo true) then {
 	// add vehicle
 };
 
-hint str (units _return);
+if (canSuspend) then {
+	waitUntil {(count (units _return)) >= (count (I_DEF_OPFOR_GROUPS select _index select 1))};
+	_return deleteGroupWhenEmpty true;
+} else {
+	[{(_this select 0) deleteGroupWhenEmpty true;}, [_return], (0.2 * (count (I_DEF_OPFOR_GROUPS select _index select 1)))] call CBA_fnc_waitAndExecute;
+};
 
 _return

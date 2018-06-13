@@ -3,13 +3,12 @@
 	
 	Description:
 	Searches a few viable locations around a town and spawns in some objects to fortify the positions, accordingly, it also
-	spawns units in. Returns an array of objects.
+	spawns units in. Scheduled function only!
 	
 	Parameters:
 	_this select 0: Position2D
 	
 	Returns:
-	ARRAY
 	
 	Example:
 	_call = [[5000, 3000]] call I_fnc_populateTown;
@@ -26,7 +25,7 @@ if ((count ([_pos, 400] call I_fnc_findEmptyNoRoads)) >= 4) then {
 		// Create some stuff
 		_temp = (selectRandom I_DEF_MILITARY_VEHICLE_COVERS) createVehicle ([_pos, ([_pos, 400] call I_fnc_findEmptyNoRoads)] call I_fnc_findNearestPos);
 		_temp setDir (getDir (nearestBuilding _temp));
-		_veh = [(getPos _temp), (getDir _temp) - 180, selectRandom I_DEF_VEHICLES_ARMORED, EAST] call bis_fnc_spawnvehicle;
+		_veh = [(getPos _temp), (getDir _temp) - 180, selectRandom I_DEF_VEHICLES_ARMORED, EAST] call bis_fnc_spawnVehicle;
 		(_veh select 2) deleteGroupWhenEmpty true;
 		// Sort into arrays
 		_static pushBack _temp;
@@ -66,6 +65,8 @@ if ((count _static) > 0) then {
 						(_this select 0) enableAI "MOVE";
 					};
 				};
+				
+				uiSleep 0.1;
 			} forEach ([_x] call BIS_fnc_buildingPositions);
 		};
 	} forEach _static;
@@ -84,8 +85,7 @@ for "_i" from 0 to 6 do {
 		_scan = _pos findEmptyPosition [random 100, (200 + random 200), "Land_HelipadEmpty_F"];
 		
 		if !(_scan isEqualTo []) then {
-			_group = [selectRandom ["VDV-INFANTRY-SQUAD", "MSV-INFANTRY-SQUAD"], [_scan select 0, _scan select 1]] call I_fnc_createGroup;
-			//_group = [[_scan select 0, _scan select 1], selectRandom ["MSV-EMR-SQUAD", "VDV-EMR_SQUAD-SPC", "MSV-EMR-SQUAD-MM"], false] call I_fnc_createGroupEfficient;
+			_group = [[_scan select 0, _scan select 1], selectRandom ["MSV-EMR-SQUAD", "VDV-EMR_SQUAD-SPC", "MSV-EMR-SQUAD-MM"], false] call I_fnc_createGroupEfficient;
 			[_group, _pos, 400] call CBA_fnc_taskPatrol;
 			
 			{
@@ -95,6 +95,4 @@ for "_i" from 0 to 6 do {
 	};
 };
 
-_return = _objects + _static;
-
-_return
+[format ["ADS_TOWN_%1_OBJECTS", _pos], (_static + _objects)] call I_fnc_setVariable;

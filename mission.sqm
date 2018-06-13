@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2505;
+		nextID=2506;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3866.8308,28.681509,9763.0488};
-		dir[]={0.16331308,-0.37591326,-0.91227949};
-		up[]={0.066276878,0.92634982,-0.37023112};
-		aside[]={-0.98450452,-3.2646931e-006,-0.17625177};
+		pos[]={4491.0811,342.54788,9669.2354};
+		dir[]={-0.83365935,-0.44195637,-0.3315433};
+		up[]={-0.41083202,0.89671892,-0.16338569};
+		aside[]={-0.36960831,-3.826397e-006,0.92935508};
 	};
 };
 binarizationWanted=0;
@@ -4692,17 +4692,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3878.7151,3.3877964,9722.7588};
+						position[]={5050.5552,7.7356939,9352.4141};
 						angles[]={0,3.3308794,0};
 					};
 					side="West";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						isPlayer=1;
 					};
 					id=2366;
 					type="B_officer_F";
+					atlOffset=0.79226017;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4751,6 +4752,7 @@ class Mission
 			{
 			};
 			id=2365;
+			atlOffset=0.79226017;
 		};
 	};
 };
