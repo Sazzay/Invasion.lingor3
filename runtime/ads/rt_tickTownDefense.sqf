@@ -22,8 +22,6 @@
 	
 		if ((_var select 1) isEqualTo false and ((_var select 2) < 21)) then {
 			if (count ([_pos, 600] call I_fnc_findPlayers) >= 1) then {
-			hint str _objects;
-			
 				if ((_var select 0) isEqualTo false) then {
 					[_pos] spawn I_fnc_populateTown;
 					[format ["ADS_TOWN_%1", _pos], [true, (_var select 1), (_var select 2), (_var select 3)]] call I_fnc_setVariable;
@@ -41,7 +39,7 @@
 			};
 			
 			if ((_var select 3) >= 30) then {
-				[format ["ADS_TOWN_%1", _pos], [false, (_var select 1), (_var select 2), (_var select 3)]] call I_fnc_setVariable;
+				[format ["ADS_TOWN_%1", _pos], [false, (_var select 1), (_var select 2), 0]] call I_fnc_setVariable;
 				
 				{
 					deleteVehicle _x;

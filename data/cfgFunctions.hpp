@@ -23,6 +23,7 @@ class I
 		class createGroup;
 		class createGroupEfficient;
 		class createCrewedVehicle;
+		class createTaskGroup;
 		class findPlayers;
 		class populateTown;
 		class populateTask;
