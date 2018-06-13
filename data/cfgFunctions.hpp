@@ -27,6 +27,8 @@ class I
 		class findPlayers;
 		class populateTown;
 		class populateTask;
+		class deleteObjects;
+		class returnGroupsFromArray;
 	};
 	class acs
 	{

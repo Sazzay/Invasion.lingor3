@@ -26,12 +26,7 @@ GLOBAL setVariable ["ADS_TASK_ALLOBJECTS", _array, true];
 				diag_log format ["ADS_TASK_%1: Active.", (_this select 0)];
 			} else { // if players are not in radius and inactive then delete existing objects 
 				if !(_objects isEqualTo []) then {
-					{
-						if !(isNil "_x") then {
-							deleteVehicle _x;
-						};
-					} forEach _objects;
-						
+					[_objects] call I_fnc_deleteObjects;
 					[format ["ADS_TASK_%1_DYN_OBJECTS", (_this select 0)], []] call I_fnc_setVariable;
 					diag_log format ["ADS_TASK_%1: Inactive, deleted objects due to timeout.", (_this select 0)];
 				};
@@ -55,6 +50,10 @@ GLOBAL setVariable ["ADS_TASK_ALLOBJECTS", _array, true];
 			[format ["ADS_TASK_%1", (_this select 0)], [nil, nil]] call I_fnc_setVariable;
 			diag_log format ["ADS_TASK_%1: Task object destroyed, PFH removed.", (_this select 0)];
 			[(_this select 1)] call CBA_fnc_removePerFrameHandler;
+			
+			{
+				[_x] call I_fnc_deleteInactive;
+			} forEach ([_objects] call I_fnc_returnGroupsFromArray);
 		};
 		
 	}, 5, _x] call CBA_fnc_addPerFrameHandler;

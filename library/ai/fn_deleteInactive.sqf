@@ -21,6 +21,8 @@ if (isNil "_group") exitWith {
 
 [_group] spawn {
 	[0] params ["_count"];
+	
+	diag_log format ["I_fnc_deleteInactive: %1 marked for deletion, starting 300 second interval timeout deletion loop.", (_this select 0)];
 
 	while {true} do {
 		sleep 300;
@@ -34,8 +36,6 @@ if (isNil "_group") exitWith {
 		} else {
 			_count = 0;
 		};
-		
-		hint str _count;
 		
 		if ((_count) >= 5) exitWith {
 			{
