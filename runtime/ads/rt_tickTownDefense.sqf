@@ -35,7 +35,7 @@
 			} else {
 				if ((_var select 0) isEqualTo true) then {
 					[format ["ADS_TOWN_%1", _pos], [(_var select 0), (_var select 1), (_var select 2) + 1]] call I_fnc_setVariable;
-					diag_log format ["ADS_TOWN_%1: Inactive, despawning at 30, current count: %2", _pos, (_var select 2) + 1];
+					diag_log format ["ADS_TOWN_%1: Inactive, despawning at 10, current count: %2", _pos, (_var select 2) + 1];
 				};
 			};
 			

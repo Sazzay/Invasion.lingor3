@@ -32,12 +32,12 @@ GLOBAL setVariable ["ADS_TASK_ALLOBJECTS", _array, true];
 				};
 			};
 		} else { // if is active
-			if (count ([getPos (_this select 0), 600] call I_fnc_findPlayers) <= 0) then { // if there are no players in radius increase timeout
+			if (count ([getPos (_this select 0), 800] call I_fnc_findPlayers) <= 0) then { // if there are no players in radius increase timeout
 				[format ["ADS_TASK_%1", (_this select 0)], [(_var select 0), (_var select 1) + 1]] call I_fnc_setVariable;
-				diag_log format ["ADS_TASK_%1: No players in radius, timeout till deletion: %2.", (_this select 0), (_var select 1) + 1];
+				diag_log format ["ADS_TASK_%1: No players in radius, deletes at 10, timeout till deletion: %2.", (_this select 0), (_var select 1) + 1];
 			};
 				
-			if ((count ([getPos (_this select 0), 600] call I_fnc_findPlayers) >= 1) and (_var select 1) > 0) then { // if players are found in radius again and timeout is over 0, reset back to 0
+			if ((count ([getPos (_this select 0), 800] call I_fnc_findPlayers) >= 1) and (_var select 1) > 0) then { // if players are found in radius again and timeout is over 0, reset back to 0
 				[format ["ADS_TASK_%1", (_this select 0)], [(_var select 0), 0]] call I_fnc_setVariable;
 			};
 				

@@ -74,10 +74,10 @@ if ((count _static) > 0) then {
 	} forEach _static;
 };
 
-for "_i" from 0 to 6 do {
+for "_i" from 0 to 4 do {
 	[random 100, [], grpNull] params ["_random", "_scan", "_group"];
 
-	if (_i isEqualTo 0 or _i isEqualTo 1 or _i isEqualTo 2) then {
+	if (_i isEqualTo 0 or _i isEqualTo 1) then {
 		_random = 0;
 	} else {
 		_random = random 100;
