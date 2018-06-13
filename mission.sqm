@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5156.0112,245.17154,9478.5752};
-		dir[]={-0.51665854,-0.67135346,-0.53158104};
-		up[]={-0.467944,0.74081165,-0.48145866};
-		aside[]={-0.71721733,-5.382055e-006,0.69707513};
+		pos[]={6741.4409,90.555946,10147.682};
+		dir[]={0.23673914,-0.58845568,-0.77324456};
+		up[]={0.17229676,0.80819196,-0.56276691};
+		aside[]={-0.95634049,-4.3053878e-006,-0.29280227};
 	};
 };
 binarizationWanted=0;
@@ -245,7 +245,6 @@ class Mission
 						{
 							dataType="Layer";
 							name="Playable Units";
-							state=1;
 							class Entities
 							{
 								items=11;
@@ -748,7 +747,7 @@ class Mission
 									{
 									};
 									id=862;
-									atlOffset=17.27;
+									atlOffset=8.9044266;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1356,7 +1355,7 @@ class Mission
 									{
 									};
 									id=889;
-									atlOffset=17.27;
+									atlOffset=8.9044876;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1516,7 +1515,7 @@ class Mission
 									{
 									};
 									id=902;
-									atlOffset=17.27;
+									atlOffset=18.215117;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1562,6 +1561,7 @@ class Mission
 											{
 												rank="CAPTAIN";
 												description="Pilot";
+												isPlayer=1;
 												isPlayable=1;
 											};
 											id=2080;
@@ -1676,7 +1676,7 @@ class Mission
 									{
 									};
 									id=905;
-									atlOffset=17.27;
+									atlOffset=46.646;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1775,7 +1775,7 @@ class Mission
 									{
 									};
 									id=908;
-									atlOffset=17.27;
+									atlOffset=8.8610153;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1874,7 +1874,7 @@ class Mission
 									{
 									};
 									id=910;
-									atlOffset=17.27;
+									atlOffset=8.8610153;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2097,7 +2097,7 @@ class Mission
 									{
 									};
 									id=1402;
-									atlOffset=17.27;
+									atlOffset=5.4660292;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2320,7 +2320,7 @@ class Mission
 									{
 									};
 									id=1406;
-									atlOffset=17.27;
+									atlOffset=5.4666195;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2543,7 +2543,7 @@ class Mission
 									{
 									};
 									id=1494;
-									atlOffset=17.27;
+									atlOffset=7.656774;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2824,7 +2824,7 @@ class Mission
 									{
 									};
 									id=2048;
-									atlOffset=17.27;
+									atlOffset=6.699852;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2984,7 +2984,7 @@ class Mission
 									{
 									};
 									id=2034;
-									atlOffset=17.27;
+									atlOffset=8.8607264;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3011,7 +3011,7 @@ class Mission
 								};
 							};
 							id=209;
-							atlOffset=17.27;
+							atlOffset=7.1568565;
 						};
 						class Item1
 						{
@@ -4442,11 +4442,11 @@ class Mission
 						};
 					};
 					id=725;
-					atlOffset=-11.651658;
+					atlOffset=38.596359;
 				};
 			};
 			id=722;
-			atlOffset=-11.651658;
+			atlOffset=38.596359;
 		};
 		class Item1
 		{
@@ -4707,7 +4707,6 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						isPlayer=1;
 					};
 					id=2366;
 					type="B_officer_F";

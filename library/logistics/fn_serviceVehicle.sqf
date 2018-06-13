@@ -31,16 +31,7 @@ if (_object isEqualTo objNull) exitWith {
 			
 		sleep 0.1;
 	};
+
 	
-	{
-		if !((_this select 0) turretLocal _x) then {
-			[(_this select 0), 1] remoteExec ["setVehicleAmmo", (_this select 0) turretOwner _x, false];
-		} else {
-			(_this select 0) setVehicleAmmo 1;
-		};
-	} forEach (allTurrets (_this select 0));
-	
-	if ((_this select 0) isKindOf "Plane") then {
-		(_this select 0) setVehicleAmmo 1;
-	};
+	[(_this select 0), 1] remoteExec ["setVehicleAmmo", (_this select 0), false];
 };
