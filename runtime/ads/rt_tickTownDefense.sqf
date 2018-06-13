@@ -68,6 +68,7 @@
 		
 		if ((_var select 1) isEqualTo false and ((_var select 2) >= 21)) then {
 			[format ["ADS_TOWN_%1", _pos], [(_var select 1), true, (_var select 2), (_var select 3)]] call I_fnc_setVariable;
+			diag_log format ["ADS_TOWN_%1: Captured, despawning objects in 10 minutes (600 seconds).", _pos];
 			
 			[_objects] spawn {
 				sleep 10;
