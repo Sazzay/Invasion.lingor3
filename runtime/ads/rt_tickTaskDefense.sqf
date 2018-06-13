@@ -20,7 +20,7 @@ GLOBAL setVariable ["ADS_TASK_ALLOBJECTS", _array, true];
 		[(missionNamespace getVariable format ["ADS_TASK_%1", (_this select 0)]), (missionNamespace getVariable format ["ADS_TASK_%1_DYN_OBJECTS", (_this select 0)])] params ["_var", ["_objects", []]];
 		
 		if (((_var select 0) isEqualTo false)) then { // if is inactive
-			if (count ([getPos (_this select 0), 600] call I_fnc_findPlayers) >= 1) then { // if players are in radius, then spawn and change to active
+			if (count ([getPos (_this select 0), 800] call I_fnc_findPlayers) >= 1) then { // if players are in radius, then spawn and change to active
 				[(_this select 0)] spawn I_fnc_createTaskGroup;
 				[format ["ADS_TASK_%1", (_this select 0)], [true, (_var select 1)]] call I_fnc_setVariable;
 				diag_log format ["ADS_TASK_%1: Active.", (_this select 0)];
@@ -41,7 +41,7 @@ GLOBAL setVariable ["ADS_TASK_ALLOBJECTS", _array, true];
 				[format ["ADS_TASK_%1", (_this select 0)], [(_var select 0), 0]] call I_fnc_setVariable;
 			};
 				
-			if ((_var select 1) >= 30) then { // if timeout reaches 30, then set var select 0 as false AKA inactive.
+			if ((_var select 1) >= 10) then { // if timeout reaches 10, then set var select 0 as false AKA inactive.
 				[format ["ADS_TASK_%1", (_this select 0)], [false, 0]] call I_fnc_setVariable;
 			};
 		};

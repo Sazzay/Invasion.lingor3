@@ -13,8 +13,7 @@
 ["RESTRICT_ACS_SEA", 0] call I_fnc_timedBool; // Initialize the bool
 
 while {true} do {
-	_array = ([2] call I_fnc_findHostileBoatPatrol);
-	_var = (["ADS_TASK_RRS", [0, 0, 0]] call I_fnc_getVariable);
+	[([2] call I_fnc_findHostileBoatPatrol), (["ADS_TASK_RRS", [0, 0, 0]] call I_fnc_getVariable)] params ["_array", "_var"];
 	
 	if (((missionNamespace getVariable "RESTRICT_ACS_SEA") isEqualTo false) and !(_array isEqualTo [])) then {
 		{
@@ -22,7 +21,7 @@ while {true} do {
 				_positions = ([_x] call I_fnc_findAmbushLocation);
 				
 				if !(_positions isEqualTo []) then {
-					_groups pushBack ([(selectRandom I_DEF_LAND_AMBUSH_GROUPS), selectRandom _positions] call I_fnc_createGroup);
+					_groups pushBack ([selectRandom _positions, selectRandom ["VDV-EMR-SQUAD-SPC", "VDV-EMR-SQUAD-RECON", "VMF-EMR-SQUAD-RECON"], false] call I_fnc_createGroupEfficient);
 					[(_groups select _forEachIndex), _x] call I_fnc_taskGroupAmbush;
 					[(_groups select _forEachIndex)] call I_fnc_deleteInactive;
 					["RESTRICT_ACS_SEA", 600 - (random 150) + (random 150)  - ((_var select 1) * 20)] call I_fnc_timedBool;

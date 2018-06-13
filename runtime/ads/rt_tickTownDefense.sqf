@@ -21,7 +21,7 @@
 		[(missionNamespace getVariable format ["ADS_TOWN_%1", _pos]), (missionNamespace getVariable format ["ADS_TOWN_%1_OBJECTS", _pos]), ([_pos, 50] call I_fnc_findPlayers)] params ["_var", "_objects", "_players"];
 	
 		if ((_var select 1) < 21) then {
-			if (count ([_pos, 400] call I_fnc_findPlayers) >= 1) then {
+			if (count ([_pos, 1500] call I_fnc_findPlayers) >= 1) then {
 				if ((_var select 0) isEqualTo false) then {
 					[_pos] spawn I_fnc_populateTown;
 					[format ["ADS_TOWN_%1", _pos], [true, (_var select 1), (_var select 2)]] call I_fnc_setVariable;
@@ -39,7 +39,7 @@
 				};
 			};
 			
-			if ((_var select 2) >= 30) then {
+			if ((_var select 2) >= 10) then {
 				[format ["ADS_TOWN_%1", _pos], [false, (_var select 1), 0]] call I_fnc_setVariable;
 				[_objects] call I_fnc_deleteObjects;
 				diag_log format ["ADS_TOWN_%1: Despawned", _pos];

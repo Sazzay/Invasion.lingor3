@@ -12,7 +12,7 @@
 ["RESTRICT_ACS_LAND", 0] call I_fnc_timedBool;
 
 while {true} do {
-	[([6] call I_fnc_findHostileForce), (["ADS_TASK_RRS", [0, 0, 0]] call I_fnc_getVariable), []]params ["_array", "_var", "_groups"];
+	[([6] call I_fnc_findHostileForce), (["ADS_TASK_RRS", [0, 0, 0]] call I_fnc_getVariable), []] params ["_array", "_var", "_groups"];
 	
 	if (!(_array isEqualTo [[0, 0], 0]) and ((missionNamespace getVariable "RESTRICT_ACS_LAND") isEqualTo false)) then {
 		_positions = [(_array select 0), 300, 1000, ((_array select 1) - 180)] call I_fnc_findEmptyLine;
