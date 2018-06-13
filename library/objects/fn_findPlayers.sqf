@@ -22,7 +22,7 @@ if ((isNil "_pos") or (isNil "_rad")) then {
 };
 
 {
-	if ((alive _x) and (_x distance _pos) < _rad) then {
+	if ((alive _x) and (_x distance _pos) < _rad and !((vehicle _x) isKindOf "Plane")) then {
 		_return pushBack _x;
 	};
 } forEach (call BIS_fnc_listPlayers);

@@ -2,7 +2,7 @@
 	Author: Markus "Sazzay" Larsson
 	
 	Description: 
-	Crates a group very efficiently by delaying execution by 80 ms. Uses pvar's to fetch the units. If the bool is specified
+	Crates a group very efficiently by delaying execution by 20 ms. Uses pvar's to fetch the units. If the bool is specified
 	as true, it will spawn with a random vehicle (wip) attached to the squad. This function won't work well in a non scheduled
 	enviroment, be mindful of this. So make sure you call it from a scheduled enviroment.
 	
@@ -40,13 +40,8 @@ if (isNil "_index") exitWith {
 _return = createGroup east;
 
 {
-	[{[((_this select 0) createUnit [(_this select 1), (_this select 2), [], 0, "FORM"])] call I_fnc_aiSkill;}, [_return, _x, _pos], (0.2 * _forEachIndex)] call CBA_fnc_waitAndExecute;
+	[{((_this select 0) createUnit [(_this select 1), (_this select 2), [], 0, "FORM"])}, [_return, _x, _pos], (0.2 * _forEachIndex)] call CBA_fnc_waitAndExecute;
 } forEach (I_DEF_OPFOR_GROUPS select _index select 1);
-
-
-if ((_vehbool) isEqualTo true) then {
-	// add vehicle
-};
 
 if (canSuspend) then {
 	waitUntil {(count (units _return)) >= (count (I_DEF_OPFOR_GROUPS select _index select 1))};
@@ -54,5 +49,11 @@ if (canSuspend) then {
 } else {
 	[{(_this select 0) deleteGroupWhenEmpty true;}, [_return], (0.2 * (count (I_DEF_OPFOR_GROUPS select _index select 1)))] call CBA_fnc_waitAndExecute;
 };
+
+if ((_vehbool) isEqualTo true) then {
+	[selectRandom I_DEF_VEHICLES_APC, _pos, getDir (leader _return), _return] call I_fnc_createCrewedVehicle;
+};
+
+[_return] call I_fnc_aiSkill;
 
 _return

@@ -42,6 +42,8 @@ if ((count ([_pos, 400] call I_fnc_findEmptyNoRoads)) >= 7) then {
 		_temp = (selectRandom I_DEF_MILITARY_WATCHTOWERS) createVehicle ([_pos, ([_pos, 400] call I_fnc_findEmptyNoRoads)] call I_fnc_findFarthestPos);
 		_temp setDir (getDir (nearestBuilding _temp));
 		_static pushBack _temp;
+		
+		uiSleep 0.1;
 		};
 	};
 };
@@ -82,9 +84,9 @@ for "_i" from 0 to 6 do {
 	};
 	
 	if (_random < 40) then {	
-		_scan = _pos findEmptyPosition [random 100, (200 + random 200), "Land_HelipadEmpty_F"];
+		_scan = [_pos, random 100, (200 + random 200), 7, 0, 0.5, 0, [], []] call BIS_fnc_findSafePos;
 		
-		if !(_scan isEqualTo []) then {
+		if !(_scan isEqualTo (getArray (configfile >> "CfgWorlds" >> worldName >> "centerPosition"))) then {
 			_group = [[_scan select 0, _scan select 1], selectRandom ["MSV-EMR-SQUAD", "VDV-EMR_SQUAD-SPC", "MSV-EMR-SQUAD-MM"], false] call I_fnc_createGroupEfficient;
 			[_group, _pos, 400] call CBA_fnc_taskPatrol;
 			
