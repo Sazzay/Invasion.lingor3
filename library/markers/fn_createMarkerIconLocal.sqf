@@ -27,7 +27,7 @@
 		STRING - Created marker.
 
 	Example: 
-		Example 1: ["respawn_west",(position player),"Empty","ColorBlack",""] call fnc_createMarkerIconLocal;
+		Example 1: ["respawn_west",(position player),"Empty","ColorBlack",""] call I_fnc_createMarkerIconLocal;
 
 	Notes:
 	Do not touch this file.
@@ -49,6 +49,6 @@ _marker 	setMarkerColorLocal _markerColor;
 _marker 	setMarkerTextLocal _markerText;
 _marker 	setMarkerDirLocal _markerDir;
 
-_functionReturn = _marker;
+_return = _marker;
 
-_functionReturn
+_return
