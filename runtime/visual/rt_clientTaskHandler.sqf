@@ -36,7 +36,7 @@ while {true} do {
 		[(format ["OBJECTIVE_TASK_%1", _x])] params ["_task"];
 	
 		if (!(alive _x) and !([_task] call BIS_fnc_taskCompleted)) then {
-			[_task, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
+			[_task, "SUCCEEDED", true] call BIS_fnc_taskSetState;
 		};
 	} forEach _tasks;
 	
@@ -44,7 +44,7 @@ while {true} do {
 		[(GLOBAL getVariable [format ["ADS_TOWN_%1_CAP", [_x select 0, _x select 1]], 0]), (format ["TOWN_TASK_%1", [_x select 0, _x select 1]])] params ["_var", "_task"];
 		
 		if (((round _var) >= 21) and !([_task] call BIS_fnc_taskCompleted)) then {
-			[_task, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
+			[_task, "SUCCEEDED", true] call BIS_fnc_taskSetState;
 		};
 	} forEach _towns;
 

@@ -23,7 +23,7 @@ if !((vehicle _obj) isEqualTo _obj) exitWith {["Rally point can not be placed fr
 if (surfaceIsWater (getPos _obj)) exitWith {["Rally point can not be placed in water."] call I_fnc_notification;}; // pls no grief
 if (((getPosATL _obj) select 2) > 10) exitWith {["Rally point can not be placed while airborne."] call I_fnc_notification;}; // pls no grief
 
-[((group _obj) getVariable "I_GROUP_RALLYPOINT"), (nearestObjects [_obj, ["Man"], 50]), ((group _obj) getVariable "I_GROUP_RALLYPOINT_TIMEOUT") , false] params ["_var", "_objects", ["_timeout", 0], "_fail"];
+[((group _obj) getVariable "I_GROUP_RALLYPOINT"), (nearestObjects [_obj, ["Man"], 50]), ((group _obj) getVariable "I_GROUP_RALLYPOINT_TIMEOUT"), false] params ["_var", "_objects", ["_timeout", 0], "_fail"];
 
 if (_timeout > 0) exitWith {[format ["You are unable place another rally for %1 seconds.", _timeout]] call I_fnc_notification;};
 

@@ -88,7 +88,12 @@ for "_i" from 0 to 4 do {
 		
 		if !(_scan isEqualTo (getArray (configfile >> "CfgWorlds" >> worldName >> "centerPosition"))) then {
 			_group = [[_scan select 0, _scan select 1], selectRandom ["MSV-EMR-SQUAD", "VDV-EMR-SQUAD-SPC", "MSV-EMR-SQUAD-MM"], false] call I_fnc_createGroupEfficient;
-			[_group, _pos, 400] call CBA_fnc_taskPatrol;
+			
+			if (_i isEqualTo 0 or _i isEqualTo 1) then {
+				[_group, _pos, 400] call CBA_fnc_taskPatrol;
+			} else {
+				[_group, [_pos select 0, _pos select 1, 0], 200, 3, 0.3, false] call CBA_fnc_taskDefend;
+			};
 			
 			{
 				_objects pushBack _x;

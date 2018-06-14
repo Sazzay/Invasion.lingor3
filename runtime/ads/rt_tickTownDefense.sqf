@@ -47,7 +47,7 @@
 			
 			// cap
 			if (count _players >= 1) then {
-				[format ["ADS_TOWN_%1", _pos], [((missionNamespace getVariable format ["ADS_TOWN_%1", _pos]) select 0), (_var select 1) + 0.25 + ((count _players) / 10), ((missionNamespace getVariable format ["ADS_TOWN_%1", _pos]) select 2)]] call I_fnc_setVariable;
+				[format ["ADS_TOWN_%1", _pos], [((missionNamespace getVariable format ["ADS_TOWN_%1", _pos]) select 0), (_var select 1) + 5.25 + ((count _players) / 10), ((missionNamespace getVariable format ["ADS_TOWN_%1", _pos]) select 2)]] call I_fnc_setVariable;
 			};
 			
 			if ((count _players) <= 0 and (_var select 1) >= 0.25) then {
