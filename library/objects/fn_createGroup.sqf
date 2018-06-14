@@ -28,9 +28,9 @@ if (isNil("_type") or isNil ("_pos")) exitWith {
 	if (_type in _x) exitWith {
 		_index = _forEachIndex;
 	};
-} forEach I_DEF_GROUPS;
+} forEach I_DEF_OPFOR_INEFFICIENT_GROUPS;
 
-_return = [_pos, EAST, ((I_DEF_GROUPS select _index) select 1)] call BIS_fnc_spawnGroup;
+_return = [_pos, EAST, ((I_DEF_OPFOR_INEFFICIENT_GROUPS select _index) select 1)] call BIS_fnc_spawnGroup;
 
 [_return] call I_fnc_aiSkill;
 _return deleteGroupWhenEmpty true;

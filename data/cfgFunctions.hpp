@@ -29,6 +29,7 @@ class I
 		class populateTask;
 		class deleteObjects;
 		class returnGroupsFromArray;
+		class spawnRandomAA;
 	};
 	class acs
 	{
