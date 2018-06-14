@@ -18,4 +18,9 @@ player addEventHandler ["Respawn", {
 	if (((["task_force_radio"] call I_fnc_isAddonActive) isEqualTo true) and ((typeOf _unit) in _tls)) then {
 		_unit addBackpack "tf_rt1523g_rhs";
 	};
+	
+	if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
+		_unit addItem "ACE_EarPlugs";
+		_unit assignItem "ACE_EarPlugs";
+	};
 }];

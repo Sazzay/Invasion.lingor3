@@ -75,6 +75,7 @@ class I
 		class addRepairStation;
 		class createAmmoCrate;
 		class serviceVehicle;
+		class createRallyPoint;
 	};
 	class support
 	{

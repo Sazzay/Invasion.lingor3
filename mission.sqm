@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2566;
+		nextID=2574;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=379;
+		nextID=384;
 	};
 	class Camera
 	{
-		pos[]={5388.4365,738.26172,9329.2432};
-		dir[]={-0.51431423,-0.70067984,-0.49457142};
-		up[]={-0.50505793,0.71346974,-0.4856689};
-		aside[]={-0.69316465,4.1723251e-007,0.72083688};
+		pos[]={5084.686,34.036674,9032.3789};
+		dir[]={-0.72511584,-0.47845021,-0.49536154};
+		up[]={-0.39509037,0.87809503,-0.26990396};
+		aside[]={-0.56411517,3.3224933e-007,0.82575756};
 	};
 };
 binarizationWanted=0;
@@ -38,14 +38,13 @@ addons[]=
 	"A3_Characters_F_Common",
 	"A3_Modules_F",
 	"A3_Ui_F",
-	"rhs_c_btr",
-	"RHS_US_A2_AirImport"
+	"rhs_c_btr"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=10;
+		items=9;
 		class Item0
 		{
 			className="rhsusf_c_troops";
@@ -101,13 +100,6 @@ class AddonsMetaData
 		{
 			className="rhs_c_btr";
 			name="BTR-70 & 80";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item9
-		{
-			className="RHS_US_A2_AirImport";
-			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
@@ -234,7 +226,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=9;
 		class Item0
 		{
 			dataType="Layer";
@@ -4843,66 +4835,24 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4906.6118,347.51831,8906.7158};
-						angles[]={0,3.4195538,0};
+						position[]={5056.3901,12.913554,9011.1592};
 					};
 					side="West";
-					flags=2;
+					flags=7;
 					class Attributes
 					{
 						isPlayer=1;
 					};
-					id=2565;
-					type="rhsusf_airforce_jetpilot";
-					atlOffset=327.67599;
+					id=2572;
+					type="rhsusf_socom_marsoc_teamleader";
+					atlOffset=-9.059906e-005;
 				};
 			};
 			class Attributes
 			{
 			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=1;
-				};
-				class Links
-				{
-					items=1;
-					class Item0
-					{
-						linkID=0;
-						item0=2565;
-						item1=2564;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-				};
-			};
-			id=2528;
-			atlOffset=327.67599;
-		};
-		class Item9
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4906.4355,348.29654,8906.5166};
-				angles[]={0,3.4195538,0};
-			};
-			side="West";
-			flags=2;
-			class Attributes
-			{
-				reportRemoteTargets=1;
-				receiveRemoteTargets=1;
-				reportOwnPosition=1;
-			};
-			id=2564;
-			type="RHS_A10";
-			atlOffset=327.67599;
+			id=2571;
+			atlOffset=-9.059906e-005;
 		};
 	};
 };
