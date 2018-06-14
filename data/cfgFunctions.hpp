@@ -88,4 +88,10 @@ class I
 		file = "library\debug";
 		class hintStrEastGroups;
 	};
+	class markers
+	{
+		file = "library\markers";
+		class createMarker;
+		class createMarkerLocal;
+	};
 };
