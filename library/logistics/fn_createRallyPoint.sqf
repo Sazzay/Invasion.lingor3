@@ -19,13 +19,13 @@ if (isNil "_obj") exitWith {
 	diag_log "I_fnc_createRallyPoint: _obj nil, invalid.";
 };
 
-if !((vehicle _obj) isEqualTo _obj) exitWith {["Can not drop a rally point in a vehicle."] call I_fnc_notification;}; // pls no grief
-if (surfaceIsWater (getPos _obj)) exitWith {["Can not drop a rally point in water."] call I_fnc_notification;}; // pls no grief
-if (((getPosATL _obj) select 2) > 10) exitWith {["Can not drop a rally point while airborne."] call I_fnc_notification;}; // pls no grief
+if !((vehicle _obj) isEqualTo _obj) exitWith {["Rally point can not be placed from inside a vehicle."] call I_fnc_notification;}; // pls no grief
+if (surfaceIsWater (getPos _obj)) exitWith {["Rally point can not be placed in water."] call I_fnc_notification;}; // pls no grief
+if (((getPosATL _obj) select 2) > 10) exitWith {["Rally point can not be placed while airborne."] call I_fnc_notification;}; // pls no grief
 
 [((group _obj) getVariable "I_GROUP_RALLYPOINT"), (nearestObjects [_obj, ["Man"], 50]), ((group _obj) getVariable "I_GROUP_RALLYPOINT_TIMEOUT") , false] params ["_var", "_objects", ["_timeout", 0], "_fail"];
 
-if (_timeout > 0) exitWith {[format ["Can not place another rally for %1 seconds.", _timeout]] call I_fnc_notification;};
+if (_timeout > 0) exitWith {[format ["You are unable place another rally for %1 seconds.", _timeout]] call I_fnc_notification;};
 
 {
 	if ((side _x) isEqualTo east) exitWith {
@@ -33,7 +33,7 @@ if (_timeout > 0) exitWith {[format ["Can not place another rally for %1 seconds
 	};
 } forEach _objects;
 
-if (_fail isEqualTo true) exitWith {["Enemies nearby, can not drop rally."] call I_fnc_notification;};
+if (_fail isEqualTo true) exitWith {["Enemies nearby, rally point can not be dropped."] call I_fnc_notification;};
 
 if !(isNil "_var") then {
 	(_var select 0) call BIS_fnc_removeRespawnPosition;
