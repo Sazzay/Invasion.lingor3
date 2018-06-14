@@ -91,7 +91,7 @@ class I
 	class markers
 	{
 		file = "library\markers";
-		class createMarker;
-		class createMarkerLocal;
+		class createMarkerIcon;
+		class createMarkerIconLocal;
 	};
 };

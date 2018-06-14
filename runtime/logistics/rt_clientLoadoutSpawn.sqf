@@ -20,9 +20,8 @@ player addEventHandler ["Respawn", {
 	};
 	
 	if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
-	
 		{
 			_unit addItemToUniform _x;
-		}forEach ["ACE_EarPlugs","ACE_IR_Strobe_Item","ACE_Flashlight_XL50","ACE_MapTools","ACE_microDAGR"];
+		} forEach ["ACE_EarPlugs","ACE_IR_Strobe_Item","ACE_Flashlight_XL50","ACE_MapTools","ACE_microDAGR"];
 	};
 }];

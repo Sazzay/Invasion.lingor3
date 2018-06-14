@@ -24,5 +24,5 @@ if (count _this isEqualTo 0) exitWith {
 for "_i" from 0 to 2 do {
 	playSound "FD_Timer_F";
 	
-	sleep 0.15;
+	uiSleep 0.15;
 };
