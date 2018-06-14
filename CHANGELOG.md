@@ -1,6 +1,6 @@
 Build 4:
 - Added: Rally Points.
-- Added: Earpluggs on spawn.
+- Added: Earplugs on spawn.
 and should now be virtually eliminated.
 - Fixed: Service Script should now correctly refill ammo.
 - Fixed: Script error showing up in rpt logs should now be resolved.
