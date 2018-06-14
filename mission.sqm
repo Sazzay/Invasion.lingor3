@@ -21,9 +21,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={5211.5386,350.28149,9407.5195};
-		dir[]={-0.45089278,-0.61450922,-0.64744478};
-		up[]={-0.35119691,0.78888643,-0.50428832};
-		aside[]={-0.82065916,6.868504e-008,0.57152164};
+		dir[]={-0.38055143,-0.71048951,-0.59202844};
+		up[]={-0.38418004,0.70369083,-0.59767157};
+		aside[]={-0.84125328,1.2427336e-007,0.54075074};
 	};
 };
 binarizationWanted=0;
@@ -234,7 +234,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=9;
+		items=8;
 		class Item0
 		{
 			dataType="Layer";
@@ -4830,37 +4830,6 @@ class Mission
 				};
 				nAttributes=6;
 			};
-		};
-		class Item8
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5056.3901,12.913554,9011.1592};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=2572;
-					type="rhsusf_socom_marsoc_teamleader";
-					atlOffset=-9.059906e-005;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=2571;
-			atlOffset=-9.059906e-005;
 		};
 	};
 };
