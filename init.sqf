@@ -22,13 +22,5 @@ if !(isServer) exitWith {};
 [] execVM "runtime\logistics\rt_crateRespawner.sqf";
 [] execVM "runtime\logistics\rt_serviceArea.sqf";
 
-//[[6665.361, 10033.129, 47]] call I_fnc_createAmmoCrate;
-
 // LHD respawn
 I_RESPAWN_LHD = [west, [6690.31,10032.1,16.6477], "USMC LHD"] call BIS_fnc_addRespawnPosition; // getPosASL player;
-
-// Testing stuff
-
-sleep 5;
-
-//[[3848, 9599], "MSV-EMR-SQUAD", false] call I_fnc_createGroupEfficient;

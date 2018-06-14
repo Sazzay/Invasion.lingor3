@@ -4,7 +4,7 @@ OnLoadName 	       = "Lingor Invasion";
 OnLoadMission 	   = "Invade and capture the lush island of Lingor.";
 loadScreen		   = "textures\loading_logo.paa";
 overviewPicture	   = "textures\overview_logo.paa";
-overviewText	   = "Invade and capture the lush island of Lingor.";
+overviewText	   = "Invade and capture the lush island of Lingor. Build 3.";
 overviewTextLocked = "";
 
 #include "data\defines.hpp"

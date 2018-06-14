@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=369;
+		nextID=379;
 	};
 	class Camera
 	{
-		pos[]={6628.5073,274.10202,10324.006};
-		dir[]={0.26676089,-0.4369027,-0.85918117};
-		up[]={0.12960359,0.89917839,-0.41742787};
-		aside[]={-0.95518178,-3.1883828e-006,-0.29657465};
+		pos[]={4628.8149,305.78348,9772.7617};
+		dir[]={-0.49501571,-0.49355748,-0.715119};
+		up[]={-0.28091604,0.86971122,-0.40582007};
+		aside[]={-0.82224274,-3.0780211e-007,0.56917053};
 	};
 };
 binarizationWanted=0;
@@ -748,7 +748,7 @@ class Mission
 									{
 									};
 									id=862;
-									atlOffset=8.9044266;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1356,7 +1356,7 @@ class Mission
 									{
 									};
 									id=889;
-									atlOffset=8.9044876;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1516,7 +1516,7 @@ class Mission
 									{
 									};
 									id=902;
-									atlOffset=18.215117;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1676,7 +1676,7 @@ class Mission
 									{
 									};
 									id=905;
-									atlOffset=46.646;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1775,7 +1775,7 @@ class Mission
 									{
 									};
 									id=908;
-									atlOffset=8.8610153;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1874,7 +1874,7 @@ class Mission
 									{
 									};
 									id=910;
-									atlOffset=8.8610153;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2097,7 +2097,7 @@ class Mission
 									{
 									};
 									id=1402;
-									atlOffset=5.4660292;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2320,7 +2320,7 @@ class Mission
 									{
 									};
 									id=1406;
-									atlOffset=5.4666195;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2543,7 +2543,7 @@ class Mission
 									{
 									};
 									id=1494;
-									atlOffset=7.656774;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2824,7 +2824,7 @@ class Mission
 									{
 									};
 									id=2048;
-									atlOffset=6.699852;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2984,7 +2984,7 @@ class Mission
 									{
 									};
 									id=2034;
-									atlOffset=8.8607264;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3011,7 +3011,7 @@ class Mission
 								};
 							};
 							id=209;
-							atlOffset=7.1568565;
+							atlOffset=17.27;
 						};
 						class Item1
 						{
@@ -4442,11 +4442,11 @@ class Mission
 						};
 					};
 					id=725;
-					atlOffset=38.596359;
+					atlOffset=-11.651658;
 				};
 			};
 			id=722;
-			atlOffset=38.596359;
+			atlOffset=-11.651658;
 		};
 		class Item1
 		{

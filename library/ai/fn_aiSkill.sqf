@@ -21,11 +21,11 @@ if (!((typeName _mvar) isEqualTo "OBJECT") and !((typeName _mvar) isEqualTo "GRO
 
 _table = [
 ["spotTime", 0.7],
-["spotDistance", 0.55],
+["spotDistance", 0.6],
 ["courage", 0.8],
-["aimingSpeed", 0.2],
+["aimingSpeed", 0.4],
 ["aimingShake", 0.3],
-["aimingAccuracy", 0.15],
+["aimingAccuracy", 0.2],
 ["commanding", 0.6],
 ["reloadSpeed", 0.8]
 ];
