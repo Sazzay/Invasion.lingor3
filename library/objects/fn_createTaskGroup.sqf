@@ -29,7 +29,7 @@ for "_i" from 0 to 2 do {
 
 	if !(_scan isEqualTo (getArray (configfile >> "CfgWorlds" >> worldName >> "centerPosition"))) then {
 		_group = [[_scan select 0, _scan select 1], selectRandom ["VDV-EMR-SQUAD-SPC", "VDV-EMR-SQUAD-AT", "VDV-EMR-SQUAD-RECON"],	selectRandom [true, false]] call I_fnc_createGroupEfficient;
-		[_group, getPos _obj, 400, 7, "MOVE", "SAFE", "YELLOW", "LIMITED", "STAG COLUMN", "_group call CBA_fnc_searchNearby", [3,6,9]] call CBA_fnc_taskPatrol;
+		[_group, getPos _obj, (100 + random 100), 7, "MOVE", "SAFE", "RED", "LIMITED", "STAG COLUMN", "_group call CBA_fnc_searchNearby", [3,6,9]] call CBA_fnc_taskPatrol;
 					
 		{
 			_objects pushBack _x;

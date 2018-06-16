@@ -43,11 +43,11 @@ params
 	["_markerDir",0,[0]]
 ];
 
-_marker = 	createMarkerLocal [_markerID, _markerPos];
-_marker 	setMarkerTypeLocal _markerType;
-_marker 	setMarkerColorLocal _markerColor;
-_marker 	setMarkerTextLocal _markerText;
-_marker 	setMarkerDirLocal _markerDir;
+_marker = createMarkerLocal [_markerID, _markerPos];
+_marker setMarkerTypeLocal _markerType;
+_marker setMarkerColorLocal _markerColor;
+_marker setMarkerTextLocal _markerText;
+_marker setMarkerDirLocal _markerDir;
 
 _return = _marker;
 

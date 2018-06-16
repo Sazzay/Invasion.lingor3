@@ -43,11 +43,11 @@ params
 	["_markerDir",0,[0]]
 ];
 
-_marker = 	createMarker [_markerID, _markerPos];
-_marker 	setMarkerType _markerType;
-_marker 	setMarkerColor _markerColor;
-_marker 	setMarkerText _markerText;
-_marker 	setMarkerDir _markerDir;
+_marker = createMarker [_markerID, _markerPos];
+_marker setMarkerType _markerType;
+_marker setMarkerColor _markerColor;
+_marker setMarkerText _markerText;
+_marker setMarkerDir _markerDir;
 
 _return = _marker;
 

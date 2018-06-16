@@ -39,6 +39,7 @@ GLOBAL setVariable ["ADS_TASK_ALLOBJECTS", _array, true];
 				
 			if ((count ([getPos (_this select 0), 800] call I_fnc_findPlayers) >= 1) and (_var select 1) > 0) then { // if players are found in radius again and timeout is over 0, reset back to 0
 				[format ["ADS_TASK_%1", (_this select 0)], [(_var select 0), 0]] call I_fnc_setVariable;
+				diag_log format ["ADS_TASK_%1: Players found in radius again, resetting timeout to 0.", (_this select 0)];
 			};
 				
 			if ((_var select 1) >= 10) then { // if timeout reaches 10, then set var select 0 as false AKA inactive.

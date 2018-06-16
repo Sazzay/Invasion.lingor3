@@ -38,15 +38,17 @@ if (_fail isEqualTo true) exitWith {["Enemies nearby, rally point can not be dro
 if !(isNil "_var") then {
 	(_var select 0) call BIS_fnc_removeRespawnPosition;
 	deleteVehicle (_var select 1);
+	deleteMarker (_var select 2);
 };
 
 _rally = createVehicle ["Misc_Backpackheap", (_obj modelToWorld [0, 2, 0]), [], 0, "CAN_COLLIDE"];
 _respawn = [(group _obj), (getPos _rally), "RP"] call BIS_fnc_addRespawnPosition;
+_marker = [format ["RP_%1", (group _obj)], (getPos _rally), "respawn_inf", "ColorWEST", format ["Rally Point - %1", groupId (group _obj)]] call I_fnc_createMarkerIcon;
 
-(group _obj) setVariable ["I_GROUP_RALLYPOINT", [_respawn, _rally]];
+(group _obj) setVariable ["I_GROUP_RALLYPOINT", [_respawn, _rally, _marker]];
 
 [(group _obj)] spawn {
-	(_this select 0) setVariable ["I_GROUP_RALLYPOINT_TIMEOUT", 120];
+	(_this select 0) setVariable ["I_GROUP_RALLYPOINT_TIMEOUT", 240];
 
 	while {((_this select 0) getVariable "I_GROUP_RALLYPOINT_TIMEOUT") > 0} do {
 		(_this select 0) setVariable ["I_GROUP_RALLYPOINT_TIMEOUT", ((_this select 0) getVariable "I_GROUP_RALLYPOINT_TIMEOUT") - 1];
