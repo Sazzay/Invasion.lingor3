@@ -1,4 +1,5 @@
 Build 5:
+- Added: Client setViewdistance added and set to 2500 meters.
 - Added: Info stand right outside LHD respawn that shows the assigned radio channels.
 - Fixed: Tasks being re-added when another player joining should now be fixed.
 - Fixed: Service script not refueling should now be fixed, was a locality issue.
