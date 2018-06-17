@@ -22,13 +22,17 @@ waitUntil {!((GLOBAL getVariable "ADS_TASK_ALLOBJECTS") isEqualTo [])};
 		_icon = "Town"
 	};
 
-	[player, format ["TOWN_TASK_%1", [_x select 0, _x select 1]], ["", format ["Capture %1", _name], ""], _x, "CREATED", 1, false, _icon, false] call BIS_fnc_taskCreate;
+	if ((GLOBAL getVariable [format ["ADS_TOWN_%1_CAP", [_x select 0, _x select 1]], 0]) < 21) then {
+		[player, format ["TOWN_TASK_%1", [_x select 0, _x select 1]], ["", format ["Capture %1", _name], ""], _x, "CREATED", 1, false, _icon, false] call BIS_fnc_taskCreate;
+	};
 } forEach _towns;
 
 {
 	["NIL", ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliett", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "Xray", "Yankee", "Zulu"]] params ["_name", "_array"];
 	
-	[player, format ["OBJECTIVE_TASK_%1", _x], ["", format ["Destroy %1", (_array select _forEachIndex)], ""], _x, "CREATED", 1, false, ((_array select _forEachIndex) select [0, 1]), false] call BIS_fnc_taskCreate;
+	if (alive _x) then {
+		[player, format ["OBJECTIVE_TASK_%1", _x], ["", format ["Destroy %1", (_array select _forEachIndex)], ""], _x, "CREATED", 1, false, ((_array select _forEachIndex) select [0, 1]), false] call BIS_fnc_taskCreate;
+	};
 } forEach _tasks;
 
 while {true} do {

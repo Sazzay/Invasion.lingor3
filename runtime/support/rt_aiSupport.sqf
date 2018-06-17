@@ -14,7 +14,7 @@ addMissionEventHandler ["EntityKilled", {
 
 	if !((vehicle _killer) isKindOf "Air") then {
 		if (((side _killer) isEqualTo west) and ((missionNamespace getVariable "RESTRICT_AISS_PARA") isEqualTo false)) then {
-			if ((random 100) < (3 + ((_var select 2) / 2))) then {
+			if ((random 100) < (4 + ((_var select 2) / 1.5))) then {
 				[(selectRandom [2, 4]), (getPos _killer)] call I_fnc_paraAssaultSquadron;
 				
 				["RESTRICT_AISS_PARA", 800 - random 150 + random 400 - ((_var select 2) * 20)] call I_fnc_timedBool;
