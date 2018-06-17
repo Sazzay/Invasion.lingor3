@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2587;
+		nextID=2605;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=414;
+		nextID=419;
 	};
 	class Camera
 	{
-		pos[]={3672.9497,174.10027,9296.7129};
-		dir[]={-0.23863222,-0.25133455,0.93814111};
-		up[]={-0.062011473,0.9677943,0.2437814};
-		aside[]={0.96925944,-4.0873419e-007,0.24654618};
+		pos[]={6641.8179,62.157997,10058.827};
+		dir[]={0.53369206,-0.59452724,-0.60161674};
+		up[]={0.39461669,0.80391628,-0.44483703};
+		aside[]={-0.74816304,-7.4339914e-007,-0.6637001};
 	};
 };
 binarizationWanted=0;
@@ -36,13 +36,14 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"A3_Characters_F_Common",
 	"A3_Modules_F",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"A3_Signs_F_Signs_Ad"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			className="rhsusf_c_troops";
@@ -91,6 +92,13 @@ class AddonsMetaData
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Signs_F";
+			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -225,7 +233,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			dataType="Layer";
@@ -342,7 +350,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6685.4121,16.68993,10021.23};
+												position[]={6685.4121,16.689438,10021.23};
 												angles[]={0,2.7662072,0};
 											};
 											side="West";
@@ -350,11 +358,12 @@ class Mission
 											class Attributes
 											{
 												rank="SERGEANT";
+												isPlayer=1;
 												isPlayable=1;
 											};
 											id=865;
 											type="rhsusf_socom_marsoc_elementleader";
-											atlOffset=8.9032125;
+											atlOffset=8.9027205;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -1811,7 +1820,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6659.4614,16.647728,10018.354};
+												position[]={6659.4609,16.647438,10018.354};
 												angles[]={0,5.8685822,0};
 											};
 											side="West";
@@ -1824,7 +1833,7 @@ class Mission
 											};
 											id=911;
 											type="rhsusf_airforce_jetpilot";
-											atlOffset=8.8610153;
+											atlOffset=8.8607254;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2587,7 +2596,6 @@ class Mission
 											class Attributes
 											{
 												rank="SERGEANT";
-												isPlayer=1;
 												isPlayable=1;
 											};
 											id=2049;
@@ -3515,6 +3523,46 @@ class Mission
 			type="b_support";
 			id=2074;
 			atlOffset=30.021;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6684.7476,17.518646,10029.413};
+				angles[]={0,4.2723513,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=2604;
+			type="SignAd_Sponsor_F";
+			atlOffset=8.6930809;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="textures\radiochart.paa";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
