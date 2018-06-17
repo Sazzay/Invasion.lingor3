@@ -1,4 +1,5 @@
 Build 5:
+- Added: Info stand right outside LHD respawn that shows the assigned radio channels.
 - Fixed: Tasks being re-added when another player joining should now be fixed.
 - Fixed: Service script not refueling should now be fixed, was a locality issue.
 - Changed: Tweaked the aiSupport.sqf script to have double the chance to call in paratroopers compared to before.
