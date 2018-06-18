@@ -7,8 +7,6 @@ player addEventHandler ["GetInMan", {
 // Definitions
 [] call compile preprocessFileLineNumbers "definitions\def_clientClasses.sqf";
 
-sleep 1;
-
 // Client runtime
 [] execVM "runtime\visual\rt_clientSettings.sqf";
 [] execVM "runtime\visual\rt_clientTownHUD.sqf";
