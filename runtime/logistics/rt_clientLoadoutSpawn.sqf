@@ -16,7 +16,7 @@ player addEventHandler ["Respawn", {
 		_unit linkItem "ItemGPS";
 	};
 	
-	if (((["task_force_radio"] call I_fnc_isAddonActive) isEqualTo true) then {
+	if (((["task_force_radio"] call I_fnc_isAddonActive) isEqualTo true)) then {
 
 		_unit linkItem "tf_anprc152";
 
