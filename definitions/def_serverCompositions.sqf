@@ -1,0 +1,1 @@
+I_DEF_COMPOSITIONS_STATIC_AA = [["Land_BagFence_Round_F",[1.75488,-2.23413,0],321.769],["Land_BagFence_Round_F",[-2.86377,-1.98706,0],39.6947],["Land_BagFence_Round_F",[2.13037,2.93262,0],222.612],["Land_BagFence_Round_F",[-2.81494,3.12622,0],136.579]]

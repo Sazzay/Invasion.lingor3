@@ -30,6 +30,7 @@ class I
 		class deleteObjects;
 		class returnGroupsFromArray;
 		class spawnRandomAA;
+		class spawnComposition;
 	};
 	class acs
 	{
@@ -53,6 +54,7 @@ class I
 		class findFarthestPos;
 		class findTaskPos;
 		class findArtilleryPos;
+		class findCompositionPos;
 	};
 	class ai
 	{

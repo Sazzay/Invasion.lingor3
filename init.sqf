@@ -1,14 +1,14 @@
 if !(isServer) exitWith {};
 
 // Definitions
-[] execVM "definitions\locations.sqf";
-[] execVM "definitions\groups.sqf";
-[] execVM "definitions\vehicles.sqf";
-[] execVM "definitions\objects.sqf";
-[] execVM "definitions\units.sqf";
-[] execVM "definitions\factions.sqf";
-[] execVM "definitions\magazines.sqf";
-[] execVM "definitions\clientClasses.sqf";
+[] execVM "definitions\def_serverLocations.sqf";
+[] execVM "definitions\def_serverGroups.sqf";
+[] execVM "definitions\def_serverVehicles.sqf";
+[] execVM "definitions\def_serverObjects.sqf";
+[] execVM "definitions\def_serverUnits.sqf";
+[] execVM "definitions\def_serverFactions.sqf";
+[] execVM "definitions\def_serverMagazines.sqf";
+[] execVM "definitions\def_serverCompositions.sqf";
 
 // Runtime
 [] execVM "runtime\spawns\rt_vehicularSpawns.sqf";
@@ -18,6 +18,7 @@ if !(isServer) exitWith {};
 [] execVM "runtime\ads\rt_tickTownDefense.sqf";
 [] execVM "runtime\ads\rt_tickTaskDefense.sqf";
 [] execVM "runtime\ads\rt_tickTaskCount.sqf";
+[] execVM "runtime\ads\rt_tickStaticAA.sqf";
 [] execVM "runtime\support\rt_aiSupport.sqf";
 [] execVM "runtime\maintenance\rt_deleteInactiveVehicles.sqf";
 [] execVM "runtime\logistics\rt_crateRespawner.sqf";

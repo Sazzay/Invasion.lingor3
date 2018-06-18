@@ -16,7 +16,6 @@ I_USMC_CLASS_EOD = [
 "rhsusf_usmc_marpat_wd_explosives"
 ];
 
-// People who have long range radios.
 I_USMC_CLASS_TFAR_LR = [
 "rhsusf_usmc_marpat_wd_squadleader",
 "rhsusf_usmc_marpat_wd_teamleader",

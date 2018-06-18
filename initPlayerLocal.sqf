@@ -5,7 +5,9 @@ player addEventHandler ["GetInMan", {
 }];
 
 // Definitions
-[] execVM "definitions\clientClasses.sqf";
+[] call compile preprocessFileLineNumbers "definitions\def_clientClasses.sqf";
+
+sleep 1;
 
 // Client runtime
 [] execVM "runtime\visual\rt_clientSettings.sqf";
@@ -14,3 +16,4 @@ player addEventHandler ["GetInMan", {
 [] execVM "runtime\visual\rt_clientCreateDiary.sqf";
 [] execVM "runtime\logistics\rt_clientLoadoutSpawn.sqf";
 [] execVM "runtime\logistics\rt_clientRallyPoint.sqf";
+[] execVM "runtime\logistics\rt_clientSetRole.sqf";

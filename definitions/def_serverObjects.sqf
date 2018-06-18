@@ -4,6 +4,8 @@
 	Description: Arrays containing some classes.
 */
 
+I_DEF_STATIC_AA = "RHS_ZU23_VMF";
+
 I_DEF_MILITARY_BUILDINGS = [
 "RU_WarfareBBarracks",
 "Land_fortified_nest_big",
