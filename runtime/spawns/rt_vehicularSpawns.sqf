@@ -19,7 +19,6 @@
 ["CUP_B_M1128_MGS_Woodland", [6735.495, 10061.063, 39.781], 245.139, true,false] call I_fnc_createVehicle;
 ["CUP_B_M1129_MC_MK19_Woodland", [6713.477, 10040.066, 39.785], 244.4, true,false] call I_fnc_createVehicle;
 ["CUP_B_M1129_MC_MK19_Woodland", [6704.642, 10036.012, 39.783], 244.4, true,false] call I_fnc_createVehicle;
-
-I_COMMAND_TENT = [[6688.11,10025.4,47.0792],"COMMAND"] call I_fnc_createTent;
-I_MEDICAL_TENT = [[6688.85,10023.9,46.8086],"MEDICAL"] call I_fnc_createTent;
-I_SUPPORT_TENT = [[6689.61,10022.4,46.8086],"SERVICE"] call I_fnc_createTent;
+[[6688.11,10025.4,47.0792],"COMMAND"] call I_fnc_createTent;
+[[6688.85,10023.9,46.8086],"MEDICAL"] call I_fnc_createTent;
+[[6689.61,10022.4,46.8086],"SERVICE"] call I_fnc_createTent;
