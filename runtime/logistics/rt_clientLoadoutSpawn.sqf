@@ -1,5 +1,5 @@
 /*
-	Author: Markus "Sazzay" Larsson & Panda.
+	Author: Markus "Sazzay" Larsson
 	
 	Description:
 	Saves the default loadout of the unit, and it proceeds to give them that same loadout on respawn.
@@ -83,6 +83,25 @@ player addEventHandler ["Respawn", {
 			{
 				_unit addItemToBackpack _x;
 			}forEach ["ACE_DefusalKit","ACE_Clacker"];
+		};
+		
+	} else {
+
+		{
+			for "_i" from 1 to 2 do {	
+					
+				_unit addItemToUniform _x;
+			};
+		}forEach ["FirstAidKit"];
+
+		if ((typeOf _unit) in I_USMC_CLASS_MEDIC) then {
+
+			{
+				for "_i" from 1 to 12 do {	
+					
+					_unit addItemToBackpack _x;
+				};
+			}forEach ["FirstAidKit"];
 		};
 	};
 }];
