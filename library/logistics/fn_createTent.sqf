@@ -82,11 +82,11 @@ switch (_tentType) do {
 {
 	[
 		(_this select 0),
-		"Assemble Tent",
+		(format["Assemble %1",(_this select 2)]),
 		"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 		"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 		"_this distance _target < 5",
-		"_caller distance _target < 5",
+		"_caller distance _target < 5 && (getPosATL _target select 2) < 1 && (surfaceIsWater (getPos _target)) isEqualTo false;",
 		{}, // Executed on action start.
 		{},	// Code executed on every progress tick						
 		{
@@ -109,7 +109,7 @@ switch (_tentType) do {
 
 	[
 		(_this select 1),
-		"Pack Tent",
+		(format["Pack %1",(_this select 2)]),
 		"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 		"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 		"_this distance _target < 5",
