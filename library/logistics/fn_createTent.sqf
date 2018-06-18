@@ -97,7 +97,7 @@ switch (_tentType) do {
 			_crateObject hideObjectGlobal true;
 			_tentObject hideObjectGlobal false;
 
-			["I_TENT_X", (getPos _crateObject), "hd_flag", "ColorWEST", (_this select 3 select 2)] call I_fnc_createMarkerIcon;
+			[format["I_TENT_%1",(str _tentObject)], (getPos _crateObject), "hd_flag", "ColorWEST", (_this select 3 select 2)] call I_fnc_createMarkerIcon;
 		}, // Code executed on completion
 		{},	// Code executed on interrupted
 		[(_this select 0),(_this select 1),(_this select 2)],
@@ -124,7 +124,7 @@ switch (_tentType) do {
 			_crateObject hideObjectGlobal false;
 			_tentObject hideObjectGlobal true;
 
-			deleteMarker "I_TENT_X";
+			deleteMarker (format["I_TENT_%1",(str _tentObject)]);
 		}, // Code executed on completion
 		{},	// Code executed on interrupted
 		[(_this select 0),(_this select 1)],
