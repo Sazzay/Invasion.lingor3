@@ -38,7 +38,7 @@
 				
 				{
 					if ((vehicle _x) isKindOf "Air") then {
-						(_this select 0) reveal [_x, 4];
+						(_this select 0) reveal [(vehicle _x), 4];
 					};
 				} forEach _players;
 				
