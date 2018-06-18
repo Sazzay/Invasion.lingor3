@@ -30,7 +30,7 @@ private ["_crateObject","_tentObject","_tentName"];
 _crateObject = createVehicle ["CargoNet_01_box_F", _tentPos, [], 0, "CAN_COLLIDE"];
 
 if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
-	[_crateObject,true] call ace_dragging_fnc_setDraggable;
+	[_crateObject,true,[0,1.8,0]] call ace_dragging_fnc_setDraggable;
 };
 
 switch (_tentType) do {
