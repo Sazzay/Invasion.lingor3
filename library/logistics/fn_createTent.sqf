@@ -28,7 +28,10 @@ params
 private ["_crateObject","_tentObject","_tentName"];
 
 _crateObject = createVehicle ["CargoNet_01_box_F", _tentPos, [], 0, "CAN_COLLIDE"];
-[_crateObject,true] call ace_dragging_fnc_setDraggable;
+
+if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
+	[_crateObject,true] call ace_dragging_fnc_setDraggable;
+};
 
 switch (_tentType) do {
 
@@ -61,7 +64,7 @@ switch (_tentType) do {
 		_tentObject attachTo[_crateObject,[0,0,0.7]];
 
 		[_tentObject] call I_fnc_serviceVehicle;
-		
+
 		if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
 			_tentObject setVariable ["ACE_isRepairFacility",true,true];
 		};
@@ -132,4 +135,5 @@ switch (_tentType) do {
 	] call BIS_fnc_holdActionAdd;
 }] remoteExec ["bis_fnc_call", 0,true]; 
 
+_return = _crateObject;
 _return
