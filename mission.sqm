@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2713;
+		nextID=2715;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=451;
+		nextID=469;
 	};
 	class Camera
 	{
-		pos[]={6667.0112,50.381714,10020.62};
-		dir[]={-0.27435571,-0.92163193,0.27459919};
-		up[]={-0.65140051,0.38807428,0.65197951};
-		aside[]={0.70744878,1.0593794e-006,0.70682174};
+		pos[]={6642.4863,37.831398,10040.068};
+		dir[]={0.55112731,-0.7115913,-0.4360306};
+		up[]={0.55809855,0.70253521,-0.44154727};
+		aside[]={-0.62052464,4.3091859e-007,-0.78432065};
 	};
 };
 binarizationWanted=0;
@@ -51,7 +51,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=19;
+		items=14;
 		class Item0
 		{
 			className="rhsusf_c_troops";
@@ -75,105 +75,70 @@ class AddonsMetaData
 		};
 		class Item3
 		{
-			className="ace_optics";
-			name="ACE3 - Optics";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item4
-		{
-			className="ace_compat_rhs_usf3";
-			name="ACE3 - RHS USF Compatibility";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item5
-		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item6
-		{
-			className="ace_explosives";
-			name="ACE3 - Explosives";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item7
-		{
 			className="A3_Weapons_F_Orange";
 			name="Arma 3 Orange - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item4
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
-		{
-			className="ace_laser";
-			name="ACE3 - Laser";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item10
-		{
-			className="ace_medical";
-			name="ACE3 - Medical";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item11
+		class Item5
 		{
 			className="rhsusf_sounds";
 			name="USF Sounds";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item12
+		class Item6
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item8
 		{
 			className="CUP_WaterVehicles_Weapons";
 			name="CUP_WaterVehicles_Weapons";
 			author="Community Upgrade Project and ATLAS Mod";
 		};
-		class Item14
+		class Item9
 		{
 			className="CUP_WaterVehicles_Fregata";
 			name="CUP_WaterVehicles_Fregata";
 		};
-		class Item15
+		class Item10
 		{
 			className="CUP_WaterVehicles_LHD";
 			name="CUP_WaterVehicles_LHD";
 		};
-		class Item16
+		class Item11
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item12
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item13
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
@@ -384,7 +349,7 @@ class Mission
 														isBackpack=0;
 														class MagazineCargo
 														{
-															items=4;
+															items=2;
 															class Item0
 															{
 																name="rhs_mag_30Rnd_556x45_M855_Stanag";
@@ -393,19 +358,7 @@ class Mission
 															};
 															class Item1
 															{
-																name="SmokeShellBlue";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="HandGrenade";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="SmokeShell";
+																name="rhs_mag_m67";
 																count=2;
 																ammoLeft=1;
 															};
@@ -489,15 +442,10 @@ class Mission
 															name="rhs_mag_30Rnd_556x45_M855_Stanag";
 															ammoLeft=30;
 														};
-														class secondaryMuzzleMag
-														{
-															name="rhs_mag_M441_HE";
-															ammoLeft=1;
-														};
 													};
 													class binocular
 													{
-														name="Binocular";
+														name="Rangefinder";
 													};
 													class uniform
 													{
@@ -510,17 +458,17 @@ class Mission
 														isBackpack=0;
 														class MagazineCargo
 														{
-															items=5;
+															items=6;
 															class Item0
 															{
 																name="rhs_mag_30Rnd_556x45_M855_Stanag";
-																count=10;
+																count=6;
 																ammoLeft=30;
 															};
 															class Item1
 															{
 																name="1Rnd_HE_Grenade_shell";
-																count=6;
+																count=5;
 																ammoLeft=1;
 															};
 															class Item2
@@ -538,6 +486,12 @@ class Mission
 															class Item4
 															{
 																name="1Rnd_Smoke_Grenade_shell";
+																count=2;
+																ammoLeft=1;
+															};
+															class Item5
+															{
+																name="rhs_mag_m67";
 																count=2;
 																ammoLeft=1;
 															};
@@ -994,15 +948,10 @@ class Mission
 															name="rhs_mag_30Rnd_556x45_M855_Stanag";
 															ammoLeft=30;
 														};
-														class secondaryMuzzleMag
-														{
-															name="rhs_mag_M441_HE";
-															ammoLeft=1;
-														};
 													};
 													class binocular
 													{
-														name="Binocular";
+														name="Rangefinder";
 													};
 													class uniform
 													{
@@ -1015,17 +964,17 @@ class Mission
 														isBackpack=0;
 														class MagazineCargo
 														{
-															items=5;
+															items=6;
 															class Item0
 															{
 																name="rhs_mag_30Rnd_556x45_M855_Stanag";
-																count=10;
+																count=6;
 																ammoLeft=30;
 															};
 															class Item1
 															{
 																name="1Rnd_HE_Grenade_shell";
-																count=6;
+																count=5;
 																ammoLeft=1;
 															};
 															class Item2
@@ -1043,6 +992,12 @@ class Mission
 															class Item4
 															{
 																name="1Rnd_Smoke_Grenade_shell";
+																count=2;
+																ammoLeft=1;
+															};
+															class Item5
+															{
+																name="rhs_mag_m67";
 																count=2;
 																ammoLeft=1;
 															};
@@ -1516,15 +1471,10 @@ class Mission
 															name="rhs_mag_30Rnd_556x45_M855_Stanag";
 															ammoLeft=30;
 														};
-														class secondaryMuzzleMag
-														{
-															name="rhs_mag_M441_HE";
-															ammoLeft=1;
-														};
 													};
 													class binocular
 													{
-														name="Binocular";
+														name="Rangefinder";
 													};
 													class uniform
 													{
@@ -1537,17 +1487,17 @@ class Mission
 														isBackpack=0;
 														class MagazineCargo
 														{
-															items=5;
+															items=6;
 															class Item0
 															{
 																name="rhs_mag_30Rnd_556x45_M855_Stanag";
-																count=10;
+																count=6;
 																ammoLeft=30;
 															};
 															class Item1
 															{
 																name="1Rnd_HE_Grenade_shell";
-																count=6;
+																count=5;
 																ammoLeft=1;
 															};
 															class Item2
@@ -1565,6 +1515,12 @@ class Mission
 															class Item4
 															{
 																name="1Rnd_Smoke_Grenade_shell";
+																count=2;
+																ammoLeft=1;
+															};
+															class Item5
+															{
+																name="rhs_mag_m67";
 																count=2;
 																ammoLeft=1;
 															};
@@ -2041,7 +1997,7 @@ class Mission
 												{
 													class primaryWeapon
 													{
-														name="rhs_weap_m4_carryhandle_grip3";
+														name="rhs_weap_m4_carryhandle";
 														optics="rhsusf_acc_ACOG3_USMC";
 														flashlight="rhsusf_acc_anpeq16a";
 														underBarrel="rhsusf_acc_grip3";
@@ -2054,26 +2010,11 @@ class Mission
 													class binocular
 													{
 														name="Laserdesignator";
-														class primaryMuzzleMag
-														{
-															name="Laserbatteries";
-															ammoLeft=1;
-														};
 													};
 													class uniform
 													{
 														typeName="rhs_uniform_FROG01_wd";
 														isBackpack=0;
-														class MagazineCargo
-														{
-															items=1;
-															class Item0
-															{
-																name="Laserbatteries";
-																count=1;
-																ammoLeft=1;
-															};
-														};
 													};
 													class vest
 													{
@@ -2081,36 +2022,18 @@ class Mission
 														isBackpack=0;
 														class MagazineCargo
 														{
-															items=5;
+															items=2;
 															class Item0
-															{
-																name="SmokeShellBlue";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item1
-															{
-																name="SmokeShellRed";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="SmokeShell";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="HandGrenade";
-																count=1;
-																ammoLeft=1;
-															};
-															class Item4
 															{
 																name="rhs_mag_30Rnd_556x45_M855_Stanag";
 																count=4;
 																ammoLeft=30;
+															};
+															class Item1
+															{
+																name="rhs_mag_m67";
+																count=2;
+																ammoLeft=1;
 															};
 														};
 													};
@@ -2654,12 +2577,13 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6653.3882,16.810049,10021.579};
+												position[]={6653.3882,16.810436,10021.58};
 											};
 											side="West";
 											flags=5;
 											class Attributes
 											{
+												description="Sniper";
 												isPlayable=1;
 												class Inventory
 												{
@@ -2733,6 +2657,7 @@ class Mission
 											};
 											id=2700;
 											type="rhsusf_usmc_recon_marpat_wd_sniper_M107";
+											atlOffset=0.00038719177;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2781,18 +2706,20 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6653.9375,16.810049,10020.089};
+												position[]={6654.0171,16.810049,10020.01};
+												angles[]={0,5.8917804,0};
 											};
 											side="West";
 											flags=5;
 											class Attributes
 											{
+												description="Spotter";
 												isPlayable=1;
 												class Inventory
 												{
 													class primaryWeapon
 													{
-														name="rhs_weap_m4_carryhandle_grip3";
+														name="rhs_weap_m4_carryhandle";
 														optics="rhsusf_acc_ACOG_USMC";
 														flashlight="rhsusf_acc_anpeq16a";
 														underBarrel="rhsusf_acc_grip3";
@@ -2804,7 +2731,7 @@ class Mission
 													};
 													class binocular
 													{
-														name="Rangefinder";
+														name="lerca_1200_black";
 													};
 													class uniform
 													{
@@ -2973,11 +2900,6 @@ class Mission
 															name="rhs_mag_30Rnd_556x45_M855_Stanag";
 															ammoLeft=30;
 														};
-														class secondaryMuzzleMag
-														{
-															name="rhs_mag_M441_HE";
-															ammoLeft=1;
-														};
 													};
 													class binocular
 													{
@@ -2994,17 +2916,17 @@ class Mission
 														isBackpack=0;
 														class MagazineCargo
 														{
-															items=5;
+															items=6;
 															class Item0
 															{
 																name="rhs_mag_30Rnd_556x45_M855_Stanag";
-																count=10;
+																count=6;
 																ammoLeft=30;
 															};
 															class Item1
 															{
 																name="1Rnd_HE_Grenade_shell";
-																count=6;
+																count=5;
 																ammoLeft=1;
 															};
 															class Item2
@@ -3022,6 +2944,12 @@ class Mission
 															class Item4
 															{
 																name="1Rnd_Smoke_Grenade_shell";
+																count=2;
+																ammoLeft=1;
+															};
+															class Item5
+															{
+																name="rhs_mag_m67";
 																count=2;
 																ammoLeft=1;
 															};
@@ -3085,7 +3013,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6647.9814,16.810436,10025.994};
+												position[]={6647.7822,16.810049,10026.395};
 												angles[]={0,5.8987069,0};
 											};
 											side="West";
@@ -3158,7 +3086,6 @@ class Mission
 											};
 											id=2678;
 											type="rhsusf_usmc_marpat_wd_javelin";
-											atlOffset=0.00038719177;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -3207,7 +3134,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6648.7334,16.810049,10024.479};
+												position[]={6648.5063,16.810049,10024.875};
 												angles[]={0,5.8808012,0};
 											};
 											side="West";
@@ -3328,7 +3255,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={6649.3516,16.810049,10023.077};
+												position[]={6649.2031,16.810049,10023.244};
 												angles[]={0,5.8617582,0};
 											};
 											side="West";
