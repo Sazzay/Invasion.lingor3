@@ -9,7 +9,7 @@ player setVariable ["I_LOADOUT", (getUnitLoadout player)];
 
 player addEventHandler ["Respawn", {
 	params ["_unit", "_corpse"];
-	[(_unit getVariable ["I_LOADOUT", []]), ["rhsusf_socom_marsoc_teamleader", "rhsusf_socom_marsoc_spotter", "rhsusf_usmc_marpat_wd_teamleader"]] params ["_loadout", "_tls"];
+	[(_unit getVariable ["I_LOADOUT", []])] params ["_loadout"];
 	
 	if !(_loadout isEqualTo []) then {
 		_unit setUnitLoadout _loadout;
@@ -20,7 +20,7 @@ player addEventHandler ["Respawn", {
 
 		_unit linkItem "tf_anprc152";
 
-		if ((typeOf _unit) in _tls) then {
+		if ((typeOf _unit) in I_USMC_CLASS_TFAR_LR) then {
 			_unit addBackpack "tf_rt1523g_rhs";
 		};
 	};

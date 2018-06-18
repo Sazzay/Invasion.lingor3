@@ -8,6 +8,7 @@ if !(isServer) exitWith {};
 [] execVM "definitions\units.sqf";
 [] execVM "definitions\factions.sqf";
 [] execVM "definitions\magazines.sqf";
+[] execVM "definitions\clientClasses.sqf";
 
 // Runtime
 [] execVM "runtime\spawns\rt_vehicularSpawns.sqf";
