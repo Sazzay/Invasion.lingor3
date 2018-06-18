@@ -58,8 +58,6 @@ if (_respawnObject isKindOf "LandVehicle" || _respawnObject isKindOf "Helicopter
 
 		sleep 1;
 	};
-}
-else
-{
+} else {
 	["fn_addMobileRespawn does not support this class type. It currently only supports all land vehicles, and helicopters."] call BIS_fnc_error;
 };

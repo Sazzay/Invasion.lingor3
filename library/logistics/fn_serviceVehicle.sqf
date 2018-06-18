@@ -31,7 +31,6 @@ if (_object isEqualTo objNull) exitWith {
 			
 		sleep 0.1;
 	};
-
 	
 	[(_this select 0), 1] remoteExec ["setVehicleAmmo", (_this select 0), false];
 };
