@@ -22,6 +22,13 @@ player addEventHandler ["Respawn", {
 
 		if ((typeOf _unit) in I_USMC_CLASS_TFAR_LR) then {
 			_unit addBackpack "tf_rt1523g_rhs";
+
+			{
+				for "_i" from 1 to 4 do {	
+					
+						_unit addItemToBackpack _x;
+				};
+			}forEach ["SmokeShell","SmokeShellRed","SmokeShellBlue"];
 		};
 	};
 	
