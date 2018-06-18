@@ -13,10 +13,16 @@ player addEventHandler ["Respawn", {
 	
 	if !(_loadout isEqualTo []) then {
 		_unit setUnitLoadout _loadout;
+		_unit linkItem "ItemGPS";
 	};
 	
-	if (((["task_force_radio"] call I_fnc_isAddonActive) isEqualTo true) and ((typeOf _unit) in _tls)) then {
-		_unit addBackpack "tf_rt1523g_rhs";
+	if (((["task_force_radio"] call I_fnc_isAddonActive) isEqualTo true) then {
+
+		_unit linkItem "tf_anprc152";
+
+		if ((typeOf _unit) in _tls) then {
+			_unit addBackpack "tf_rt1523g_rhs";
+		};
 	};
 	
 	if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
