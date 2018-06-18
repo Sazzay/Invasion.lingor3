@@ -11,6 +11,8 @@ player addEventHandler ["Respawn", {
 	params ["_unit", "_corpse"];
 	[(_unit getVariable ["I_LOADOUT", []])] params ["_loadout"];
 	
+	deleteVehicle _corpse;
+	
 	if !(_loadout isEqualTo []) then {
 		_unit setUnitLoadout _loadout;
 		_unit linkItem "ItemGPS";
