@@ -1,3 +1,9 @@
+Build 6:
+- Added: Static AA emplacements scattered across the map.
+- Added: Backpack to the AT Assistant in the AT squad for one extra javelin.
+- Changed: Some roles have changed, and main units are no longer MARSOC but USMC.
+- Changed: Loadouts have been revamped to reduce weight.
+
 Build 5:
 - Added: Client setViewdistance added and set to 2500 meters.
 - Added: Info stand right outside LHD respawn that shows the assigned radio channels.
