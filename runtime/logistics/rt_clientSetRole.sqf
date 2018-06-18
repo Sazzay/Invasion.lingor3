@@ -4,6 +4,7 @@
 	Description:
 	Ensures that classes have the appropriate role.
 */
+
 [player] params ["_unit"];
 
 if ((typeOf _unit) in I_USMC_CLASS_MEDIC) exitWith {
