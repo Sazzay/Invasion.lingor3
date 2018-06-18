@@ -53,5 +53,5 @@
 			};
 		};
 	
-	}, 3, _x] call CBA_fnc_addPerFrameHandler;
+	}, 10, _x] call CBA_fnc_addPerFrameHandler;
 } forEach _units;
