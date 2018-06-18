@@ -6,7 +6,7 @@
 	
 	Parameters:
 	_this select 0: PositionATL
-	_this select 1: STRING.
+	_this select 1: STRING
 	
 	Returns:
 	OBJECT
