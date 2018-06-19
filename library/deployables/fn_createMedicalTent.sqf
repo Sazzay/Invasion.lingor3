@@ -20,7 +20,7 @@ params
 ];
 
 if (_tentPos isEqualTo []) exitWith {
-	diag_log "I_fnc_createTent: no position provided.";
+	diag_log "I_fnc_createMedicalTent: no position provided.";
 };
 
 private ["_crateObject","_tentObject"];
