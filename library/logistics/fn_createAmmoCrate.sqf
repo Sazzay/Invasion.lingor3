@@ -24,6 +24,12 @@ if (_pos isEqualTo []) exitWith {
 
 _return = createVehicle ["CargoNet_01_box_F", _pos, [], 0, "CAN_COLLIDE"];
 
+if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
+	[_return,true,[0,1.8,0]] call ace_dragging_fnc_setDraggable;
+	[_return, 5] call ace_cargo_fnc_setSize;
+	_return enableRopeAttach false;
+};
+
 {
 	_return addMagazineCargoGlobal [_x select 0, _x select 1];
 } forEach I_USMC_MAGAZINES;
