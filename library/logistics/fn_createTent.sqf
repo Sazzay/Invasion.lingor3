@@ -25,6 +25,12 @@ if (_tentPos isEqualTo []) exitWith {
 	diag_log "I_fnc_createTent: no position provided.";
 };
 
+/*
+
+	ADD RESTRICTIONS.
+
+*/
+
 private ["_crateObject","_tentObject","_tentName","_supportedTypes"];
 
 _crateObject = createVehicle ["CargoNet_01_box_F", _tentPos, [], 0, "CAN_COLLIDE"];
@@ -40,6 +46,7 @@ switch (_tentType) do {
 	case "COMMAND": {
 		_tentObject = createVehicle ["Land_tent_east", _tentPos, [], 0, "CAN_COLLIDE"];
 		_tentObject attachTo[_crateObject,[0,0,1.3]];
+
 		_tentName = "Command Tent";
 	};
 
@@ -88,18 +95,26 @@ _tentObject allowDamage false;
 		{}, // Executed on action start.
 		{},	// Code executed on every progress tick						
 		{
-			private ["_crateObject","_tentObject"];
+			private ["_crateObject","_tentObject","_nearestTents","_findTents"];
 			_crateObject = (_this select 3 select 0);
 			_tentObject = (_this select 3 select 1);
 
-			[_crateObject,true] remoteExec ["hideObject",0,true]; // hideobjectglobal isn't working on dedi from holdaction.
-			[_tentObject,false] remoteExec ["hideObject",0,true]; // hideobjectglobal isn't working on dedi from holdaction.
+			_nearestTents = nearestObjects [_crateObject, ["Land_tent_east", "USMC_WarfareBFieldhHospital","CampEast_EP1"], 20];
+			_findTents = [_tentObject,_nearestTents] call I_fnc_deleteElement;
 
-			[format["I_TENT_%1",(str _tentObject)], (getPos _crateObject), "hd_flag", "ColorWEST", (_this select 3 select 2)] call I_fnc_createMarkerIcon;
+			if (_findTents isEqualTo []) then {
+
+				[_crateObject,true] remoteExec ["hideObject",0,true]; // hideobjectglobal isn't working on dedi from holdaction.
+				[_tentObject,false] remoteExec ["hideObject",0,true]; // hideobjectglobal isn't working on dedi from holdaction.
+
+				[format["I_TENT_%1",(str _tentObject)], (getPos _crateObject), "hd_flag", "ColorWEST", (_this select 3 select 2)] call I_fnc_createMarkerIcon;
+			} else {
+				["Cannot assemble; Another tent is within 20 meters."] call I_fnc_notification;
+			};
 		}, // Code executed on completion
 		{},	// Code executed on interrupted
 		[(_this select 0),(_this select 1),(_this select 2)],
-		6,
+		2,
 		0,
 		false,
 		false
@@ -126,7 +141,7 @@ _tentObject allowDamage false;
 		}, // Code executed on completion
 		{},	// Code executed on interrupted
 		[(_this select 0),(_this select 1)],
-		6,
+		2,
 		0,
 		false,
 		false
