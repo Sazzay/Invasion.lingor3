@@ -25,12 +25,6 @@ if (_tentPos isEqualTo []) exitWith {
 	diag_log "I_fnc_createTent: no position provided.";
 };
 
-/*
-
-	ADD RESTRICTIONS.
-
-*/
-
 private ["_crateObject","_tentObject","_tentName","_supportedTypes"];
 
 _crateObject = createVehicle ["CargoNet_01_box_F", _tentPos, [], 0, "CAN_COLLIDE"];
