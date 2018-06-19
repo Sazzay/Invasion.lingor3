@@ -67,7 +67,7 @@ if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
 
 if !(_vehicle isEqualTo objNull) then {
 	if (_respawn isEqualTo true) then {
-		[_vehicle, _type, _pos, _dir, _respawn,_isMHQ,_aceCargoSize] spawn {
+		[_vehicle, _type, _pos, _dir, _respawn,_isMHQ, _aceCargoSize] spawn {
 			waitUntil {!(alive (_this select 0))};
 			
 			sleep 60;
