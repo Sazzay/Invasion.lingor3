@@ -1,5 +1,5 @@
-["RHS_UH1Y_FFAR", [6637.176,10023.523,47.1], 153.694, true, false, 10] call I_fnc_createVehicle;
-["RHS_UH1Y_FFAR", [6622.403,10016.349,47.1], 153.694, true, false, 10] call I_fnc_createVehicle;
+["RHS_UH1Y_FFAR", [6637.176,10023.523,47.1], 153.694, true, false, 5] call I_fnc_createVehicle;
+["RHS_UH1Y_FFAR", [6622.403,10016.349,47.1], 153.694, true, false, 5] call I_fnc_createVehicle;
 ["RHS_AH1Z_wd", [6794.132,10075.462,47.1], 333.838, true, false, -1] call I_fnc_createVehicle;
 ["RHS_AH1Z_wd", [6780.599,10069.069,47.1], 333.838, true, false, -1] call I_fnc_createVehicle;
 ["rhsusf_CH53E_USMC", [6635.461,9998.054,47.1], 244.993, true,false, 25] call I_fnc_createVehicle;
@@ -11,7 +11,7 @@
 ["rhsusf_m1025_w_s_Mk19", [6678.494, 10023.915, 37.623], 292.065, true, false, 5] call I_fnc_createVehicle;
 ["rhsusf_rg33_m2_usmc_wd", [6672.94, 10021.218, 37.623], 292.065, true, false, 5] call I_fnc_createVehicle;
 ["rhsusf_rg33_m2_usmc_wd", [6667.367, 10018.534, 37.623], 292.065, true, false, 5] call I_fnc_createVehicle;
-["rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy", [6672.881, 10041.740, 38], 245.676, true, true, 15] call I_fnc_createVehicle;
+["rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy", [6672.881, 10041.740, 38], 245.676, true, true, 5] call I_fnc_createVehicle;
 ["rhsusf_m113_usarmy_supply", [6658.85,10034.9,38], 245.676, true, false, 5] call I_fnc_createVehicle;
 ["CUP_B_LAV25M240_USMC", [6697.741, 10052.556, 39.783], 192.492, true, false, 5] call I_fnc_createVehicle;
 ["CUP_B_LAV25M240_USMC", [6702.353, 10054.708, 39.784], 192.492, true, false, 5] call I_fnc_createVehicle;
@@ -19,6 +19,6 @@
 ["CUP_B_M1128_MGS_Woodland", [6735.495, 10061.063, 39.781], 245.139, true, false, 5] call I_fnc_createVehicle;
 ["CUP_B_M1129_MC_MK19_Woodland", [6713.477, 10040.066, 39.785], 244.4, true, false, 5] call I_fnc_createVehicle;
 ["CUP_B_M1129_MC_MK19_Woodland", [6704.642, 10036.012, 39.783], 244.4, true, false, 5] call I_fnc_createVehicle;
-[[6688.11,10025.4,47.0792],"COMMAND"] call I_fnc_createTent;
-[[6688.85,10023.9,46.8086],"MEDICAL"] call I_fnc_createTent;
-[[6689.61,10022.4,46.8086],"SERVICE"] call I_fnc_createTent;
+[[6688.11,10025.4,47.0792]] call I_fnc_createCommandTent;
+[[6688.85,10023.9,46.8086]] call I_fnc_createMedicalTent;
+[[6689.61,10022.4,46.8086]] call I_fnc_createServiceTent;
