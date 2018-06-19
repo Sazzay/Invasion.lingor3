@@ -22,6 +22,8 @@ player createDiaryRecord ["Diary", ["Update Notes",
 
 Marker added to MHQ system. The MHQ will now display whether it's active or inactive, and it's location on the map.<br/><br/>
 
+The LHD now appears as an object on the map screen.<br/><br/>
+
 Supply crates and Tent crates can now be dragged and loaded, if ace is enabled.<br/><br/>
 
 Basic tent system has been added, currently, only three types exist, with two serving a purpose.<br/><br/>
