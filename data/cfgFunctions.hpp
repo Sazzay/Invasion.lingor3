@@ -74,7 +74,6 @@ class I
 	{
 		file = "library\logistics";
 		class addMobileRespawn;
-		class addRepairStation;
 		class createAmmoCrate;
 		class serviceVehicle;
 		class createRallyPoint;
@@ -96,5 +95,12 @@ class I
 		file = "library\markers";
 		class createMarkerIcon;
 		class createMarkerIconLocal;
+	};
+	class deployables
+	{
+		file = "library\deployables";
+		class createCommandTent;
+		class createMedicalTent;
+		class createEngineerTent;
 	};
 };
