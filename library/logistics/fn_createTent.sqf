@@ -21,9 +21,9 @@ params
 	["_tentType","",[""]]
 ];
 
-/*if (_tentPos isEqualTo []) exitWith {
+if (_tentPos isEqualTo []) exitWith {
 	diag_log "I_fnc_createTent: no position provided.";
-};*/
+};
 
 private ["_crateObject","_tentObject","_tentName"];
 
@@ -31,6 +31,7 @@ _crateObject = createVehicle ["CargoNet_01_box_F", _tentPos, [], 0, "CAN_COLLIDE
 
 if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
 	[_crateObject,true,[0,1.8,0]] call ace_dragging_fnc_setDraggable;
+	[_crateObject, 5] call ace_cargo_fnc_setSize;
 };
 
 switch (_tentType) do {
