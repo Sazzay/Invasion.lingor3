@@ -1,8 +1,10 @@
 Build 6:
 - Added: Static AA emplacements scattered across the map.
 - Added: Backpack to the AT Assistant in the AT squad for one extra javelin.
+- Added: Various briefing updates with new information, including the same information displayed in the radiochart.
 - Changed: Some roles have changed, and main units are no longer MARSOC but USMC.
 - Changed: Loadouts have been revamped to reduce weight.
+- Changed: Radiochart texture was updated with new frequencies.
 
 Build 5:
 - Added: Client setViewdistance added and set to 2500 meters.
