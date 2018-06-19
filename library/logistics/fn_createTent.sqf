@@ -21,17 +21,17 @@ params
 	["_tentType","",[""]]
 ];
 
-/*if (_tentPos isEqualTo []) exitWith {
+if (_tentPos isEqualTo []) exitWith {
 	diag_log "I_fnc_createTent: no position provided.";
-};*/
+};
 
-private ["_crateObject","_tentObject","_tentName"];
+private ["_crateObject","_tentObject","_tentName","_supportedTypes"];
 
 _crateObject = createVehicle ["CargoNet_01_box_F", _tentPos, [], 0, "CAN_COLLIDE"];
 
 if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
-	[_crateObject,true,[0,1.8,0]] call ace_dragging_fnc_setDraggable;
-	[_crateObject, 5] call ace_cargo_fnc_setSize;
+	[_crateObject,true,[0,1.8,0]] remoteExecCall ["ace_dragging_fnc_setDraggable",0,true];
+	[_crateObject, 5] remoteExecCall ["ace_cargo_fnc_setSize",0,true];
 	_crateObject enableRopeAttach false;
 };
 
@@ -39,17 +39,12 @@ switch (_tentType) do {
 
 	case "COMMAND": {
 		_tentObject = createVehicle ["Land_tent_east", _tentPos, [], 0, "CAN_COLLIDE"];
-		_tentObject hideObjectGlobal true;
-		_tentObject allowDamage false;
 		_tentObject attachTo[_crateObject,[0,0,1.3]];
-
 		_tentName = "Command Tent";
 	};
 
 	case "MEDICAL": {
 		_tentObject = createVehicle ["USMC_WarfareBFieldhHospital", _tentPos, [], 0, "CAN_COLLIDE"];
-		_tentObject hideObjectGlobal true;
-		_tentObject allowDamage false;
 		_tentObject attachTo[_crateObject,[0,0,-1.831]];
 
 		if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
@@ -61,8 +56,6 @@ switch (_tentType) do {
 
 	case "SERVICE": {
 		_tentObject = createVehicle ["CampEast_EP1", _tentPos, [], 0, "CAN_COLLIDE"];
-		_tentObject hideObjectGlobal true;
-		_tentObject allowDamage false;
 		_tentObject attachTo[_crateObject,[0,0,0.7]];
 
 		[_tentObject] call I_fnc_serviceVehicle;
@@ -78,6 +71,9 @@ switch (_tentType) do {
 		diag_log "I_fnc_createTent: invalid tent type. Only supports 'COMMAND', 'MEDICAL' and 'SERVICE'";
 	};
 };
+
+_tentObject hideObjectGlobal true;
+_tentObject allowDamage false;
 
 [
 	[_crateObject,_tentObject,_tentName],
@@ -96,8 +92,8 @@ switch (_tentType) do {
 			_crateObject = (_this select 3 select 0);
 			_tentObject = (_this select 3 select 1);
 
-			[_crateObject,true] remoteExec ["hideObject",0,true]; // hideobjectglobal doesn't work on dedi for some reason.
-			[_tentObject,false] remoteExec ["hideObject",0,true]; // hideobjectglobal doesn't work on dedi for some reason.
+			[_crateObject,true] remoteExec ["hideObject",0,true]; // hideobjectglobal isn't working on dedi from holdaction.
+			[_tentObject,false] remoteExec ["hideObject",0,true]; // hideobjectglobal isn't working on dedi from holdaction.
 
 			[format["I_TENT_%1",(str _tentObject)], (getPos _crateObject), "hd_flag", "ColorWEST", (_this select 3 select 2)] call I_fnc_createMarkerIcon;
 		}, // Code executed on completion
@@ -123,8 +119,8 @@ switch (_tentType) do {
 			_crateObject = (_this select 3 select 0);
 			_tentObject = (_this select 3 select 1);
 
-			[_crateObject,false] remoteExec ["hideObject",0,true]; // hideobjectglobal doesn't work on dedi for some reason.
-			[_tentObject,true] remoteExec ["hideObject",0,true];; // hideobjectglobal doesn't work on dedi for some reason.
+			[_crateObject,false] remoteExec ["hideObject",0,true]; // hideobjectglobal isn't working on dedi from holdaction.
+			[_tentObject,true] remoteExec ["hideObject",0,true]; // hideobjectglobal isn't working on dedi from holdaction.
 
 			deleteMarker (format["I_TENT_%1",(str _tentObject)]);
 		}, // Code executed on completion
