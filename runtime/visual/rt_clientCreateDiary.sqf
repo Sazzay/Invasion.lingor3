@@ -100,6 +100,9 @@ New Features:<br/>
 Tweaked Features:<br/>
 <font color='#ffab1a'>(1)</font> Nothing.<br/><br/>
 
+Fixed Bugs:<br/>
+<font color='#ffab1a'>(1)</font> Nothing.
+
 Known Bugs:<br/>
 <font color='#ffab1a'>(1)</font> Nothing.
 "]];
