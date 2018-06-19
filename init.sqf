@@ -21,6 +21,7 @@ if !(isServer) exitWith {};
 [] execVM "runtime\ads\rt_tickStaticAA.sqf";
 [] execVM "runtime\support\rt_aiSupport.sqf";
 [] execVM "runtime\maintenance\rt_deleteInactiveVehicles.sqf";
+[] execVM "runtime\maintenance\rt_deleteUnderwaterVehicles.sqf";
 [] execVM "runtime\logistics\rt_crateRespawner.sqf";
 [] execVM "runtime\logistics\rt_serviceArea.sqf";
 

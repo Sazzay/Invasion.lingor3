@@ -1,3 +1,16 @@
+I_DEF_BLUFOR_VEHICLES = [
+"RHS_UH1Y_FFAR",
+"RHS_AH1Z_wd",
+"rhsusf_CH53E_USMC",
+"CUP_B_AV8B_DYN_USMC",
+"rhsusf_m1025_w_s_Mk19",
+"rhsusf_rg33_m2_usmc_wd",
+"rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy",
+"rhsusf_m113_usarmy_supply",
+"CUP_B_M1129_MC_MK19_Woodland",
+"CUP_B_M1128_MGS_Woodland"
+];
+
 I_DEF_VEHICLES_AA_PLANES = [
 "rhs_mig29s_vmf",
 "rhs_mig29sm_vmf",
