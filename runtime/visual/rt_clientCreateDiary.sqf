@@ -33,7 +33,7 @@ player createDiaryRecord ["Diary", ["Logistic System",
 "<font color='#ffab1a'>Report bugs and leave feedback to discord tag ocd#0644 or Panda#8990</font><br/><br/>
 
 In the current build of this mission, the logistics system is fairly simple. You can slingload supply crates from air vehicles, or, if ace is enabled, you can
-load them into the back of vehicles. Each crate is <font color='#ffab1a'>dragable</font><br/><br/> and takes up <font color='#ffab1a'>5 cargo space</font>.
+load them into the back of vehicles. Each crate is <font color='#ffab1a'>draggable</font> and takes up <font color='#ffab1a'>5 cargo space</font>.
 Please note that <font color='#ffab1a'>you may not be able to move an ammo crate if it's full with ammunition</font>.<br/><br/>
 
 There is a service pad on the LHD, which can re-arm <font color='#ffab1a'>any type of vehicle</font>.<br/><br/>
