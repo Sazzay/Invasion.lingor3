@@ -19,9 +19,9 @@ params
 	["_tentPos",[],[[]]]
 ];
 
-/*if (_tentPos isEqualTo []) exitWith {
+if (_tentPos isEqualTo []) exitWith {
 	diag_log "I_fnc_createTent: no position provided.";
-};*/
+};
 
 private ["_crateObject","_tentObject"];
 
