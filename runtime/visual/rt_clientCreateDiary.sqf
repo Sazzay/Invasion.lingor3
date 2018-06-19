@@ -35,7 +35,6 @@ The logistics system curruently features:<br/>
 (3) A tent system, all tent types are listed below:<br/>
 <font color='#ffab1a'>Command</font> - Currently has no functionality.<br/>
 <font color='#ffab1a'>Medical</font> - Provides a training boost to both medics and regular soldiers.<br/>
-<font color='#ffab1a'>Service</font> - Provides a training boost to engineers.<br/><br/>
 
 This system will be expanded upon throughout updates, to create a fully player-dependable logistics system.<br/>
 Please note that, not all helicopters will be able to sling load, as each vehicle has a weight limit. Crates are not slingloadable if ACE is enabled, and training boosts
@@ -94,7 +93,7 @@ New Features:<br/>
 <font color='#ffab1a'>(1)</font> Marker added to MHQ system. The MHQ will now display whether it's active or inactive, and it's location on the map.<br/>
 <font color='#ffab1a'>(2)</font> The LHD now has an outline on the map screen.<br/>
 <font color='#ffab1a'>(3)</font> Supply crates and Tent crates can now be dragged and loaded, if ace is enabled.<br/>
-<font color='#ffab1a'>(4)</font> Basic tent system has been added, currently, only three types exist, with two serving a purpose.<br/>
+<font color='#ffab1a'>(4)</font> Basic tent system has been added.<br/>
 <font color='#ffab1a'>(5)</font> Loadouts have been revamped. Medics, Engineers and EOD tech should have their class appropriate items.<br/><br/>
 
 Tweaked Features:<br/>
