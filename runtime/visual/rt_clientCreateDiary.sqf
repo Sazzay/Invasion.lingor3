@@ -35,7 +35,7 @@ The logistics system curruently features:<br/>
 (3) A tent system, all tent types are listed below:<br/>
 <font color='#ffab1a'>Command</font> - Currently has no functionality.<br/>
 <font color='#ffab1a'>Medical</font> - Provides a training boost to both medics and regular soldiers.<br/>
-<font color='#ffab1a'>Service</font> - Provides a training boost to engineers, as well as an area to service vehicles.<br/><br/>
+<font color='#ffab1a'>Service</font> - Provides a training boost to engineers.<br/><br/>
 
 This system will be expanded upon throughout updates, to create a fully player-dependable logistics system.<br/>
 Please note that, not all helicopters will be able to sling load, as each vehicle has a weight limit. Crates are not slingloadable if ACE is enabled, and training boosts
