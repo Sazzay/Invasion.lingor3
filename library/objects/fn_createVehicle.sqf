@@ -40,8 +40,8 @@ if (isNil "_isMHQ") then {
 	_isMHQ = false;
 };
 
-if (isNil "_aceCargo") then {
-	_aceCargo = -1;
+if (isNil "_aceCargoSize") then {
+	_aceCargoSize = -1;
 };
 
 _vehicle = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
@@ -62,7 +62,7 @@ if (_isMHQ isEqualTo true) then {
 };
 
 if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
-	[_vehicle, _aceCargoSize] call ace_cargo_fnc_setSize;
+	[_vehicle, _aceCargoSize] call ace_cargo_fnc_setSpace;
 };
 
 if !(_vehicle isEqualTo objNull) then {
