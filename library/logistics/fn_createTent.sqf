@@ -96,8 +96,8 @@ switch (_tentType) do {
 			_crateObject = (_this select 3 select 0);
 			_tentObject = (_this select 3 select 1);
 
-			_crateObject hideObjectGlobal true;
-			_tentObject hideObjectGlobal false;
+			[_crateObject,true] remoteExec ["hideObject",0,true];
+			[_tentObject,false] remoteExec ["hideObject",0,true];
 
 			[format["I_TENT_%1",(str _tentObject)], (getPos _crateObject), "hd_flag", "ColorWEST", (_this select 3 select 2)] call I_fnc_createMarkerIcon;
 		}, // Code executed on completion
@@ -123,8 +123,8 @@ switch (_tentType) do {
 			_crateObject = (_this select 3 select 0);
 			_tentObject = (_this select 3 select 1);
 
-			_crateObject hideObjectGlobal false;
-			_tentObject hideObjectGlobal true;
+			[_crateObject,false] remoteExec ["hideObject",0,true];
+			[_tentObject,true] remoteExec ["hideObject",0,true];
 
 			deleteMarker (format["I_TENT_%1",(str _tentObject)]);
 		}, // Code executed on completion
