@@ -46,28 +46,28 @@ player createDiaryRecord ["Diary", ["Callsigns & Radio Frequency",
 "Report bugs and leave feedback to discord tag <font color='#ffab1a'>ocd#0644</font> or <font color='#ffab1a'>Panda#8990</font><br/><br/>
 
 <font color='#ffab1a'>Reaper 1-1, Infantry</font>:<br/>
-SR: <font color='#ffab1a'>30</font> Default, <font color='#ffab1a'>30</font>-<font color='#ffab1a'>39</font> range.<br/><br/>
+SR: <font color='#ffab1a'>30</font> Default, <font color='#ffab1a'>30</font>-<font color='#ffab1a'>35</font> range.<br/><br/>
 
 <font color='#ffab1a'>Erebus 1-1, Recon</font>:<br/>
-SR: <font color='#ffab1a'>40</font> Default, <font color='#ffab1a'>40</font>-<font color='#ffab1a'>49</font> range.<br/><br/>
+SR: <font color='#ffab1a'>40</font> Default, <font color='#ffab1a'>40</font>-<font color='#ffab1a'>41</font> range.<br/><br/>
 
-<font color='#ffab1a'>Kratos 1-1, Infantry Support</font>:<br/>
-SR: <font color='#ffab1a'>50</font> Default, <font color='#ffab1a'>50</font>-<font color='#ffab1a'>50</font> range.<br/><br/>
+<font color='#ffab1a'>Kratos 1-1, Anti-Tank Support</font>:<br/>
+SR: <font color='#ffab1a'>50</font> Default, <font color='#ffab1a'>50</font>-<font color='#ffab1a'>51</font> range.<br/><br/>
 
 <font color='#ffab1a'>Ares 1-1, Vehicle Support</font>:<br/>
-SR: <font color='#ffab1a'>100</font> Default, <font color='#ffab1a'>100</font>-<font color='#ffab1a'>104</font> range.<br/><br/>
+SR: <font color='#ffab1a'>60</font> Default, <font color='#ffab1a'>60</font>-<font color='#ffab1a'>61</font> range.<br/><br/>
 
 <font color='#ffab1a'>Ares 1-2, Vehicle Support</font>:<br/>
-SR: <font color='#ffab1a'>105</font> Default, <font color='#ffab1a'>105</font>-<font color='#ffab1a'>109</font> range.<br/><br/>
+SR: <font color='#ffab1a'>62</font> Default, <font color='#ffab1a'>62</font>-<font color='#ffab1a'>63</font> range.<br/><br/>
 
 <font color='#ffab1a'>Ares 1-3, Vehicle Support</font>:<br/>
-SR: <font color='#ffab1a'>110</font> Default, <font color='#ffab1a'>110</font>-<font color='#ffab1a'>114</font> range.<br/><br/>
+SR: <font color='#ffab1a'>64</font> Default, <font color='#ffab1a'>64</font>-<font color='#ffab1a'>65</font> range.<br/><br/>
 
 <font color='#ffab1a'>Pegasus 1-1, Rotor Support</font>:<br/>
-SR: <font color='#ffab1a'>115</font> Default, <font color='#ffab1a'>115</font>-<font color='#ffab1a'>119</font> range.<br/><br/>
+SR: <font color='#ffab1a'>66</font> Default, <font color='#ffab1a'>66</font>-<font color='#ffab1a'>67</font> range.<br/><br/>
 
 <font color='#ffab1a'>Pegasus 1-2, Rotor Support</font>:<br/>
-SR: <font color='#ffab1a'>120</font> Default, <font color='#ffab1a'>120</font>-<font color='#ffab1a'>124</font> range.<br/><br/>
+SR: <font color='#ffab1a'>68</font> Default, <font color='#ffab1a'>68</font>-<font color='#ffab1a'>69</font> range.<br/><br/>
 
 <font color='#ffab1a'>Apocalypse 1-1, Fixed-wing Support</font>:<br/>
 LR: <font color='#ffab1a'>81</font> Default.<br/><br/>
@@ -77,7 +77,7 @@ LR: <font color='#ffab1a'>81</font> Default.<br/><br/>
 
 <font color='#ffab1a'>Intersquad Communication</font>:<br/>
 LR: <font color='#ffab1a'>70</font> Default.<br/><br/>
-Used by ground infantry to communicate with eachother. It is ideal that all units make use of task force radios' seperate multi-channel functionality. (Use numpad or open up the radio and change channel.)<br/><br/>
+Used by ground infantry, rotor aircraft and armor to communicate with eachother. It is ideal that all units make use of task force radios' seperate multi-channel functionality. (Use numpad or open up the radio and change channel.)<br/><br/>
 
 <font color='#ffab1a'>Support Communication</font>:<br/>
 LR: <font color='#ffab1a'>80</font> Default.<br/><br/>
