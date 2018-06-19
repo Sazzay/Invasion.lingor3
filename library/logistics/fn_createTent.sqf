@@ -103,7 +103,7 @@ switch (_tentType) do {
 		}, // Code executed on completion
 		{},	// Code executed on interrupted
 		[(_this select 0),(_this select 1),(_this select 2)],
-		2,
+		6,
 		0,
 		false,
 		false
@@ -130,7 +130,7 @@ switch (_tentType) do {
 		}, // Code executed on completion
 		{},	// Code executed on interrupted
 		[(_this select 0),(_this select 1)],
-		2,
+		6,
 		0,
 		false,
 		false
