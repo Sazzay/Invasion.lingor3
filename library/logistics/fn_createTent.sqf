@@ -90,7 +90,7 @@ if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
 							_tentName = "Service Tent";
 						};
 						
-						default: {
+						default {
 							diag_log "I_fnc_createTent: invalid tent type.";
 						};
 					};
