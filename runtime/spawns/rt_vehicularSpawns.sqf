@@ -21,4 +21,4 @@
 ["CUP_B_M1129_MC_MK19_Woodland", [6704.642, 10036.012, 39.783], 244.4, true, false, 5] call I_fnc_createVehicle;
 [[6688.11,10025.4,47.0792]] call I_fnc_createCommandTent;
 [[6688.85,10023.9,46.8086]] call I_fnc_createMedicalTent;
-[[6689.61,10022.4,46.8086]] call I_fnc_createServiceTent;
+[[6689.61,10022.4,46.8086]] call I_fnc_createEngineerTent;
