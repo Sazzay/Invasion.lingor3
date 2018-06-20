@@ -77,7 +77,6 @@ class I
 		class createAmmoCrate;
 		class serviceVehicle;
 		class createRallyPoint;
-		class createTent;
 	};
 	class support
 	{

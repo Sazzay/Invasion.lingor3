@@ -8,22 +8,22 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=2736;
+		nextID=2810;
 	};
 	class MarkerIDProvider
 	{
-		nextID=15;
+		nextID=17;
 	};
 	class LayerIndexProvider
 	{
-		nextID=478;
+		nextID=523;
 	};
 	class Camera
 	{
-		pos[]={6645.4365,20.345215,10020.955};
-		dir[]={0.6644451,-0.55086529,0.50510103};
-		up[]={0.43854922,0.83458126,0.33337715};
-		aside[]={0.60520113,-3.221794e-008,-0.79612166};
+		pos[]={6705.9229,45.189598,9988.1309};
+		dir[]={-0.70178509,-0.18451633,0.68811291};
+		up[]={-0.13176751,0.9828254,0.12920138};
+		aside[]={0.70013785,4.3399632e-007,0.71404737};
 	};
 };
 binarizationWanted=0;
@@ -44,8 +44,8 @@ addons[]=
 	"CUP_WaterVehicles_LHD",
 	"A3_Ui_F",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Characters_F_Common",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"A3_Characters_F_Common"
 };
 class AddonsMetaData
 {
@@ -283,7 +283,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5;
+		items=4;
 		class Item0
 		{
 			dataType="Layer";
@@ -295,6 +295,7 @@ class Mission
 				{
 					dataType="Layer";
 					name="BLUFOR";
+					state=1;
 					class Entities
 					{
 						items=2;
@@ -1954,6 +1955,7 @@ class Mission
 									{
 									};
 									id=2606;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2849,6 +2851,7 @@ class Mission
 									{
 									};
 									id=2682;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3374,6 +3377,7 @@ class Mission
 									{
 									};
 									id=2671;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3788,7 +3792,7 @@ class Mission
 									{
 									};
 									id=1402;
-									atlOffset=0.16309929;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -4203,7 +4207,7 @@ class Mission
 									{
 									};
 									id=1406;
-									atlOffset=0.16234207;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -4618,7 +4622,7 @@ class Mission
 									{
 									};
 									id=1494;
-									atlOffset=0.15528679;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -4899,7 +4903,7 @@ class Mission
 									{
 									};
 									id=905;
-									atlOffset=0.16261101;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -5180,7 +5184,7 @@ class Mission
 									{
 									};
 									id=902;
-									atlOffset=0.16261101;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -5324,6 +5328,7 @@ class Mission
 									{
 									};
 									id=910;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -5467,6 +5472,7 @@ class Mission
 									{
 									};
 									id=908;
+									atlOffset=17.27;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -5493,13 +5499,12 @@ class Mission
 								};
 							};
 							id=209;
-							atlOffset=8.636651;
+							atlOffset=17.27;
 						};
 						class Item1
 						{
 							dataType="Layer";
 							name="LHD";
-							state=1;
 							class Entities
 							{
 								items=3;
@@ -5825,7 +5830,7 @@ class Mission
 									name="LHD Markers";
 									class Entities
 									{
-										items=3;
+										items=9;
 										class Item0
 										{
 											dataType="Marker";
@@ -5861,21 +5866,101 @@ class Mission
 											id=2074;
 											atlOffset=30.021;
 										};
+										class Item3
+										{
+											dataType="Marker";
+											position[]={6726.6812,0,10055.895};
+											name="I_USMC_LHD_FLAG";
+											text="USMC LHD";
+											type="flag_USA";
+											id=2753;
+											atlOffset=30;
+										};
+										class Item4
+										{
+											dataType="Marker";
+											position[]={6948.9424,0,10006.26};
+											name="I_SHIPOutline_1";
+											markerType="RECTANGLE";
+											type="rectangle";
+											colorName="ColorGrey";
+											fillName="SolidFull";
+											a=55;
+											b=10;
+											angle=335.24188;
+											id=2754;
+											atlOffset=30;
+										};
+										class Item5
+										{
+											dataType="Marker";
+											position[]={6576.3486,0,9835.4082};
+											name="I_SHIPOutline_2";
+											markerType="RECTANGLE";
+											type="rectangle";
+											colorName="ColorGrey";
+											fillName="SolidFull";
+											a=55;
+											b=10;
+											angle=335.24188;
+											id=2761;
+											atlOffset=30;
+										};
+										class Item6
+										{
+											dataType="Marker";
+											position[]={6458.0283,0,10116.473};
+											name="I_SHIPOutline_3";
+											markerType="RECTANGLE";
+											type="rectangle";
+											colorName="ColorGrey";
+											fillName="SolidFull";
+											a=55;
+											b=10;
+											angle=335.24188;
+											id=2762;
+											atlOffset=30;
+										};
+										class Item7
+										{
+											dataType="Marker";
+											position[]={6838.9819,0,10286.758};
+											name="I_SHIPOutline_4";
+											markerType="RECTANGLE";
+											type="rectangle";
+											colorName="ColorGrey";
+											fillName="SolidFull";
+											a=55;
+											b=10;
+											angle=335.24188;
+											id=2763;
+											atlOffset=30;
+										};
+										class Item8
+										{
+											dataType="Marker";
+											position[]={6689.1943,0,10024.011};
+											name="I_CRATE_TENT";
+											text="LHD - Tent Crates";
+											type="b_support";
+											id=2809;
+											atlOffset=30;
+										};
 									};
 									id=2642;
-									atlOffset=30.1005;
+									atlOffset=30.00157;
 								};
 							};
 							id=2641;
-							atlOffset=2.6325264;
+							atlOffset=34.711933;
 						};
 					};
 					id=725;
-					atlOffset=2.382596;
+					atlOffset=-12.235385;
 				};
 			};
 			id=722;
-			atlOffset=2.382596;
+			atlOffset=-12.235385;
 		};
 		class Item1
 		{
@@ -5883,7 +5968,7 @@ class Mission
 			name="DEV";
 			class Entities
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
 					dataType="Logic";
@@ -5975,9 +6060,21 @@ class Mission
 						nAttributes=4;
 					};
 				};
+				class Item1
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={6647.3818,-0.083999634,10634.581};
+					};
+					name="GLOBAL";
+					id=1987;
+					type="Logic";
+					atlOffset=29.916;
+				};
 			};
 			id=833;
-			atlOffset=30;
+			atlOffset=29.958;
 		};
 		class Item2
 		{
@@ -6084,18 +6181,6 @@ class Mission
 			};
 			id=1525;
 			atlOffset=2.8141375;
-		};
-		class Item4
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={6647.3818,-0.083999634,10634.581};
-			};
-			name="GLOBAL";
-			id=1987;
-			type="Logic";
-			atlOffset=29.916;
 		};
 	};
 };
