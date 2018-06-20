@@ -35,7 +35,7 @@ The logistics system curruently features:<br/>
 (3) A tent system, all tent types are listed below:<br/>
 <font color='#ffab1a'>Command</font> - Currently has no functionality.<br/>
 <font color='#ffab1a'>Medical</font> - Provides a training boost to both medics and regular soldiers.<br/>
-<font color='#ffab1a'>Engineer</font> - Provides a training boost to engineers.<br/>
+<font color='#ffab1a'>Engineer</font> - Provides a training boost to engineers.<br/><br/>
 
 This system will be expanded upon throughout updates, to create a fully player-dependable logistics system.<br/>
 Please note that, not all helicopters will be able to sling load, as each vehicle has a weight limit. Crates are not slingloadable if ACE is enabled, and training boosts
@@ -81,7 +81,7 @@ Used by ground infantry, rotor aircraft and armor to communicate with eachother.
 
 <font color='#ffab1a'>Support Communication</font>:<br/>
 LR: <font color='#ffab1a'>80</font> Default.<br/><br/>
-Used by ground infantry to request support from air & vehicle support. It is ideal that all units make use of task force radios' seperate multi-channel functionality. (Use numpad or open up the radio and change channel.)<br/><br/>
+Used by ground infantry to request support from air and vehicle support. It is ideal that all units make use of task force radios' seperate multi-channel functionality. (Use numpad or open up the radio and change channel.)<br/><br/>
 "]];
 
 /*
@@ -101,8 +101,8 @@ Tweaked Features:<br/>
 <font color='#ffab1a'>(1)</font> Nothing.<br/><br/>
 
 Fixed Bugs:<br/>
-<font color='#ffab1a'>(1)</font> Nothing.
+<font color='#ffab1a'>(1)</font> Nothing.<br/><br/>
 
 Known Bugs:<br/>
-<font color='#ffab1a'>(1)</font> Nothing.
+<font color='#ffab1a'>(1)</font> Nothing.<br/>
 "]];
