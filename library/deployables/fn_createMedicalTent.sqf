@@ -48,7 +48,7 @@ if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
 			{}, // Executed on action start.
 			{},	// Code executed on every progress tick						
 			{
-				private ["_crateObject","_nearestTents","_commandTentCheck",,"_nearestTerrainObj","_surfaceIsWater","_isTouchingGround","_tentObject"];
+				private ["_crateObject","_nearestTents","_commandTentCheck","_nearestTerrainObj","_surfaceIsWater","_isTouchingGround","_tentObject"];
 				_crateObject = (_this select 3 select 0);
 				_nearestTents = nearestObjects [_crateObject, ["Land_tent_east", "USMC_WarfareBFieldhHospital","CampEast_EP1"], 20];
 				_commandTentCheck = ["I_TENT_COMMAND_ACTIVE", [false, objNull]] call I_fnc_getVariable;
