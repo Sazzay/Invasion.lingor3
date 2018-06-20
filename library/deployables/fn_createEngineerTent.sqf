@@ -19,9 +19,9 @@ params
 	["_tentPos",[],[[]]]
 ];
 
-if (_tentPos isEqualTo []) exitWith {
-	diag_log "I_fnc_createEngineerTent: no position provided.";
-};
+/*if (_tentPos isEqualTo []) exitWith {
+	diag_log "I_fnc_createTent: no position provided.";
+};*/
 
 private ["_crateObject","_tentObject"];
 
@@ -70,7 +70,7 @@ if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
 							
 							["I_TENT_ENGINEER_ACTIVE", true] call I_fnc_setVariable;
 
-							[format["I_TENT_%1",(str _tentObject)], (getPos _crateObject), "hd_flag", "ColorWEST","Command Tent"] call I_fnc_createMarkerIcon;
+							[format["I_TENT_%1",(str _tentObject)], (getPos _crateObject), "hd_flag", "ColorWEST","Engineer Tent"] call I_fnc_createMarkerIcon;
 
 							[
 								[_crateObject,_tentObject],
@@ -93,7 +93,7 @@ if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
 											[_crateObject,false] remoteExec ["hideObject",0,true]; // hideobjectglobal isn't working on dedi from holdaction.
 
 											if ((["ace_main"] call I_fnc_isAddonActive) isEqualTo true) then {
-												_tentObject setVariable ["ACE_isRepairFacility",false,true];
+												_tentObject setVariable ["ACE_isRepairFacility",nil,true];
 											};
 
 											["I_TENT_ENGINEER_ACTIVE", false] call I_fnc_setVariable;
